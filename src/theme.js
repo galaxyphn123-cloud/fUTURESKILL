@@ -1,0 +1,15 @@
+export const COLORS = {
+  ink: "#132A2C",
+  paper: "#F6F3EC",
+  panel: "#FFFFFF",
+  moss: "#2E6B5E",
+  mossDeep: "#1C4A40",
+  amber: "#E8A33D",
+  coral: "#E0654A",
+  sky: "#3E7CA6",
+  lilac: "#8B6FB0",
+  line: "#DCD5C4",
+  build: "#3E7CA6",
+  practice: "#E8A33D",
+  master: "#2E6B5E",
+};
