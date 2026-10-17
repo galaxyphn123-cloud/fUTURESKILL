@@ -9,7 +9,9 @@ const input = { width: "100%", boxSizing: "border-box", padding: "14px 16px", bo
   border: `1.5px solid ${COLORS.line}`, fontSize: 18, fontFamily: "inherit", marginBottom: 12, textAlign: "center" };
 
 /* Quizizz-style entry: 6-digit session code, then student code (or name the first time). */
-export function JoinScreen({ onJoin, onTeacher }) {
+export function JoinScreen({ onJoin, onTeacher, onParent }) {
+  const [parentCode, setParentCode] = useState("");
+  const [showParent, setShowParent] = useState(false);
   const [code, setCode] = useState("");
   const [session, setSession] = useState(null);
   const [who, setWho] = useState("");
@@ -48,6 +50,19 @@ export function JoinScreen({ onJoin, onTeacher }) {
           <Btn style={{ width: "100%" }} disabled={!who.trim()} onClick={enter}>Mulai belajar</Btn>
           <div style={{ marginTop: 10 }}><button onClick={() => { setSession(null); setWho(""); }} style={link}>← Ganti kode sesi</button></div>
         </>
+      )}
+      {!session && (
+        <div style={{ marginTop: 24 }}>
+          {!showParent ? <button onClick={() => setShowParent(true)} style={link}>Saya orang tua</button> : (
+            <>
+              <input value={parentCode} onChange={e => setParentCode(e.target.value.toUpperCase().slice(0, 6))} placeholder="Kode orang tua (6 karakter)" style={{ ...input, fontSize: 15 }} />
+              <Btn variant="ghost" style={{ width: "100%" }} disabled={parentCode.length !== 6} onClick={async () => {
+                const st = await ClassService.findByParentCode(parentCode);
+                if (!st) setError("Kode orang tua tidak ditemukan. Mintalah kode dari guru."); else onParent(st);
+              }}>Lihat perkembangan anak</Btn>
+            </>
+          )}
+        </div>
       )}
       <div style={{ marginTop: 28 }}>
         <button onClick={onTeacher} style={{ ...link, color: COLORS.sky }}>Saya seorang guru</button>

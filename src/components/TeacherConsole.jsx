@@ -73,7 +73,7 @@ function ClassesTab({ teacher, classes, reload }) {
               {roster.length === 0 && <div style={{ opacity: .5, fontSize: 13 }}>Belum ada siswa. Siswa juga otomatis terdaftar saat mengetik namanya di layar gabung.</div>}
               {roster.map(s => (
                 <div key={s.id} style={{ display: "flex", justifyContent: "space-between", padding: "8px 0", borderTop: `1px solid ${COLORS.line}`, fontSize: 14 }}>
-                  <span>{s.name}</span><code style={{ fontWeight: 800, letterSpacing: ".15em" }}>{s.code}</code>
+                  <span>{s.name}</span><span style={{ fontSize: 12 }}>siswa <code style={{ fontWeight: 800, letterSpacing: ".15em" }}>{s.code}</code> · orang tua <code style={{ fontWeight: 800, letterSpacing: ".1em" }}>{s.parent_code}</code></span>
                 </div>
               ))}
             </div>

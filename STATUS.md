@@ -13,6 +13,8 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 | 22 Session / join code | **Baru:** guru (PIN lokal) → kelas + roster dengan student code 4 karakter → sesi per kelas+skill dengan kode 6 digit unik di antara sesi terbuka → siswa gabung dengan kode sesi + student code (atau nama, otomatis terdaftar). Setiap attempt (termasuk retry) tersimpan dengan session_id, pilihan jawaban, waktu |
 | 23 Dashboard guru | **Baru:** konsol guru (Kelas / Sesi / Laporan): overview kelas (terdaftar, aktif, selesai, akurasi, fase, terakhir aktif), detail siswa (mastery micro-skill + jawaban yang meleset beserta pilihan anak), analitik soal (tersulit/termudah + kesalahan terbanyak). Belum: badge/project/reflection di detail siswa |
 | 0/2 Taksonomi & metadata | **Baru:** `src/data/taxonomy.js` (110 skill × 10 micro-skill = 1.100, dibangkitkan oleh `scripts/build-taxonomy.mjs`) dan `engine/metadata.js` yang menurunkan metadata Phase 0 lengkap per aktivitas (age_level, difficulty 1–10, cognitive_load, estimated_time, prerequisite_skill, mastery_requirement). **Mastery per micro-skill** (butuh ≥5 percobaan pertama; ≥80% = TUNTAS) tampil sebagai "Peta micro-skill" di layar siswa. `age_level` dan `prerequisite_skill` masih heuristik — perlu ditinjau pemilik kurikulum |
+| 21 Profil siswa / badge | **Baru:** layar "MY FUTURE SKILLS" (`ProfileView`): level per domain (1 + ⌊micro-skill tuntas ÷ 3⌋) dan per skill (1 + tuntas), skill yang sedang dijalani, "Yang sudah kuat" / "Sedang dibangun", rekomendasi berikutnya, 11 lencana berbasis usaha/pertumbuhan (tanpa ranking) dengan toast saat diraih, aktivitas terakhir |
+| 24 Dashboard orang tua | **Baru:** orang tua masuk dengan kode orang tua 6 karakter (ditampilkan di roster guru), melihat progres, skill berkembang, aktivitas terakhir, kekuatan, area yang sedang dibangun, dan saran latihan di rumah — bahasa non-diagnosis |
 | 27 Quality check | **Baru:** `scripts/quality-check.mjs` — 0 duplikat, 0 opsi kembar, 0 jawaban di luar rentang; **140 aktivitas NEEDS REVIEW** (teks panjang, 2 hint membocorkan jawaban) |
 
 ## Belum ada (urutan pengerjaan yang disarankan)
@@ -20,7 +22,7 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 2. ~~Taksonomi micro-skill~~ selesai (lihat atas); tinggal tinjau age_level/prerequisite per skill.
 3. **Penempatan usia/mastery** (Age A–E) dan kembali ke fondasi untuk anak yang belum kuat.
 4. ~~Sesi guru~~ selesai di mode lokal. **Batas penting:** data tersimpan di localStorage satu browser, jadi siswa di perangkat lain belum bisa memakai kode sesi. Itu butuh backend Supabase (adapter sudah ada; skema tabel + RLS + migrasi belum ditulis). PIN guru bukan autentikasi sungguhan.
-5. **Profil siswa "MY FUTURE SKILLS"**, badge, level per skill, dashboard orang tua + rekomendasi.
+5. ~~Profil siswa, badge, dasbor orang tua~~ selesai (mode lokal; parent code hanya bekerja di browser yang sama sampai ada backend).
 6. **Mission, Boss Challenge, Project + rubric, Reflection.**
 7. **Content generator + workflow GENERATE→VALIDATE→REVIEW→APPROVE→PUBLISH** (butuh backend/LLM; quality-check di atas jadi tahap VALIDATE).
 8. Tipe aktivitas tambahan (lihat Phase 5).

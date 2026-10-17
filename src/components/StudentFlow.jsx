@@ -18,7 +18,7 @@ import { ActivityCard } from "./ActivityCard.jsx";
    would not change at all if getAdapter() started returning a
    SupabaseAdapter tomorrow. Fully skill-agnostic: which skill is being
    played is passed in as a prop, not hardcoded. */
-export function StudentFlow({ studentId, session, onExit }) {
+export function StudentFlow({ studentId, session, onExit, onProfile }) {
   const skillId = session.skill_id;
   const skill = LIVE_SKILLS.find(s => s.id === skillId);
   const activities = QuestionService.listForSkill(skillId);
@@ -51,14 +51,16 @@ export function StudentFlow({ studentId, session, onExit }) {
   const canRetry = saved && saved.gradable && !saved.correct;
 
   async function handleAnswer(res) {
-    const { student: updatedStudent, progress: updatedProgress } = await AttemptService.submitAnswer({
+    const { student: updatedStudent, progress: updatedProgress, newBadges } = await AttemptService.submitAnswer({
       studentId: student.id, sessionId: session.id, skillId, activity: current, result: res, isRetry: !!saved,
       choice: res.choice, timeMs: Date.now() - startedAt.current,
     });
     setStudent(updatedStudent);
     setProgress(updatedProgress);
     setRetrying(false);
-    if (res.gradable && res.correct) { setJustAwarded(saved ? "+5 XP" : "+10 XP"); setTimeout(() => setJustAwarded(null), 1200); }
+    const xpText = res.gradable && res.correct ? (saved ? "+5 XP" : "+10 XP") : null;
+    const badgeText = newBadges.length ? `${newBadges[0].icon} Lencana baru: ${newBadges[0].name}` : null;
+    if (xpText || badgeText) { setJustAwarded([xpText, badgeText].filter(Boolean).join("  ·  ")); setTimeout(() => setJustAwarded(null), badgeText ? 3000 : 1200); }
   }
 
   function goNext() {
@@ -82,7 +84,7 @@ export function StudentFlow({ studentId, session, onExit }) {
           <div style={{ fontSize: 22, fontWeight: 800, color: COLORS.mossDeep }}>{student.name}</div>
         </div>
         <XPBar xp={student.xp} />
-        <Btn variant="ghost" onClick={onExit}>Keluar</Btn>
+        <span style={{ display: "flex", gap: 8 }}><Btn variant="amber" onClick={onProfile}>Profilku</Btn><Btn variant="ghost" onClick={onExit}>Keluar</Btn></span>
       </div>
 
       <div style={{ background: COLORS.panel, borderRadius: 18, padding: 18, marginBottom: 20, border: `1.5px solid ${COLORS.line}` }}>
