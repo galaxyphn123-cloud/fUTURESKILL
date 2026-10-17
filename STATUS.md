@@ -37,3 +37,8 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 **Petunjuk panjang-opsi pada konten lama.** Pada soal pilihan ganda berisi kalimat, opsi benar adalah yang terpanjang di **97%** soal (kebetulan ≈33%). Anak bisa menjawab tanpa memahami. `npm run quality` kini menandainya sebagai `length-cue` (**4.591 aktivitas** konten lama). Konten baru (LHL, 800 aktivitas) lolos aturan ini dengan sebaran posisi jawaban merata. Perbaikan konten lama = menulis ulang pengecoh; kandidat pekerjaan berikutnya (alat `scripts/patch-distractors.mjs` + `normalize-file.mjs` sudah siap pakai).
 
 Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-distractors.mjs` (ganti pengecoh, jawaban benar tetap), `normalize-file.mjs` (putar posisi jawaban n%3, format kanonik). Tambah skill = 1 file aktivitas + 1 baris di `src/data/activities/lhl/index.js` (domain lain: salin pola ini).
+
+## Length-cue cleanup (legacy MCQs) — selesai
+- 4.591 → 12 item ditandai. Sisa 12 ada di FIN-02..06/09: opsi benar sudah melewati batas panjang checker, jadi distraktor tidak bisa disamakan panjangnya.
+- ~80 distraktor (FIN, COL) diperpanjang dengan klausa pengisi generik (mis. ", tanpa dicek lagi"); DIG/WEL banyak distraktor wordy dan belum ditinjau satu per satu. Layak ditinjau manusia bila ada waktu.
+- Agen WEL berhenti karena rate limit; `stats` menunjukkan WEL tidak ada flag tersisa, tetapi kualitas bacaannya belum diperiksa.
