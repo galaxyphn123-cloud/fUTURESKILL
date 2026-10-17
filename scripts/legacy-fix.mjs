@@ -30,7 +30,7 @@ if (cmd === "stats") {
     const set = new Set(flagged(id)); console.log(`## ${id} (${set.size})`);
     for (const a of SKILL_CONTENT[id]) if (set.has(a.n)) {
       const w = a.options.filter((_, i) => i !== a.answer);
-      console.log(process.env.X ? `${a.n}. ${a.q.slice(0, 200)} | OK: ${a.options[a.answer]} | X: ${w.join(" ## ")}` : `${a.n}. ${a.q.slice(0, 200)} | OK: ${a.options[a.answer]}`);
+      console.log(process.env.X ? `${a.n}. ${a.q.slice(0, 130)} | OK: ${a.options[a.answer]} | X: ${w.join(" ## ")}` : `${a.n}. ${a.q.slice(0, 130)} | OK: ${a.options[a.answer]}`);
     }
   }
 } else if (cmd === "apply") {
