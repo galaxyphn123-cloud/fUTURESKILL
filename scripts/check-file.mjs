@@ -9,6 +9,7 @@ const flags = checkSkill(exportName, acts);
 const stats = statsFor(acts);
 console.log(JSON.stringify(stats));
 if (stats.longestAnswerShare > 45) console.log(`WARN correct option is the longest in ${stats.longestAnswerShare}% of MCQs (chance ≈ 33%); lengthen some distractors`);
+if (stats.shortestAnswerShare > 45) console.log(`WARN correct option is the shortest in ${stats.shortestAnswerShare}% of MCQs (chance ≈ 33%); make some distractors shorter`);
 const soft = new Set(["option-long", "too-long"]);
 flags.forEach(f => console.log(soft.has(f.rule) ? "WARN" : "FAIL", `#${f.n}`, f.rule, f.detail));
 process.exit(flags.some(f => !soft.has(f.rule)) ? 1 : 0);

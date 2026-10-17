@@ -5,6 +5,7 @@ import { FOCUS_ATTENTION_ACTIVITIES } from "./focusAttention.js";
 import { REMEMBER_STRATEGIES_ACTIVITIES } from "./rememberStrategies.js";
 import { STUDY_TIME_ACTIVITIES } from "./studyTime.js";
 import { LEARNING_GOALS_ACTIVITIES } from "./learningGoals.js";
+import { ASK_AND_FIND_ACTIVITIES } from "./askAndFind.js";
 
 export const LHL_DOMAIN_NAME = "Belajar Cara Belajar";
 export const LHL_SKILLS = [
@@ -13,4 +14,5 @@ export const LHL_SKILLS = [
   { id: "LHL-03", name: "Strategi Mengingat", activities: REMEMBER_STRATEGIES_ACTIVITIES },
   { id: "LHL-04", name: "Mengatur Waktu Belajar", activities: STUDY_TIME_ACTIVITIES },
   { id: "LHL-05", name: "Tujuan Belajar", activities: LEARNING_GOALS_ACTIVITIES },
+  { id: "LHL-06", name: "Bertanya & Mencari Sumber", activities: ASK_AND_FIND_ACTIVITIES },
 ];

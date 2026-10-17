@@ -51,16 +51,17 @@ export function checkSkill(skill, acts, { metaCheck = null } = {}) {
 /* Authoring-time statistics: not hard failures, but they reveal lazy patterns. */
 export function statsFor(acts) {
   const types = {}, pos = {};
-  let mcq = 0, longest = 0;
+  let mcq = 0, longest = 0, shortest = 0;
   acts.forEach(a => {
     types[a.type] = (types[a.type] || 0) + 1;
     if (a.type === "mcq") {
       mcq++; pos[a.answer] = (pos[a.answer] || 0) + 1;
       const lens = a.options.map(o => o.length);
       if (lens[a.answer] === Math.max(...lens) && lens.filter(l => l === lens[a.answer]).length === 1) longest++;
+      if (lens[a.answer] === Math.min(...lens) && lens.filter(l => l === lens[a.answer]).length === 1) shortest++;
     }
   });
   const phaseTypes = [0, 1, 2, 3, 4].map(p => acts.slice(p * 20, p * 20 + 20).filter(a => a.type !== "mcq").length);
   const microPerStrand = Array.from({ length: 10 }, (_, b) => new Set(acts.slice(b * 10, b * 10 + 10).map(a => a.micro)).size);
-  return { types, answerPosition: pos, mcq, longestAnswerShare: mcq ? Math.round((longest / mcq) * 100) : 0, nonMcqPerPhase: phaseTypes, distinctMicroPerStrand: microPerStrand };
+  return { types, answerPosition: pos, mcq, longestAnswerShare: mcq ? Math.round((longest / mcq) * 100) : 0, shortestAnswerShare: mcq ? Math.round((shortest / mcq) * 100) : 0, nonMcqPerPhase: phaseTypes, distinctMicroPerStrand: microPerStrand };
 }

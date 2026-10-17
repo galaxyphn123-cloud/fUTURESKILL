@@ -10347,8 +10347,98 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "D",
+  "age_entry": "C",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-04"
+ },
+ "LHL-06": {
+  "id": "LHL-06",
+  "domain": "LHL",
+  "name": "Bertanya & Mencari Sumber",
+  "micro": [
+   {
+    "id": "LHL-06.01",
+    "name": "Apa itu bertanya",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-06.02",
+    "name": "Kata tanya",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-06.03",
+    "name": "Pertanyaan yang jelas",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-06.04",
+    "name": "Sumber informasi",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-06.05",
+    "name": "Memilih sumber",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-06.06",
+    "name": "Kata kunci",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-06.07",
+    "name": "Menalar informasi",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-06.08",
+    "name": "Kekeliruan mencari",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-06.09",
+    "name": "Proyek mencari tahu",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-06.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-05"
  }
 };
