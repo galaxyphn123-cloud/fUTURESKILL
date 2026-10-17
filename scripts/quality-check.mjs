@@ -4,6 +4,8 @@
    duplicates, length, and answer leaks. Flagged items => NEEDS REVIEW. */
 import fs from "node:fs";
 import { SKILL_CONTENT } from "../src/data/skillContent.js";
+import { TAXONOMY } from "../src/data/taxonomy.js";
+import { activityMeta } from "../src/engine/metadata.js";
 
 // Foundation..Application (n<=60) stays short; Reasoning/Challenge may carry longer scenarios.
 const maxQ = n => (n <= 60 ? 420 : 600), maxOpt = n => (n <= 60 ? 160 : 240);
@@ -13,10 +15,12 @@ const flag = (skill, n, rule, detail) => flags.push({ skill, n, rule, detail });
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
 for (const [skill, acts] of Object.entries(SKILL_CONTENT)) {
+  if (!TAXONOMY[skill]) flag(skill, 0, "no-taxonomy", "skill missing from taxonomy");
   if (acts.length < 100) flag(skill, 0, "min-100", `only ${acts.length}`);
   acts.forEach((a, i) => {
     if (a.n !== i + 1) flag(skill, a.n, "sequence", `expected n=${i + 1}`);
     for (const f of ["q", "explain", "hint", "micro"]) if (!a[f] || !String(a[f]).trim()) flag(skill, a.n, "missing-field", f);
+    if (TAXONOMY[skill]) { const m = activityMeta(skill, a); for (const [k, v] of Object.entries(m)) if (v === undefined || v === "") flag(skill, a.n, "metadata", k); }
     if (a.q && a.q.length > maxQ(a.n)) flag(skill, a.n, "too-long", `${a.q.length} chars`);
     if (a.type === "mcq") {
       if (!Array.isArray(a.options) || a.options.length < 2) flag(skill, a.n, "options", "needs >=2");

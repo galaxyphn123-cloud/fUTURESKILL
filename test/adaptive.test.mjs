@@ -34,3 +34,19 @@ assert.equal(next.mode, "support");
 const retried = { 1: { correct: true, gradable: true, firstTry: false, at: 1, attempts: 2 } };
 assert.equal(run(retried).mode, "steady");
 console.log("adaptive: all assertions passed");
+
+// --- metadata + micro-skill mastery ---
+import { activityMeta, microMastery } from "../src/engine/metadata.js";
+import { TAXONOMY } from "../src/data/taxonomy.js";
+const m = activityMeta("M-03", acts[0]);
+for (const k of ["domain","skill","micro_skill","age_level","phase","difficulty","cognitive_load","activity_type","learning_objective","estimated_time","prerequisite_skill","mastery_requirement"]) assert.ok(k in m, "missing " + k);
+assert.equal(m.phase, "A"); assert.equal(activityMeta("M-03", acts[99]).difficulty, 10);
+const mm = microMastery("M-03", {});
+assert.equal(mm.length, 10); assert.equal(mm[0].label, "BELUM DIMULAI");
+const six = {}; for (let i = 1; i <= 6; i++) six[i] = r(i !== 6, i);   // 5/6 first-try = 83%
+const m6 = microMastery("M-03", six)[0];
+assert.equal(m6.pct, 83); assert.equal(m6.label, "TUNTAS");
+const few = microMastery("M-03", { 1: r(true, 1) })[0];       // 1 attempt is never enough to call it mastered
+assert.equal(few.label, "SEDANG DIBANGUN");
+assert.equal(Object.values(TAXONOMY).every(t => t.micro.length === 10), true);
+console.log("metadata + micro mastery: all assertions passed");

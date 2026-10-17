@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { COLORS } from "../theme.js";
 import { PHASES } from "../data/domains.js";
+import { microMastery, microOf } from "../engine/metadata.js";
 import { pickNext, MODE_COPY } from "../engine/adaptive.js";
 import { LIVE_SKILLS } from "../data/skillContent.js";
 import { phaseUnlocked, phaseStats, masteryLabel } from "../engine/mastery.js";
@@ -102,6 +103,21 @@ export function StudentFlow({ name, skillId, onExit }) {
           })}
         </div>
       </div>
+
+      <details style={{ background: COLORS.panel, borderRadius: 18, padding: "12px 18px", marginBottom: 20, border: `1.5px solid ${COLORS.line}` }}>
+        <summary style={{ cursor: "pointer", fontSize: 12, fontWeight: 800, opacity: .6 }}>PETA MICRO-SKILL{current ? ` · sekarang: ${microOf(skillId, current.n).name}` : ""}</summary>
+        <div style={{ display: "grid", gap: 6, marginTop: 10 }}>
+          {microMastery(skillId, progress).map(m => (
+            <div key={m.id} style={{ display: "flex", alignItems: "center", gap: 10, fontSize: 12 }}>
+              <span style={{ flex: "1 1 55%", fontWeight: current && microOf(skillId, current.n).id === m.id ? 800 : 500 }}>{m.name}</span>
+              <span style={{ flex: "1 1 25%", height: 6, borderRadius: 3, background: COLORS.line, overflow: "hidden" }}>
+                <span style={{ display: "block", height: "100%", width: `${m.done * 10}%`, background: m.color }} />
+              </span>
+              <span style={{ flex: "0 0 120px", color: m.color, fontWeight: 700, fontSize: 10 }}>{m.label}{m.ready ? ` · ${m.pct}%` : ""}</span>
+            </div>
+          ))}
+        </div>
+      </details>
 
       {current ? (
         <>
