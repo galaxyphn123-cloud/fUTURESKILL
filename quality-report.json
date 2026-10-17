@@ -5,7 +5,7 @@
   "option-long": 183,
   "hint-leak": 2,
   "too-long": 23,
-  "length-cue": 177
+  "length-cue": 176
  },
  "flags": [
   {
@@ -733,12 +733,6 @@
    "n": 91,
    "rule": "option-long",
    "detail": "Bedakan bruto dari neto & anggarkan dari"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 284 chars vs 233"
   },
   {
    "skill": "FIN-05",
