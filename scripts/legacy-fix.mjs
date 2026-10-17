@@ -1,4 +1,4 @@
-/* Rewrite distractors on already-registered skills, keeping the correct option AND its position.
+/* Rewrite distractors (flags: length-cue, short-cue, absolute-word) on already-registered skills, keeping the correct option AND its position.
    node scripts/legacy-fix.mjs stats               -> flagged count per skill
    node scripts/legacy-fix.mjs show M-01 M-02 ...  -> flagged items, compact
    node scripts/legacy-fix.mjs apply patch.json    -> { "M-01": { "12": ["wrong1","wrong2"] } } */
@@ -17,8 +17,9 @@ export function fileFor(id) {
   const exp = idToExport[id]; if (!exp || !importOf[exp]) return null;
   return { exp, file: path.join(root, "src/data/activities", importOf[exp] + ".js") };
 }
+const CUES = new Set(["length-cue", "short-cue", "absolute-word"]);
 const lhl = new Set(LHL_SKILLS.map(s => s.id));
-const flagged = id => checkSkill(id, SKILL_CONTENT[id]).filter(f => f.rule === "length-cue").map(f => f.n);
+const flagged = id => checkSkill(id, SKILL_CONTENT[id]).filter(f => CUES.has(f.rule)).map(f => f.n);
 
 const [cmd, ...rest] = process.argv.slice(2);
 if (cmd === "stats") {

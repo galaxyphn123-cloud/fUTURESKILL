@@ -1,6 +1,8 @@
 /* Machine-checkable part of the Phase 27 quality check, shared by the repo-wide report
    and the per-file validator used while authoring a new skill. */
 const maxQ = n => (n <= 60 ? 420 : 600), maxOpt = n => (n <= 60 ? 160 : 240);
+// Absolute wording ("selalu", "sama sekali", ...) is a tell for a wrong option: real answers hedge.
+const ABSOLUTE = /\b(selalu|pasti|sama sekali|semua orang|tidak pernah|selamanya|apa pun|siapa pun|tidak ada yang|satu-satunya)\b/i;
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 
 export function checkSkill(skill, acts, { metaCheck = null } = {}) {
@@ -24,6 +26,11 @@ export function checkSkill(skill, acts, { metaCheck = null } = {}) {
         // answer is the unique longest and clearly longer (>=20%) than every distractor.
         const L = a.options.map(o => o.length), right = L[a.answer], others = L.filter((_, k) => k !== a.answer);
         if (a.options.every(o => o.length >= 20) && others.every(l => right >= l * 1.2)) flag(a.n, "length-cue", `correct ${right} chars vs ${Math.max(...others)}`);
+        // Mirror image: once distractors are padded, the right answer becomes the unique shortest.
+        if (a.options.every(o => o.length >= 20) && others.every(l => l >= right * 1.2)) flag(a.n, "short-cue", `correct ${right} chars vs ${Math.min(...others)}`);
+        // Absolute-word cue: the right option has none while most distractors do.
+        const abs = a.options.map(o => ABSOLUTE.test(o));
+        if (!abs[a.answer] && abs.filter(Boolean).length >= Math.max(2, a.options.length - 2)) flag(a.n, "absolute-word", `${abs.filter(Boolean).length} of ${a.options.length - 1} distractors`);
       }
     } else if (a.type === "tf") {
       if (typeof a.answer !== "boolean") flag(a.n, "answer-type", "tf needs boolean");
