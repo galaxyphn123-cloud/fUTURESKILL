@@ -10077,7 +10077,7 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "B",
+  "age_entry": "A",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-01"
  },
@@ -10167,7 +10167,7 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "C",
+  "age_entry": "B",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-02"
  },
@@ -10257,8 +10257,98 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "D",
+  "age_entry": "C",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-03"
+ },
+ "LHL-05": {
+  "id": "LHL-05",
+  "domain": "LHL",
+  "name": "Tujuan Belajar",
+  "micro": [
+   {
+    "id": "LHL-05.01",
+    "name": "Apa itu tujuan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-05.02",
+    "name": "Tujuan kecil",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-05.03",
+    "name": "Tujuan yang jelas",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-05.04",
+    "name": "Dari tujuan ke langkah",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-05.05",
+    "name": "Hambatan dan solusi",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-05.06",
+    "name": "Memantau kemajuan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-05.07",
+    "name": "Menalar tujuan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-05.08",
+    "name": "Kekeliruan tujuan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-05.09",
+    "name": "Merancang tujuan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-05.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-04"
  }
 };
