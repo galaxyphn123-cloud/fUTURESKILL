@@ -1,0 +1,851 @@
+{
+ "total": 11000,
+ "needsReview": 140,
+ "byRule": {
+  "option-long": 115,
+  "hint-leak": 2,
+  "too-long": 23
+ },
+ "flags": [
+  {
+   "skill": "CT-08",
+   "n": 45,
+   "rule": "option-long",
+   "detail": "guru mungkin mengejar materi yang tertin"
+  },
+  {
+   "skill": "M-08",
+   "n": 40,
+   "rule": "option-long",
+   "detail": "Bayangkan membulatkan 47.000 ke atas men"
+  },
+  {
+   "skill": "M-11",
+   "n": 19,
+   "rule": "hint-leak",
+   "detail": "hint contains the correct option"
+  },
+  {
+   "skill": "M-11",
+   "n": 31,
+   "rule": "hint-leak",
+   "detail": "hint contains the correct option"
+  },
+  {
+   "skill": "M-14",
+   "n": 20,
+   "rule": "option-long",
+   "detail": "Karena kepuasan bukanlah sesuatu dengan "
+  },
+  {
+   "skill": "M-16",
+   "n": 64,
+   "rule": "option-long",
+   "detail": "Karena total luas yang sama bisa menggam"
+  },
+  {
+   "skill": "M-17",
+   "n": 40,
+   "rule": "option-long",
+   "detail": "Gunakan kedua hubungan sudut yang diketa"
+  },
+  {
+   "skill": "M-19",
+   "n": 20,
+   "rule": "option-long",
+   "detail": "Salah — hubungan linear bisa melibatkan "
+  },
+  {
+   "skill": "PS-05",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Hasilkan banyak ide beragam dengan menun"
+  },
+  {
+   "skill": "PS-06",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Bandingkan hasil dengan kriteria & basel"
+  },
+  {
+   "skill": "PS-07",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Tantang asumsi, bingkai ulang masalah, g"
+  },
+  {
+   "skill": "PS-08",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Perjelas keputusan & kriteria (berbobot)"
+  },
+  {
+   "skill": "AI-02",
+   "n": 98,
+   "rule": "option-long",
+   "detail": "Mesin 'belajar' dengan menyesuaikan mode"
+  },
+  {
+   "skill": "AI-03",
+   "n": 98,
+   "rule": "option-long",
+   "detail": "Data mencerminkan dunia yang timpang & p"
+  },
+  {
+   "skill": "AI-04",
+   "n": 93,
+   "rule": "option-long",
+   "detail": "AI ada di banyak layanan sehari-hari seb"
+  },
+  {
+   "skill": "AI-05",
+   "n": 44,
+   "rule": "option-long",
+   "detail": "Menghasilkan/menyusun/menjelaskan sesuat"
+  },
+  {
+   "skill": "AI-05",
+   "n": 56,
+   "rule": "option-long",
+   "detail": "Kamu terus meminta variasi jawaban tanpa"
+  },
+  {
+   "skill": "AI-05",
+   "n": 93,
+   "rule": "option-long",
+   "detail": "Beri konteks & instruksi yang jelas; per"
+  },
+  {
+   "skill": "AI-06",
+   "n": 91,
+   "rule": "option-long",
+   "detail": "Sistem AI dibangun oleh manusia yang mem"
+  },
+  {
+   "skill": "AI-06",
+   "n": 98,
+   "rule": "option-long",
+   "detail": "Di balik setiap sistem AI ada manusia ya"
+  },
+  {
+   "skill": "AI-07",
+   "n": 31,
+   "rule": "option-long",
+   "detail": "Punya ide tapi keterbatasan keterampilan"
+  },
+  {
+   "skill": "AI-07",
+   "n": 52,
+   "rule": "option-long",
+   "detail": "Kalau AI selalu mengerjakan bagian sulit"
+  },
+  {
+   "skill": "AI-07",
+   "n": 55,
+   "rule": "option-long",
+   "detail": "Jelaskan kontribusi kreatifmu (visi, kur"
+  },
+  {
+   "skill": "AI-07",
+   "n": 91,
+   "rule": "option-long",
+   "detail": "AI generatif menghasilkan konten baru de"
+  },
+  {
+   "skill": "AI-08",
+   "n": 17,
+   "rule": "option-long",
+   "detail": "AI kemungkinan mengubah banyak pekerjaan"
+  },
+  {
+   "skill": "AI-08",
+   "n": 18,
+   "rule": "option-long",
+   "detail": "Mengambil langkah-langkah tindakan untuk"
+  },
+  {
+   "skill": "AI-08",
+   "n": 21,
+   "rule": "option-long",
+   "detail": "Ia dilatih memprediksi teks yang polanya"
+  },
+  {
+   "skill": "AI-08",
+   "n": 25,
+   "rule": "option-long",
+   "detail": "Tidak belajar secara permanen dari tiap "
+  },
+  {
+   "skill": "AI-08",
+   "n": 28,
+   "rule": "option-long",
+   "detail": "Kesalahan berasal dari cara ia bekerja ("
+  },
+  {
+   "skill": "AI-08",
+   "n": 31,
+   "rule": "option-long",
+   "detail": "Harapan yang hati-hati: AI bisa jadi ala"
+  },
+  {
+   "skill": "AI-08",
+   "n": 34,
+   "rule": "option-long",
+   "detail": "Mengalihkan perhatian dari risiko nyata "
+  },
+  {
+   "skill": "AI-08",
+   "n": 39,
+   "rule": "option-long",
+   "detail": "Terlalu sederhana — AI kemungkinan mengu"
+  },
+  {
+   "skill": "AI-08",
+   "n": 42,
+   "rule": "option-long",
+   "detail": "Sistem AI bertindak sesuai maksud manusi"
+  },
+  {
+   "skill": "AI-08",
+   "n": 48,
+   "rule": "option-long",
+   "detail": "Menetapkan syarat minimum (uji keamanan,"
+  },
+  {
+   "skill": "AI-08",
+   "n": 50,
+   "rule": "option-long",
+   "detail": "Apakah manfaatnya (produktivitas, layana"
+  },
+  {
+   "skill": "AI-08",
+   "n": 51,
+   "rule": "too-long",
+   "detail": "434 chars"
+  },
+  {
+   "skill": "AI-08",
+   "n": 54,
+   "rule": "option-long",
+   "detail": "Perhatikan risiko yang sudah ada sekaran"
+  },
+  {
+   "skill": "AI-08",
+   "n": 55,
+   "rule": "option-long",
+   "detail": "Ikut memilih pemimpin & kebijakan, mendu"
+  },
+  {
+   "skill": "AI-08",
+   "n": 56,
+   "rule": "option-long",
+   "detail": "AI seperti mesin yang sangat kuat — ke m"
+  },
+  {
+   "skill": "AI-08",
+   "n": 81,
+   "rule": "option-long",
+   "detail": "Batas pengetahuan (data & waktu), batas "
+  },
+  {
+   "skill": "AI-08",
+   "n": 90,
+   "rule": "option-long",
+   "detail": "AI punya kemampuan nyata & keterbatasan "
+  },
+  {
+   "skill": "AI-08",
+   "n": 91,
+   "rule": "option-long",
+   "detail": "AI unggul pada pola & kecepatan tapi ter"
+  },
+  {
+   "skill": "AI-08",
+   "n": 98,
+   "rule": "option-long",
+   "detail": "AI adalah alat berbasis pola dengan kema"
+  },
+  {
+   "skill": "AI-08",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Adalah program yang belajar pola dari da"
+  },
+  {
+   "skill": "FIN-02",
+   "n": 90,
+   "rule": "option-long",
+   "detail": "Amankan kebutuhan & tabungan lebih dulu;"
+  },
+  {
+   "skill": "FIN-02",
+   "n": 91,
+   "rule": "option-long",
+   "detail": "Kebutuhan menopang hidup, kesehatan, & s"
+  },
+  {
+   "skill": "FIN-03",
+   "n": 50,
+   "rule": "option-long",
+   "detail": "Sisihkan dana darurat kecil dulu, lalu f"
+  },
+  {
+   "skill": "FIN-03",
+   "n": 81,
+   "rule": "option-long",
+   "detail": "Bayar diri sendiri dulu (sisihkan begitu"
+  },
+  {
+   "skill": "FIN-03",
+   "n": 88,
+   "rule": "option-long",
+   "detail": "Tetapkan tujuan yang jelas & bermakna ba"
+  },
+  {
+   "skill": "FIN-03",
+   "n": 89,
+   "rule": "option-long",
+   "detail": "Menabung adalah menyisihkan sebagian uan"
+  },
+  {
+   "skill": "FIN-04",
+   "n": 88,
+   "rule": "option-long",
+   "detail": "Buat anggaran sederhana yang jujur mence"
+  },
+  {
+   "skill": "FIN-04",
+   "n": 89,
+   "rule": "option-long",
+   "detail": "Anggaran adalah rencana membagi pemasuka"
+  },
+  {
+   "skill": "FIN-05",
+   "n": 51,
+   "rule": "too-long",
+   "detail": "428 chars"
+  },
+  {
+   "skill": "FIN-05",
+   "n": 82,
+   "rule": "option-long",
+   "detail": "Iuran wajib warga & badan usaha kepada n"
+  },
+  {
+   "skill": "FIN-05",
+   "n": 88,
+   "rule": "option-long",
+   "detail": "Pahami dari mana penghasilanmu berasal ("
+  },
+  {
+   "skill": "FIN-05",
+   "n": 89,
+   "rule": "option-long",
+   "detail": "Penghasilan datang dari kerja, usaha, at"
+  },
+  {
+   "skill": "FIN-05",
+   "n": 91,
+   "rule": "option-long",
+   "detail": "Bedakan bruto dari neto & anggarkan dari"
+  },
+  {
+   "skill": "FIN-05",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Penghasilan adalah hasil menukar nilai ("
+  },
+  {
+   "skill": "FIN-06",
+   "n": 40,
+   "rule": "too-long",
+   "detail": "469 chars"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 49,
+   "rule": "option-long",
+   "detail": "Bandingkan: seberapa nyata masalahnya, s"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 60,
+   "rule": "too-long",
+   "detail": "467 chars"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 81,
+   "rule": "option-long",
+   "detail": "Temukan masalah nyata & pelanggan → ranc"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 88,
+   "rule": "option-long",
+   "detail": "Lihat masalah orang sebagai peluang menc"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 89,
+   "rule": "option-long",
+   "detail": "Wirausaha menciptakan nilai dengan memec"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 92,
+   "rule": "too-long",
+   "detail": "659 chars"
+  },
+  {
+   "skill": "FIN-06",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Kewirausahaan adalah keterampilan yang d"
+  },
+  {
+   "skill": "FIN-07",
+   "n": 28,
+   "rule": "option-long",
+   "detail": "Dipakai bank & lembaga lain untuk menila"
+  },
+  {
+   "skill": "FIN-09",
+   "n": 3,
+   "rule": "option-long",
+   "detail": "Menabung: prioritas keamanan & mudah dia"
+  },
+  {
+   "skill": "FIN-09",
+   "n": 25,
+   "rule": "option-long",
+   "detail": "Wadah yang mengumpulkan uang banyak oran"
+  },
+  {
+   "skill": "FIN-09",
+   "n": 26,
+   "rule": "option-long",
+   "detail": "Memiliki sepotong kecil perusahaan itu; "
+  },
+  {
+   "skill": "FIN-09",
+   "n": 39,
+   "rule": "option-long",
+   "detail": "Menganggapnya pengetahuan dasar untuk me"
+  },
+  {
+   "skill": "FIN-09",
+   "n": 53,
+   "rule": "option-long",
+   "detail": "Sangat skeptis: tidak ada yang bisa mema"
+  },
+  {
+   "skill": "FIN-09",
+   "n": 59,
+   "rule": "option-long",
+   "detail": "Apakah tujuannya sudah tercapai/dekat? A"
+  },
+  {
+   "skill": "FIN-09",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Tabung untuk keamanan, dana darurat, & t"
+  },
+  {
+   "skill": "COM-06",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Beri umpan balik yang spesifik, fokus pa"
+  },
+  {
+   "skill": "COM-08",
+   "n": 55,
+   "rule": "option-long",
+   "detail": "Minta maaf dengan tulus & spesifik ('Maa"
+  },
+  {
+   "skill": "COM-08",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Tulis dengan tujuan jelas & pembaca di b"
+  },
+  {
+   "skill": "COL-01",
+   "n": 46,
+   "rule": "option-long",
+   "detail": "Ingatkan dengan tenang bahwa kalian puny"
+  },
+  {
+   "skill": "COL-01",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Sepakati tujuan bersama, bagi tugas seca"
+  },
+  {
+   "skill": "COL-02",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Bagi pekerjaan jadi peran yang jelas & t"
+  },
+  {
+   "skill": "COL-04",
+   "n": 47,
+   "rule": "option-long",
+   "detail": "Beri dia bagian bicara yang lebih pendek"
+  },
+  {
+   "skill": "COL-04",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Pecah pekerjaan & daftar bersama, bagi a"
+  },
+  {
+   "skill": "COL-05",
+   "n": 39,
+   "rule": "option-long",
+   "detail": "Tidak perlu diselesaikan sampai satu pih"
+  },
+  {
+   "skill": "COL-05",
+   "n": 58,
+   "rule": "option-long",
+   "detail": "Adakan forum untuk mendengar kedua sisi "
+  },
+  {
+   "skill": "COL-05",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Anggap perbedaan pendapat wajar & berpot"
+  },
+  {
+   "skill": "COL-06",
+   "n": 46,
+   "rule": "option-long",
+   "detail": "Beri ruang sebentar, sampaikan sekali de"
+  },
+  {
+   "skill": "COL-06",
+   "n": 51,
+   "rule": "option-long",
+   "detail": "Bicara berdua: 'Waktu kamu bilang itu id"
+  },
+  {
+   "skill": "COL-06",
+   "n": 55,
+   "rule": "option-long",
+   "detail": "'Kamu nggak perlu minta maaf buat semuan"
+  },
+  {
+   "skill": "COL-06",
+   "n": 56,
+   "rule": "option-long",
+   "detail": "Sampaikan pandanganmu sekali dengan tena"
+  },
+  {
+   "skill": "COL-06",
+   "n": 57,
+   "rule": "option-long",
+   "detail": "'Aku mau kita baik lagi juga, tapi aku p"
+  },
+  {
+   "skill": "COL-06",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Konflik wajar & bisa menguatkan bila dit"
+  },
+  {
+   "skill": "COL-07",
+   "n": 42,
+   "rule": "option-long",
+   "detail": "Gali lebih dalam: apa kekhawatiran tiap "
+  },
+  {
+   "skill": "COL-07",
+   "n": 44,
+   "rule": "option-long",
+   "detail": "Sepakati proses keputusan yang lebih ter"
+  },
+  {
+   "skill": "COL-07",
+   "n": 49,
+   "rule": "option-long",
+   "detail": "Jelaskan situasinya: 'Ini harus diputusk"
+  },
+  {
+   "skill": "COL-07",
+   "n": 55,
+   "rule": "option-long",
+   "detail": "Hargai pengalamannya & dengarkan alasann"
+  },
+  {
+   "skill": "COL-07",
+   "n": 58,
+   "rule": "option-long",
+   "detail": "Beri keputusan waktu yang wajar untuk me"
+  },
+  {
+   "skill": "COL-07",
+   "n": 59,
+   "rule": "option-long",
+   "detail": "Sepakati untuk melanjutkan besok saat se"
+  },
+  {
+   "skill": "COL-07",
+   "n": 95,
+   "rule": "option-long",
+   "detail": "Perjelas keputusan & besarnya; kumpulkan"
+  },
+  {
+   "skill": "COL-08",
+   "n": 41,
+   "rule": "option-long",
+   "detail": "Bahas: apa yang menyebabkan menyimpang? "
+  },
+  {
+   "skill": "COL-08",
+   "n": 44,
+   "rule": "option-long",
+   "detail": "Akui bahwa ini perlu ditangani; tawarkan"
+  },
+  {
+   "skill": "COL-08",
+   "n": 46,
+   "rule": "option-long",
+   "detail": "'5 menit aja buat catat 1-2 hal yang bik"
+  },
+  {
+   "skill": "COL-08",
+   "n": 51,
+   "rule": "option-long",
+   "detail": "Arahkan ke yang bisa kita kendalikan: 'O"
+  },
+  {
+   "skill": "COL-08",
+   "n": 53,
+   "rule": "option-long",
+   "detail": "Refleksi tertulis: tiap anggota mengisi "
+  },
+  {
+   "skill": "COL-08",
+   "n": 54,
+   "rule": "option-long",
+   "detail": "Akui secara terbuka & spesifik: 'Data ya"
+  },
+  {
+   "skill": "COL-08",
+   "n": 57,
+   "rule": "option-long",
+   "detail": "Setelah tugas kecil pertama, refleksi si"
+  },
+  {
+   "skill": "COL-08",
+   "n": 97,
+   "rule": "option-long",
+   "detail": "Tinjau cara kerja tim secara rutin (teng"
+  },
+  {
+   "skill": "CRE-07",
+   "n": 20,
+   "rule": "too-long",
+   "detail": "471 chars"
+  },
+  {
+   "skill": "CRE-07",
+   "n": 40,
+   "rule": "too-long",
+   "detail": "451 chars"
+  },
+  {
+   "skill": "CRE-07",
+   "n": 60,
+   "rule": "too-long",
+   "detail": "461 chars"
+  },
+  {
+   "skill": "DIG-02",
+   "n": 38,
+   "rule": "option-long",
+   "detail": "Situs itu memakai akun Google/Facebook-m"
+  },
+  {
+   "skill": "DIG-04",
+   "n": 20,
+   "rule": "too-long",
+   "detail": "514 chars"
+  },
+  {
+   "skill": "DIG-05",
+   "n": 20,
+   "rule": "too-long",
+   "detail": "433 chars"
+  },
+  {
+   "skill": "DIG-07",
+   "n": 20,
+   "rule": "too-long",
+   "detail": "441 chars"
+  },
+  {
+   "skill": "DIG-07",
+   "n": 40,
+   "rule": "too-long",
+   "detail": "461 chars"
+  },
+  {
+   "skill": "DIG-08",
+   "n": 80,
+   "rule": "too-long",
+   "detail": "673 chars"
+  },
+  {
+   "skill": "WEL-02",
+   "n": 22,
+   "rule": "option-long",
+   "detail": "Mencoba melihat situasi dari sudut lain "
+  },
+  {
+   "skill": "WEL-02",
+   "n": 40,
+   "rule": "too-long",
+   "detail": "459 chars"
+  },
+  {
+   "skill": "WEL-02",
+   "n": 53,
+   "rule": "option-long",
+   "detail": "Untuk marah (banyak energi): gerakan fis"
+  },
+  {
+   "skill": "WEL-02",
+   "n": 59,
+   "rule": "option-long",
+   "detail": "Tetap tenang, bicara pelan, tanyakan apa"
+  },
+  {
+   "skill": "WEL-02",
+   "n": 60,
+   "rule": "too-long",
+   "detail": "461 chars"
+  },
+  {
+   "skill": "WEL-02",
+   "n": 100,
+   "rule": "too-long",
+   "detail": "647 chars"
+  },
+  {
+   "skill": "WEL-03",
+   "n": 14,
+   "rule": "option-long",
+   "detail": "Empati memperlakukan orang sebagai setar"
+  },
+  {
+   "skill": "WEL-03",
+   "n": 20,
+   "rule": "too-long",
+   "detail": "430 chars"
+  },
+  {
+   "skill": "WEL-03",
+   "n": 36,
+   "rule": "option-long",
+   "detail": "Bisa mengatakan dengan baik 'aku pengen "
+  },
+  {
+   "skill": "WEL-03",
+   "n": 60,
+   "rule": "too-long",
+   "detail": "439 chars"
+  },
+  {
+   "skill": "WEL-03",
+   "n": 80,
+   "rule": "too-long",
+   "detail": "643 chars"
+  },
+  {
+   "skill": "WEL-03",
+   "n": 86,
+   "rule": "option-long",
+   "detail": "Dengarkan sebisamu sambil jujur ('aku de"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 40,
+   "rule": "too-long",
+   "detail": "510 chars"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 42,
+   "rule": "option-long",
+   "detail": "Membuat pilihan sehat terlihat & mudah d"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 46,
+   "rule": "option-long",
+   "detail": "Tanda sederhana (centang di kalender saa"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 51,
+   "rule": "option-long",
+   "detail": "Majukan jam tidur secara bertahap (15-30"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 60,
+   "rule": "too-long",
+   "detail": "452 chars"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Pahami kenapa ketiganya penting untuk tu"
+  },
+  {
+   "skill": "WEL-04",
+   "n": 100,
+   "rule": "too-long",
+   "detail": "681 chars"
+  },
+  {
+   "skill": "WEL-05",
+   "n": 31,
+   "rule": "option-long",
+   "detail": "Menangani beberapa hal kecil (merawat ke"
+  },
+  {
+   "skill": "WEL-05",
+   "n": 38,
+   "rule": "option-long",
+   "detail": "Lakukan yang bisa kamu lakukan, lalu lat"
+  },
+  {
+   "skill": "WEL-05",
+   "n": 60,
+   "rule": "too-long",
+   "detail": "458 chars"
+  },
+  {
+   "skill": "WEL-05",
+   "n": 99,
+   "rule": "option-long",
+   "detail": "Kenali tanda stres, tenangkan tubuh & pi"
+  },
+  {
+   "skill": "CIV-07",
+   "n": 100,
+   "rule": "option-long",
+   "detail": "perubahan iklim nyata & terutama disebab"
+  },
+  {
+   "skill": "CIV-08",
+   "n": 100,
+   "rule": "option-long",
+   "detail": "menjadi warga yang baik berarti menaati "
+  }
+ ]
+}

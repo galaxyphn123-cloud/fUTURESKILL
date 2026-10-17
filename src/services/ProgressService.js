@@ -11,7 +11,13 @@ export const ProgressService = {
     const adapter = getAdapter();
     const id = this.key(studentId, skillId);
     const existing = (await adapter.get("progress", id)) || { id, student_id: studentId, skill_id: skillId, results: {} };
-    existing.results = { ...existing.results, [n]: result };
+    const prev = existing.results[n];
+    existing.results = { ...existing.results, [n]: {
+      ...result,
+      attempts: (prev?.attempts || 0) + 1,
+      firstTry: prev ? prev.firstTry : (result.gradable ? result.correct : true),
+      at: Date.now(),
+    } };
     await adapter.put("progress", existing);
     return existing.results;
   },

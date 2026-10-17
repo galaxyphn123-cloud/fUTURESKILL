@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { COLORS } from "../theme.js";
 import { PHASES } from "../data/domains.js";
+import { pickNext, MODE_COPY } from "../engine/adaptive.js";
 import { LIVE_SKILLS } from "../data/skillContent.js";
 import { phaseUnlocked, phaseStats, masteryLabel } from "../engine/mastery.js";
 import { StudentService } from "../services/StudentService.js";
@@ -21,39 +22,48 @@ export function StudentFlow({ name, skillId, onExit }) {
   const activities = QuestionService.listForSkill(skillId);
   const [student, setStudent] = useState(null);
   const [progress, setProgress] = useState({});
-  const [activePhase, setActivePhase] = useState("A");
-  const [cursor, setCursor] = useState(null);
+  const [currentN, setCurrentN] = useState(null);
+  const [mode, setMode] = useState("steady");
+  const [retryGen, setRetryGen] = useState(0);   // bumps to remount the card fresh
+  const [retrying, setRetrying] = useState(false); // true until the retry is answered
   const [justAwarded, setJustAwarded] = useState(null);
 
   useEffect(() => { (async () => {
     const s = await StudentService.getOrCreateByName(name);
     const p = await ProgressService.getForStudent(s.id, skillId);
     setStudent(s); setProgress(p);
+    const pick = pickNext({ activities, progress: p });
+    setCurrentN(pick.activity ? pick.activity.n : null); setMode(pick.mode);
   })(); }, [name, skillId]);
 
   if (!student) return <div style={{ padding: 40, textAlign: "center", color: COLORS.ink, opacity: .6 }}>Memuat kemajuanmu…</div>;
 
+  const current = currentN !== null ? activities.find(a => a.n === currentN) : null;
+  const activePhase = current ? PHASES.find(p => current.n >= p.range[0] && current.n <= p.range[1]).key : "A";
   const phaseActs = activities.filter(a => a.n >= PHASES.find(p => p.key === activePhase).range[0] && a.n <= PHASES.find(p => p.key === activePhase).range[1]);
-  const current = cursor !== null ? phaseActs.find(a => a.n === cursor) : phaseActs.find(a => !progress[a.n]) || phaseActs[0];
+  const saved = current ? progress[current.n] : null;
+  // After a miss the child may retry; the card is shown fresh while retrying.
+  const canRetry = saved && saved.gradable && !saved.correct;
 
   async function handleAnswer(res) {
     const { student: updatedStudent, progress: updatedProgress } = await AttemptService.submitAnswer({
-      studentId: student.id, skillId, activity: current, result: res,
+      studentId: student.id, skillId, activity: current, result: res, isRetry: !!saved,
     });
     setStudent(updatedStudent);
     setProgress(updatedProgress);
-    if (res.gradable && res.correct) { setJustAwarded("+10 XP"); setTimeout(() => setJustAwarded(null), 1200); }
+    setRetrying(false);
+    if (res.gradable && res.correct) { setJustAwarded(saved ? "+5 XP" : "+10 XP"); setTimeout(() => setJustAwarded(null), 1200); }
   }
 
   function goNext() {
-    const idx = phaseActs.findIndex(a => a.n === current.n);
-    if (idx < phaseActs.length - 1) setCursor(phaseActs[idx + 1].n);
-    else {
-      const pIdx = PHASES.findIndex(p => p.key === activePhase);
-      if (pIdx < PHASES.length - 1 && phaseUnlocked(PHASES[pIdx + 1].key, progress, activities)) {
-        setActivePhase(PHASES[pIdx + 1].key); setCursor(null);
-      }
-    }
+    const pick = pickNext({ activities, progress });
+    setCurrentN(pick.activity ? pick.activity.n : null); setMode(pick.mode); setRetryGen(0); setRetrying(false);
+  }
+
+  function openPhase(p) {
+    const inPhase = activities.filter(a => a.n >= p.range[0] && a.n <= p.range[1]);
+    const target = inPhase.find(a => !progress[a.n]) || inPhase[0];
+    setCurrentN(target.n); setMode("steady"); setRetryGen(0); setRetrying(false);
   }
 
   const doneInPhase = phaseActs.filter(a => progress[a.n]).length;
@@ -78,7 +88,7 @@ export function StudentFlow({ name, skillId, onExit }) {
             const active = p.key === activePhase;
             return (
               <button key={p.key} disabled={!unlocked}
-                onClick={() => { setActivePhase(p.key); setCursor(null); }}
+                onClick={() => openPhase(p)}
                 style={{
                   flex: "1 1 100px", padding: "10px 8px", borderRadius: 12, cursor: unlocked ? "pointer" : "not-allowed",
                   border: `2px solid ${active ? p.tone : COLORS.line}`, background: active ? `${p.tone}12` : "#fff",
@@ -95,13 +105,19 @@ export function StudentFlow({ name, skillId, onExit }) {
 
       {current ? (
         <>
-          <ActivityCard key={current.n} activity={current} feedback={progress[current.n]} onAnswer={handleAnswer} />
+          {MODE_COPY[mode] && <div style={{ marginBottom: 12, fontSize: 13, fontWeight: 700, color: mode === "support" ? COLORS.build : COLORS.master }}>{MODE_COPY[mode]}</div>}
+          <ActivityCard key={`${current.n}-${retryGen}`} activity={current} feedback={retrying ? undefined : saved} onAnswer={handleAnswer} />
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 16 }}>
             <span style={{ fontSize: 13, opacity: .55 }}>{doneInPhase}/{phaseActs.length} pada fase ini{student.streak >= 3 ? ` · 🔥 rentetan ${student.streak}` : ""}</span>
-            {progress[current.n] && <Btn onClick={goNext}>Aktivitas berikutnya →</Btn>}
+            <span style={{ display: "flex", gap: 8 }}>
+              {canRetry && !retrying && <Btn variant="amber" onClick={() => { setRetrying(true); setRetryGen(g => g + 1); }}>Coba lagi</Btn>}
+              {saved && <Btn onClick={goNext}>Aktivitas berikutnya →</Btn>}
+            </span>
           </div>
         </>
-      ) : <div>Semua aktivitas pada fase ini sudah selesai untuk saat ini.</div>}
+      ) : <div style={{ padding: 24, background: COLORS.panel, borderRadius: 18, border: `1.5px solid ${COLORS.line}` }}>
+          Semua aktivitas yang terbuka sudah kamu kerjakan. Pilih fase lain di atas, atau ulangi yang masih ingin diperkuat.
+        </div>}
 
       {justAwarded && (
         <div style={{ position: "fixed", bottom: 24, left: "50%", transform: "translateX(-50%)",

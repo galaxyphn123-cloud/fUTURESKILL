@@ -1,5 +1,5 @@
 import { PHASES } from "../data/domains.js";
-import { phaseStats, phaseUnlocked, masteryLabel } from "../engine/mastery.js";
+import { phaseStats, phaseUnlocked, masteryLabel, firstTry } from "../engine/mastery.js";
 
 export const MasteryService = {
   phaseStats,               // pure functions from the engine, reused as-is
@@ -7,7 +7,7 @@ export const MasteryService = {
   masteryLabel,
   accuracy(progress) {
     let c = 0, t = 0;
-    Object.values(progress).forEach(r => { if (r && r.gradable) { t++; if (r.correct) c++; } });
+    Object.values(progress).forEach(r => { if (r && r.gradable) { t++; if (firstTry(r)) c++; } });
     return t === 0 ? 0 : Math.round((c / t) * 100);
   },
   highestUnlockedPhase(progress, activities) {
