@@ -7,8 +7,8 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 | Phase | Status |
 |---|---|
 | 0 Arsitektur / 28 Database | Layer service + adapter koleksi (students, sessions, answers, progress, class_summaries). Belum: tabel teachers/classes/parents/projects/rubrics/reflections/recommendations |
-| 1–2 Domain & Skill | 11 domain (bukan 19), 110 skill |
-| 3–5 100 aktivitas/skill | **110 skill × 100 = 11.000 aktivitas**, semuanya tepat 100 dan terbagi 5 fase A–E. Tipe: mcq, tf, order, classify, open. Belum: matching, fill-blank, short answer, drag-drop, scenario/decision/creative/reflection terstruktur |
+| 1–2 Domain & Skill | **12 dari 19 domain**, 118 skill. Baru: **Belajar Cara Belajar** (LHL, 8 skill × 100) |
+| 3–5 100 aktivitas/skill | **118 skill × 100 = 11.800 aktivitas**, semuanya tepat 100 dan terbagi 5 fase A–E. Tipe: mcq, tf, order, classify, open. Belum: matching, fill-blank, short answer, drag-drop, scenario/decision/creative/reflection terstruktur |
 | 8–10 Mastery, adaptif, no random jump | **Baru:** `engine/adaptive.js` (advance setelah 3 benar-pertama, support setelah 2 salah, tidak pernah masuk fase terkunci), mastery dihitung dari percobaan pertama (retry memberi XP kecil, tidak menaikkan mastery), tombol "Coba lagi" |
 | 22 Session / join code | **Baru:** guru (PIN lokal) → kelas + roster dengan student code 4 karakter → sesi per kelas+skill dengan kode 6 digit unik di antara sesi terbuka → siswa gabung dengan kode sesi + student code (atau nama, otomatis terdaftar). Setiap attempt (termasuk retry) tersimpan dengan session_id, pilihan jawaban, waktu |
 | 23 Dashboard guru | **Baru:** konsol guru (Kelas / Sesi / Laporan): overview kelas (terdaftar, aktif, selesai, akurasi, fase, terakhir aktif), detail siswa (mastery micro-skill + jawaban yang meleset beserta pilihan anak), analitik soal (tersulit/termudah + kesalahan terbanyak). Belum: badge/project/reflection di detail siswa |
@@ -22,7 +22,7 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 | 27 Quality check | **Baru:** `scripts/quality-check.mjs` — 0 duplikat, 0 opsi kembar, 0 jawaban di luar rentang; **140 aktivitas NEEDS REVIEW** (teks panjang, 2 hint membocorkan jawaban) |
 
 ## Belum ada (urutan pengerjaan yang disarankan)
-1. **8 domain tersisa** dari 19: Creative Thinking (sebagian di CRE), Learning How to Learn, Systems Thinking, Decision Making, Leadership, Resilience, Media & Information Literacy, Life Skills, Ethics/Character — dan pemetaan ulang domain yang digabung (WEL→SEL+Resilience, CIV→Civic & Global).
+1. **Domain tersisa** dari 19: Systems Thinking, Decision Making, Leadership, Resilience, Media & Information Literacy, Life Skills, Ethics/Character (7 domain) — plus pemetaan ulang domain gabungan (WEL→SEL+Resilience, CIV→Civic & Global). Learning How to Learn sudah selesai.
 2. ~~Taksonomi micro-skill~~ selesai (lihat atas); tinggal tinjau age_level/prerequisite per skill.
 3. **Penempatan usia/mastery** (Age A–E) dan kembali ke fondasi untuk anak yang belum kuat.
 4. ~~Sesi guru~~ selesai di mode lokal. **Batas penting:** data tersimpan di localStorage satu browser, jadi siswa di perangkat lain belum bisa memakai kode sesi. Itu butuh backend Supabase (adapter sudah ada; skema tabel + RLS + migrasi belum ditulis). PIN guru bukan autentikasi sungguhan.
@@ -31,3 +31,9 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 7. **Content generator + workflow GENERATE→VALIDATE→REVIEW→APPROVE→PUBLISH** (butuh backend/LLM; quality-check di atas jadi tahap VALIDATE).
 8. Tipe aktivitas tambahan (lihat Phase 5).
 9. Review 140 aktivitas bertanda; bundle ±6,5 MB perlu code-splitting per skill.
+
+## Temuan kualitas penting (sesi ini)
+
+**Petunjuk panjang-opsi pada konten lama.** Pada soal pilihan ganda berisi kalimat, opsi benar adalah yang terpanjang di **97%** soal (kebetulan ≈33%). Anak bisa menjawab tanpa memahami. `npm run quality` kini menandainya sebagai `length-cue` (**4.591 aktivitas** konten lama). Konten baru (LHL, 800 aktivitas) lolos aturan ini dengan sebaran posisi jawaban merata. Perbaikan konten lama = menulis ulang pengecoh; kandidat pekerjaan berikutnya (alat `scripts/patch-distractors.mjs` + `normalize-file.mjs` sudah siap pakai).
+
+Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-distractors.mjs` (ganti pengecoh, jawaban benar tetap), `normalize-file.mjs` (putar posisi jawaban n%3, format kanonik). Tambah skill = 1 file aktivitas + 1 baris di `src/data/activities/lhl/index.js` (domain lain: salin pola ini).

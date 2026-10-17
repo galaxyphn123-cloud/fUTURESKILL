@@ -10530,5 +10530,95 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-06"
+ },
+ "LHL-08": {
+  "id": "LHL-08",
+  "domain": "LHL",
+  "name": "Refleksi & Memperbaiki Cara Belajar",
+  "micro": [
+   {
+    "id": "LHL-08.01",
+    "name": "Apa itu refleksi",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-08.02",
+    "name": "Yang berjalan baik",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-08.03",
+    "name": "Yang sulit dan sebabnya",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-08.04",
+    "name": "Satu perubahan kecil",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-08.05",
+    "name": "Mencoba dan mencatat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-08.06",
+    "name": "Membandingkan bukti",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-08.07",
+    "name": "Menalar perbaikan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-08.08",
+    "name": "Kekeliruan dalam memperbaiki",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-08.09",
+    "name": "Laboratorium belajar",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-08.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-07"
  }
 };

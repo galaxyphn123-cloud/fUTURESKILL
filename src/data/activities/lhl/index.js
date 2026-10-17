@@ -7,6 +7,7 @@ import { STUDY_TIME_ACTIVITIES } from "./studyTime.js";
 import { LEARNING_GOALS_ACTIVITIES } from "./learningGoals.js";
 import { ASK_AND_FIND_ACTIVITIES } from "./askAndFind.js";
 import { CHECK_UNDERSTANDING_ACTIVITIES } from "./checkUnderstanding.js";
+import { REFLECT_IMPROVE_ACTIVITIES } from "./reflectImprove.js";
 
 export const LHL_DOMAIN_NAME = "Belajar Cara Belajar";
 export const LHL_SKILLS = [
@@ -17,4 +18,5 @@ export const LHL_SKILLS = [
   { id: "LHL-05", name: "Tujuan Belajar", activities: LEARNING_GOALS_ACTIVITIES },
   { id: "LHL-06", name: "Bertanya & Mencari Sumber", activities: ASK_AND_FIND_ACTIVITIES },
   { id: "LHL-07", name: "Mengecek Pemahaman", activities: CHECK_UNDERSTANDING_ACTIVITIES },
+  { id: "LHL-08", name: "Refleksi & Memperbaiki Cara Belajar", activities: REFLECT_IMPROVE_ACTIVITIES },
 ];
