@@ -10257,7 +10257,7 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "C",
+  "age_entry": "B",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-03"
  },
@@ -10437,8 +10437,98 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "D",
+  "age_entry": "C",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-05"
+ },
+ "LHL-07": {
+  "id": "LHL-07",
+  "domain": "LHL",
+  "name": "Mengecek Pemahaman",
+  "micro": [
+   {
+    "id": "LHL-07.01",
+    "name": "Apa itu paham",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-07.02",
+    "name": "Tanda paham",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-07.03",
+    "name": "Menjelaskan sendiri",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-07.04",
+    "name": "Contoh dan bentuk lain",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-07.05",
+    "name": "Menguji diri",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-07.06",
+    "name": "Menandai kebingungan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-07.07",
+    "name": "Menalar paham",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-07.08",
+    "name": "Kekeliruan cek paham",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-07.09",
+    "name": "Rencana cek paham",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-07.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-06"
  }
 };
