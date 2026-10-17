@@ -5,6 +5,9 @@ import { masteryLabel } from "../engine/mastery.js";
 import { TeacherService } from "../services/TeacherService.js";
 import { ClassService } from "../services/ClassService.js";
 import { SessionService } from "../services/SessionService.js";
+import { ProjectService } from "../services/ProjectService.js";
+import { ReflectionService } from "../services/ReflectionService.js";
+import { RUBRIC } from "../data/projects.js";
 import { AnalyticsService } from "../services/AnalyticsService.js";
 import { Btn } from "./ui/Btn.jsx";
 import { Pill } from "./ui/Pill.jsx";
@@ -198,6 +201,59 @@ function ReportTab({ sessions, classes }) {
   );
 }
 
+function WorksTab({ classes }) {
+  const [classId, setClassId] = useState("");
+  const [items, setItems] = useState([]);
+  const [scores, setScores] = useState({}); const [comment, setComment] = useState({}); const [err, setErr] = useState("");
+  const cid = classId || classes[0]?.id || "";
+  const load = useCallback(async () => {
+    if (!cid) return;
+    const roster = await ClassService.roster(cid);
+    const out = [];
+    for (const st of roster) {
+      const reflections = await ReflectionService.list(st.id);
+      for (const sub of await ProjectService.listForStudent(st.id)) out.push({ sub, student: st, reflections });
+    }
+    setItems(out.sort((a, b) => (a.sub.status === b.sub.status ? 0 : a.sub.status === "submitted" ? -1 : 1)));
+  }, [cid]);
+  useEffect(() => { load(); }, [load]);
+  if (!classes.length) return <div style={{ ...box, opacity: .6 }}>Buat kelas dulu di tab Kelas.</div>;
+  return (
+    <>
+      <select value={cid} onChange={e => setClassId(e.target.value)} style={{ ...field, marginBottom: 14 }}>{classes.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}</select>
+      {items.length === 0 && <div style={{ ...box, opacity: .6 }}>Belum ada proyek yang dikumpulkan di kelas ini.</div>}
+      {items.map(({ sub, student, reflections }) => {
+        const project = ProjectService.byId(sub.project_id);
+        const cur = scores[sub.id] || sub.teacher_rating || {};
+        const mine = reflections.find(r => r.context.id === sub.project_id);
+        return (
+          <div key={sub.id} style={box}>
+            <div style={{ display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: 8 }}>
+              <div style={{ fontWeight: 800 }}>{student.name} · {project.title}</div>
+              <Pill color={sub.status === "reviewed" ? COLORS.master : COLORS.amber}>{sub.status === "reviewed" ? "Sudah dinilai" : "Menunggu penilaian"}</Pill>
+            </div>
+            {project.prompts.map((q, i) => <div key={i} style={{ fontSize: 13, marginTop: 10 }}><div style={{ opacity: .6 }}>{q}</div><div>{sub.answers[i]}</div></div>)}
+            {mine && <div style={{ fontSize: 13, marginTop: 10, padding: 10, borderRadius: 10, background: `${COLORS.lilac}12` }}><b>Refleksi:</b> {Object.values(mine.answers).join(" · ")}</div>}
+            <div style={{ ...h, marginTop: 14 }}>Rubrik (1 = mulai · 2 = berkembang · 3 = mantap)</div>
+            {RUBRIC.map(d => (
+              <div key={d.id} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", fontSize: 13, padding: "4px 0", gap: 8 }}>
+                <span>{d.name} <span style={{ opacity: .5 }}>(anak: {sub.self_rating[d.id]})</span></span>
+                <span style={{ display: "flex", gap: 4 }}>{[1, 2, 3].map(v => (
+                  <button key={v} onClick={() => setScores(s => ({ ...s, [sub.id]: { ...cur, [d.id]: v } }))}
+                    style={{ width: 32, height: 28, borderRadius: 8, cursor: "pointer", fontFamily: "inherit", fontWeight: 700, border: `1.5px solid ${cur[d.id] === v ? COLORS.mossDeep : COLORS.line}`, background: cur[d.id] === v ? COLORS.mossDeep : "#fff", color: cur[d.id] === v ? "#fff" : COLORS.ink }}>{v}</button>))}</span>
+              </div>
+            ))}
+            <textarea rows={2} placeholder="Komentar untuk siswa (hargai usahanya, beri satu saran)" value={comment[sub.id] ?? sub.teacher_comment ?? ""} onChange={e => setComment(c => ({ ...c, [sub.id]: e.target.value }))}
+              style={{ width: "100%", boxSizing: "border-box", marginTop: 10, ...field }} />
+            {err && <div style={{ color: COLORS.coral, fontSize: 13 }}>{err}</div>}
+            <div style={{ marginTop: 10 }}><Btn onClick={async () => { try { await ProjectService.rate({ submissionId: sub.id, scores: cur, comment: comment[sub.id] ?? sub.teacher_comment }); setErr(""); load(); } catch (e) { setErr(e.message); } }}>Simpan penilaian</Btn></div>
+          </div>
+        );
+      })}
+    </>
+  );
+}
+
 export function TeacherConsole({ onExit }) {
   const [teacher, setTeacher] = useState(null);
   const [tab, setTab] = useState("classes");
@@ -212,7 +268,7 @@ export function TeacherConsole({ onExit }) {
   useEffect(() => { reload(); }, [reload]);
 
   if (!teacher) return <><Gate onLogin={setTeacher} /><div style={{ textAlign: "center" }}><Btn variant="ghost" onClick={onExit}>Kembali</Btn></div></>;
-  const tabs = [["classes", "Kelas"], ["sessions", "Sesi"], ["report", "Laporan"]];
+  const tabs = [["classes", "Kelas"], ["sessions", "Sesi"], ["report", "Laporan"], ["works", "Karya"]];
   return (
     <div style={{ maxWidth: 900, margin: "0 auto", padding: "28px 20px 60px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 18, flexWrap: "wrap", gap: 10 }}>
@@ -227,6 +283,7 @@ export function TeacherConsole({ onExit }) {
       {tab === "classes" && <ClassesTab teacher={teacher} classes={classes} reload={reload} />}
       {tab === "sessions" && <SessionsTab classes={classes} sessions={sessions} reload={reload} />}
       {tab === "report" && <ReportTab sessions={sessions} classes={classes} />}
+      {tab === "works" && <WorksTab classes={classes} />}
       <button onClick={() => setShowDev(v => !v)} style={{ background: "none", border: "none", opacity: .4, fontSize: 12, cursor: "pointer", fontFamily: "inherit" }}>Pengaturan pengembang</button>
       {showDev && <DevSettingsPanel />}
     </div>

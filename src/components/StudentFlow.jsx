@@ -18,7 +18,7 @@ import { ActivityCard } from "./ActivityCard.jsx";
    would not change at all if getAdapter() started returning a
    SupabaseAdapter tomorrow. Fully skill-agnostic: which skill is being
    played is passed in as a prop, not hardcoded. */
-export function StudentFlow({ studentId, session, onExit, onProfile }) {
+export function StudentFlow({ studentId, session, onExit, onProfile, onMissions }) {
   const skillId = session.skill_id;
   const skill = LIVE_SKILLS.find(s => s.id === skillId);
   const activities = QuestionService.listForSkill(skillId);
@@ -84,7 +84,7 @@ export function StudentFlow({ studentId, session, onExit, onProfile }) {
           <div style={{ fontSize: 22, fontWeight: 800, color: COLORS.mossDeep }}>{student.name}</div>
         </div>
         <XPBar xp={student.xp} />
-        <span style={{ display: "flex", gap: 8 }}><Btn variant="amber" onClick={onProfile}>Profilku</Btn><Btn variant="ghost" onClick={onExit}>Keluar</Btn></span>
+        <span style={{ display: "flex", gap: 8 }}><Btn variant="amber" onClick={onMissions}>Misi</Btn><Btn variant="amber" onClick={onProfile}>Profilku</Btn><Btn variant="ghost" onClick={onExit}>Keluar</Btn></span>
       </div>
 
       <div style={{ background: COLORS.panel, borderRadius: 18, padding: 18, marginBottom: 20, border: `1.5px solid ${COLORS.line}` }}>

@@ -18,7 +18,8 @@ function highestPhase(progress, activities) {
   return last;
 }
 
-export function buildProfile({ student, progressBySkill, listActivities }) {
+export function buildProfile({ student, progressBySkill, listActivities, extras = {} }) {
+  const { missions = [], projects = [], reflections = 0 } = extras;
   const skills = Object.entries(progressBySkill).filter(([, pr]) => Object.keys(pr).length).map(([id, progress]) => {
     const micro = microMastery(id, progress);
     const mastered = micro.filter(m => m.label === "TUNTAS").length;
@@ -56,12 +57,15 @@ export function buildProfile({ student, progressBySkill, listActivities }) {
 
   return {
     student: { id: student.id, name: student.name, xp: student.xp || 0, streak: student.streak || 0, badges: student.badges || [] },
-    skills, domains, strengths, growth, recommended,
+    skills, domains, strengths, growth, recommended, missions, projects,
     totals: {
       done: skills.reduce((n, s) => n + s.done, 0), mastered: skills.reduce((n, s) => n + s.mastered, 0),
       retriesFixed: skills.reduce((n, s) => n + s.retriesFixed, 0),
       skillsStarted: skills.length, domainsStarted: domains.filter(d => d.started).length,
       lastActive: latest ? latest.lastActive : null,
+      missionsCompleted: missions.filter(m => m.kind === "mission" && m.completed).length,
+      bossCompleted: missions.filter(m => m.kind === "boss" && m.completed).length,
+      projectsSubmitted: projects.length, reflections,
     },
   };
 }

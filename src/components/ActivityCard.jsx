@@ -18,7 +18,8 @@ export function ActivityCard({ activity, onAnswer, feedback }) {
     if (activity.type === "classify") setClassifyState(Object.fromEntries(activity.items.map(i => [i, null])));
   }, [activity.n]);
 
-  const ph = phaseOf(activity.n);
+  // Mission/boss steps carry a `tag` instead of a learning phase.
+  const ph = activity.tag ? { label: activity.tag, tone: COLORS.lilac } : phaseOf(activity.n);
   const answered = !!feedback;
 
   function submitMCQorTF(idx) {
@@ -62,7 +63,7 @@ export function ActivityCard({ activity, onAnswer, feedback }) {
   return (
     <div style={{ background: COLORS.panel, borderRadius: 20, padding: "26px 26px 22px", border: `1.5px solid ${COLORS.line}` }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 14 }}>
-        <Pill color={ph.tone}>{ph.label} · #{activity.n}</Pill>
+        <Pill color={ph.tone}>{activity.tag ? `${ph.label} · langkah ${activity.n}` : `${ph.label} · #${activity.n}`}</Pill>
         <span style={{ fontSize: 12, color: COLORS.ink, opacity: .5, fontWeight: 600 }}>{activity.micro}</span>
       </div>
       <div style={{ fontSize: 19, fontWeight: 700, color: COLORS.ink, lineHeight: 1.4, marginBottom: 18 }}>{activity.q}</div>

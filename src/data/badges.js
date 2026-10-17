@@ -11,4 +11,8 @@ export const BADGES = [
   { id: "explorer", icon: "🗺️", name: "Penjelajah", desc: "Mencoba 3 skill berbeda.", test: p => p.totals.skillsStarted >= 3 },
   { id: "all_rounder", icon: "🌈", name: "Serba Bisa", desc: "Mencoba 3 domain berbeda.", test: p => p.totals.domainsStarted >= 3 },
   { id: "skill_done", icon: "🏅", name: "Satu Skill Selesai", desc: "Menyelesaikan 100 aktivitas dalam satu skill.", test: p => p.skills.some(s => s.done >= 100) },
+  { id: "mission_1", icon: "🧭", name: "Penyelesai Misi", desc: "Menyelesaikan 1 misi.", test: p => p.totals.missionsCompleted >= 1 },
+  { id: "boss_done", icon: "🏆", name: "Penakluk Boss", desc: "Menyelesaikan sebuah Boss Challenge.", test: p => p.totals.bossCompleted >= 1 },
+  { id: "project_1", icon: "🎨", name: "Pembuat Karya", desc: "Mengumpulkan 1 proyek.", test: p => p.totals.projectsSubmitted >= 1 },
+  { id: "reflect_1", icon: "💭", name: "Pemikir Reflektif", desc: "Menulis refleksi tentang belajarmu.", test: p => p.totals.reflections >= 1 },
 ];

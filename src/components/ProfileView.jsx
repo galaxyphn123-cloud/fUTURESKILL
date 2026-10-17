@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { COLORS } from "../theme.js";
 import { BADGES } from "../data/badges.js";
+import { PROJECTS } from "../data/projects.js";
 import { ProfileService } from "../services/ProfileService.js";
 import { Btn } from "./ui/Btn.jsx";
 
@@ -70,6 +71,22 @@ export function ProfileView({ studentId, audience = "student", onBack }) {
             <div key={s.id} style={{ display: "flex", justifyContent: "space-between", padding: "8px 0", borderTop: `1px solid ${COLORS.line}`, fontSize: 14, gap: 10, flexWrap: "wrap" }}>
               <span style={{ fontWeight: 700 }}>{s.name}</span>
               <span style={{ opacity: .7 }}>Level {s.level} · {s.done}/100 aktivitas · fase {s.phase}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      {(p.missions.length > 0 || p.projects.length > 0) && (
+        <div style={box}>
+          <div style={h}>Penerapan: misi, boss & proyek</div>
+          {p.missions.map(m => (
+            <div key={m.id} style={{ display: "flex", justifyContent: "space-between", padding: "6px 0", fontSize: 13, gap: 10 }}>
+              <span>{m.icon} {m.title}</span><span style={{ opacity: .7 }}>{m.completed ? "selesai" : `${m.done}/${m.total} langkah`}</span>
+            </div>
+          ))}
+          {p.projects.map(pr => (
+            <div key={pr.id} style={{ display: "flex", justifyContent: "space-between", padding: "6px 0", fontSize: 13, gap: 10 }}>
+              <span>🎨 {PROJECTS.find(x => x.id === pr.project_id)?.title}</span><span style={{ opacity: .7 }}>{pr.status === "reviewed" ? "sudah dinilai guru" : "terkirim"}</span>
             </div>
           ))}
         </div>
