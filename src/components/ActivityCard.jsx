@@ -25,13 +25,13 @@ export function ActivityCard({ activity, onAnswer, feedback }) {
     if (answered) return;
     setSelected(idx);
     const correct = idx === (activity.type === "tf" ? activity.answer : activity.answer);
-    onAnswer({ correct, gradable: true });
+    onAnswer({ correct, gradable: true, choice: idx });
   }
   function submitOrder() {
     if (answered) return;
     const correctOrder = activity.answer.map(i => activity.items[i]);
     const correct = JSON.stringify(orderState) === JSON.stringify(correctOrder);
-    onAnswer({ correct, gradable: true });
+    onAnswer({ correct, gradable: true, choice: orderState.join(" → ") });
   }
   function submitClassify() {
     if (answered) return;
@@ -43,12 +43,12 @@ export function ActivityCard({ activity, onAnswer, feedback }) {
         if (expected.has(item) !== placed) correct = false;
       }
     }
-    onAnswer({ correct, gradable: true });
+    onAnswer({ correct, gradable: true, choice: JSON.stringify(classifyState) });
   }
   function submitOpen() {
     if (answered) return;
     setRevealed(true);
-    onAnswer({ correct: true, gradable: false });
+    onAnswer({ correct: true, gradable: false, choice: openText.trim() });
   }
   function move(item, dir) {
     const i = orderState.indexOf(item);

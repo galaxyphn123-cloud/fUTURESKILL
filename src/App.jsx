@@ -1,16 +1,13 @@
 import { useState } from "react";
 import { COLORS } from "./theme.js";
-import { LIVE_SKILLS } from "./data/skillContent.js";
 import { Pill } from "./components/ui/Pill.jsx";
 import { JoinScreen } from "./components/JoinScreen.jsx";
-import { DomainMap } from "./components/DomainMap.jsx";
 import { StudentFlow } from "./components/StudentFlow.jsx";
-import { TeacherDashboard } from "./components/TeacherDashboard.jsx";
+import { TeacherConsole } from "./components/TeacherConsole.jsx";
 
 export default function App() {
   const [screen, setScreen] = useState("join"); // join | student | teacher
-  const [studentName, setStudentName] = useState(null);
-  const [skillId, setSkillId] = useState(LIVE_SKILLS[0].id);
+  const [joined, setJoined] = useState(null);   // { student, session }
 
   return (
     <div style={{ background: COLORS.paper, minHeight: "100vh", fontFamily: "'Avenir Next', 'Segoe UI', system-ui, sans-serif", color: COLORS.ink }}>
@@ -22,18 +19,9 @@ export default function App() {
         {screen !== "join" && <Pill color={COLORS.moss}>{screen === "teacher" ? "Tampilan guru" : "Tampilan siswa"}</Pill>}
       </div>
 
-      {screen === "join" && (
-        <>
-          <JoinScreen
-            skillId={skillId}
-            onJoin={n => { setStudentName(n); setScreen("student"); }}
-            onTeacher={() => setScreen("teacher")}
-          />
-          <DomainMap selectedSkillId={skillId} onSelectLive={id => setSkillId(id)} />
-        </>
-      )}
-      {screen === "student" && <StudentFlow name={studentName} skillId={skillId} onExit={() => setScreen("join")} />}
-      {screen === "teacher" && <TeacherDashboard onExit={() => setScreen("join")} />}
+      {screen === "join" && <JoinScreen onJoin={j => { setJoined(j); setScreen("student"); }} onTeacher={() => setScreen("teacher")} />}
+      {screen === "student" && <StudentFlow studentId={joined.student.id} session={joined.session} onExit={() => setScreen("join")} />}
+      {screen === "teacher" && <TeacherConsole onExit={() => setScreen("join")} />}
     </div>
   );
 }

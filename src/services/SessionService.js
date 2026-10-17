@@ -1,21 +1,23 @@
 import { getAdapter } from "./adapters/index.js";
+import { uid } from "../engine/ids.js";
 
 export const SessionService = {
-  // Sessions are shared storage: the join code must be visible to any
-  // student's device, not just the account that first created it.
-  // Uses a deterministic id (one open demo session per skill) instead of a
-  // random one, so a duplicate-creation race collapses to a single
-  // last-write-wins record instead of two different codes for the same skill.
-  async ensureDemoSession(skillId) {
+  /* A teacher starts a session = one class working on one skill, with a 6-digit join code
+     that is unique among currently open sessions. */
+  async create({ classId, skillId }) {
     const adapter = getAdapter();
-    const id = `session_${skillId}`;
-    const existing = await adapter.get("sessions", id);
-    if (existing && existing.status === "open") return existing;
-    const code = String(100000 + Math.floor(Math.random() * 900000)).slice(0, 6);
-    return adapter.put("sessions", { id, skill_id: skillId, code, status: "open", __shared: true });
+    const open = await adapter.list("sessions", s => s.status === "open");
+    let code;
+    do { code = String(100000 + Math.floor(Math.random() * 900000)); } while (open.some(s => s.code === code));
+    return adapter.put("sessions", { id: uid("session"), class_id: classId, skill_id: skillId, code, status: "open" });
   },
-  async validateCode(skillId, code) {
-    const session = await this.ensureDemoSession(skillId);
-    return session.code === String(code).trim();
+  async findOpenByCode(code) {
+    const c = String(code).trim();
+    return (await getAdapter().list("sessions", s => s.status === "open" && s.code === c))[0] || null;
+  },
+  listForClass(classId) { return getAdapter().list("sessions", s => s.class_id === classId); },
+  async close(id) {
+    const s = await getAdapter().get("sessions", id);
+    return getAdapter().put("sessions", { ...s, status: "closed" });
   },
 };

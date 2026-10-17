@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { COLORS } from "../theme.js";
 import { PHASES } from "../data/domains.js";
 import { microMastery, microOf } from "../engine/metadata.js";
@@ -18,11 +18,13 @@ import { ActivityCard } from "./ActivityCard.jsx";
    would not change at all if getAdapter() started returning a
    SupabaseAdapter tomorrow. Fully skill-agnostic: which skill is being
    played is passed in as a prop, not hardcoded. */
-export function StudentFlow({ name, skillId, onExit }) {
+export function StudentFlow({ studentId, session, onExit }) {
+  const skillId = session.skill_id;
   const skill = LIVE_SKILLS.find(s => s.id === skillId);
   const activities = QuestionService.listForSkill(skillId);
   const [student, setStudent] = useState(null);
   const [progress, setProgress] = useState({});
+  const startedAt = useRef(Date.now());
   const [currentN, setCurrentN] = useState(null);
   const [mode, setMode] = useState("steady");
   const [retryGen, setRetryGen] = useState(0);   // bumps to remount the card fresh
@@ -30,12 +32,14 @@ export function StudentFlow({ name, skillId, onExit }) {
   const [justAwarded, setJustAwarded] = useState(null);
 
   useEffect(() => { (async () => {
-    const s = await StudentService.getOrCreateByName(name);
+    const s = await StudentService.getById(studentId);
     const p = await ProgressService.getForStudent(s.id, skillId);
     setStudent(s); setProgress(p);
     const pick = pickNext({ activities, progress: p });
     setCurrentN(pick.activity ? pick.activity.n : null); setMode(pick.mode);
-  })(); }, [name, skillId]);
+  })(); }, [studentId, skillId]);
+
+  useEffect(() => { startedAt.current = Date.now(); }, [currentN, retryGen]);
 
   if (!student) return <div style={{ padding: 40, textAlign: "center", color: COLORS.ink, opacity: .6 }}>Memuat kemajuanmu…</div>;
 
@@ -48,7 +52,8 @@ export function StudentFlow({ name, skillId, onExit }) {
 
   async function handleAnswer(res) {
     const { student: updatedStudent, progress: updatedProgress } = await AttemptService.submitAnswer({
-      studentId: student.id, skillId, activity: current, result: res, isRetry: !!saved,
+      studentId: student.id, sessionId: session.id, skillId, activity: current, result: res, isRetry: !!saved,
+      choice: res.choice, timeMs: Date.now() - startedAt.current,
     });
     setStudent(updatedStudent);
     setProgress(updatedProgress);
@@ -74,10 +79,10 @@ export function StudentFlow({ name, skillId, onExit }) {
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 22, flexWrap: "wrap", gap: 12 }}>
         <div>
           <div style={{ fontSize: 13, opacity: .55, fontWeight: 700 }}>SELAMAT DATANG KEMBALI</div>
-          <div style={{ fontSize: 22, fontWeight: 800, color: COLORS.mossDeep }}>{name}</div>
+          <div style={{ fontSize: 22, fontWeight: 800, color: COLORS.mossDeep }}>{student.name}</div>
         </div>
         <XPBar xp={student.xp} />
-        <Btn variant="ghost" onClick={onExit}>Ganti siswa</Btn>
+        <Btn variant="ghost" onClick={onExit}>Keluar</Btn>
       </div>
 
       <div style={{ background: COLORS.panel, borderRadius: 18, padding: 18, marginBottom: 20, border: `1.5px solid ${COLORS.line}` }}>

@@ -1,45 +1,58 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { COLORS } from "../theme.js";
 import { LIVE_SKILLS } from "../data/skillContent.js";
 import { SessionService } from "../services/SessionService.js";
+import { ClassService } from "../services/ClassService.js";
 import { Btn } from "./ui/Btn.jsx";
 
-export function JoinScreen({ skillId, onJoin, onTeacher }) {
-  const skill = LIVE_SKILLS.find(s => s.id === skillId);
+const input = { width: "100%", boxSizing: "border-box", padding: "14px 16px", borderRadius: 12,
+  border: `1.5px solid ${COLORS.line}`, fontSize: 18, fontFamily: "inherit", marginBottom: 12, textAlign: "center" };
+
+/* Quizizz-style entry: 6-digit session code, then student code (or name the first time). */
+export function JoinScreen({ onJoin, onTeacher }) {
+  const [code, setCode] = useState("");
   const [session, setSession] = useState(null);
-  const [name, setName] = useState("");
-  const [codeInput, setCodeInput] = useState("");
+  const [who, setWho] = useState("");
   const [error, setError] = useState("");
+  const skill = session && LIVE_SKILLS.find(s => s.id === session.skill_id);
 
-  useEffect(() => { setSession(null); (async () => setSession(await SessionService.ensureDemoSession(skillId)))(); }, [skillId]);
-  useEffect(() => { if (session) setCodeInput(session.code); }, [session]);
-
-  async function handleStart() {
+  async function checkCode() {
     setError("");
-    const ok = await SessionService.validateCode(skillId, codeInput);
-    if (!ok) { setError("Kode gabung tersebut tidak cocok dengan sesi ini. Tanyakan pada gurumu."); return; }
-    onJoin(name.trim());
+    const s = await SessionService.findOpenByCode(code);
+    if (!s) { setError("Kode ini tidak ditemukan atau sesinya sudah ditutup. Tanyakan pada gurumu."); return; }
+    setSession(s);
+  }
+  async function enter() {
+    setError("");
+    let student = await ClassService.identify(session.class_id, who);
+    if (!student) student = await ClassService.enroll(session.class_id, who);
+    onJoin({ student, session });
   }
 
   return (
     <div style={{ maxWidth: 440, margin: "80px auto", padding: "0 20px", textAlign: "center" }}>
-      <div style={{ fontSize: 13, letterSpacing: ".12em", fontWeight: 800, color: COLORS.amber, marginBottom: 6 }}>SESI</div>
-      <div style={{ fontSize: 28, fontWeight: 800, color: COLORS.mossDeep, marginBottom: 4 }}>
-        Kode gabung {session ? session.code : "······"}
-      </div>
-      <div style={{ fontSize: 13, opacity: .55, marginBottom: 28 }}>{skill ? `${skill.domain} → ${skill.name}, sedang berlangsung` : "Pilih skill di bawah"}</div>
-      <input value={codeInput} onChange={e => setCodeInput(e.target.value)} placeholder="Kode 6 digit"
-        style={{ width: "100%", boxSizing: "border-box", padding: "12px 16px", borderRadius: 12,
-          border: `1.5px solid ${COLORS.line}`, fontSize: 15, fontFamily: "inherit", marginBottom: 10, textAlign: "center" }} />
-      <input value={name} onChange={e => setName(e.target.value)} placeholder="Ketik namamu"
-        style={{ width: "100%", boxSizing: "border-box", padding: "14px 16px", borderRadius: 12,
-          border: `1.5px solid ${COLORS.line}`, fontSize: 16, fontFamily: "inherit", marginBottom: 14, textAlign: "center" }} />
-      {error && <div style={{ color: COLORS.coral, fontSize: 13, marginBottom: 12 }}>{error}</div>}
-      <Btn style={{ width: "100%" }} disabled={!name.trim() || !codeInput.trim()} onClick={handleStart}>Mulai belajar</Btn>
-      <div style={{ marginTop: 22 }}>
-        <button onClick={onTeacher} style={{ background: "none", border: "none", color: COLORS.sky, fontFamily: "inherit",
-          fontSize: 13, cursor: "pointer", fontWeight: 700 }}>Saya seorang guru — buka dasbor</button>
+      <div style={{ fontSize: 13, letterSpacing: ".12em", fontWeight: 800, color: COLORS.amber, marginBottom: 6 }}>GABUNG SESI</div>
+      {!session ? (
+        <>
+          <div style={{ fontSize: 26, fontWeight: 800, color: COLORS.mossDeep, marginBottom: 20 }}>Masukkan kode dari gurumu</div>
+          <input value={code} onChange={e => setCode(e.target.value.replace(/\D/g, "").slice(0, 6))} inputMode="numeric"
+            placeholder="······" style={{ ...input, fontSize: 28, letterSpacing: ".3em" }} />
+          {error && <div style={{ color: COLORS.coral, fontSize: 13, marginBottom: 12 }}>{error}</div>}
+          <Btn style={{ width: "100%" }} disabled={code.length !== 6} onClick={checkCode}>Lanjut</Btn>
+        </>
+      ) : (
+        <>
+          <div style={{ fontSize: 22, fontWeight: 800, color: COLORS.mossDeep, marginBottom: 4 }}>{skill ? skill.name : session.skill_id}</div>
+          <div style={{ fontSize: 13, opacity: .55, marginBottom: 20 }}>Kode siswa (4 huruf) atau, kalau belum punya, ketik namamu</div>
+          <input value={who} onChange={e => setWho(e.target.value)} placeholder="Kode siswa / namamu" style={input} />
+          <Btn style={{ width: "100%" }} disabled={!who.trim()} onClick={enter}>Mulai belajar</Btn>
+          <div style={{ marginTop: 10 }}><button onClick={() => { setSession(null); setWho(""); }} style={link}>← Ganti kode sesi</button></div>
+        </>
+      )}
+      <div style={{ marginTop: 28 }}>
+        <button onClick={onTeacher} style={{ ...link, color: COLORS.sky }}>Saya seorang guru</button>
       </div>
     </div>
   );
 }
+const link = { background: "none", border: "none", color: COLORS.ink, opacity: .7, fontFamily: "inherit", fontSize: 13, cursor: "pointer", fontWeight: 700 };
