@@ -10077,8 +10077,98 @@ export const TAXONOMY = {
     ]
    }
   ],
-  "age_entry": "C",
+  "age_entry": "B",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-01"
+ },
+ "LHL-03": {
+  "id": "LHL-03",
+  "domain": "LHL",
+  "name": "Strategi Mengingat",
+  "micro": [
+   {
+    "id": "LHL-03.01",
+    "name": "Mengingat dan lupa",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-03.02",
+    "name": "Mengulang",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-03.03",
+    "name": "Mengelompokkan",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-03.04",
+    "name": "Gambaran dan kaitan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-03.05",
+    "name": "Jembatan keledai",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-03.06",
+    "name": "Menguji diri",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-03.07",
+    "name": "Menalar ingatan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-03.08",
+    "name": "Kekeliruan dalam mengingat",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-03.09",
+    "name": "Rencana mengingat",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-03.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-02"
  }
 };
