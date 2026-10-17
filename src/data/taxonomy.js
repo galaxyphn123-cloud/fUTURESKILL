@@ -9900,5 +9900,95 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "CIV-07"
+ },
+ "LHL-01": {
+  "id": "LHL-01",
+  "domain": "LHL",
+  "name": "Mengenal Cara Belajarmu",
+  "micro": [
+   {
+    "id": "LHL-01.01",
+    "name": "Apa itu belajar",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-01.02",
+    "name": "Indera untuk belajar",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-01.03",
+    "name": "Bukti belajar",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-01.04",
+    "name": "Cara belajar yang cocok",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-01.05",
+    "name": "Memilih cara belajar",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-01.06",
+    "name": "Mengenali perasaan saat sulit",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-01.07",
+    "name": "Menalar cara belajar",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-01.08",
+    "name": "Menemukan kekeliruan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-01.09",
+    "name": "Merancang rencana belajar",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-01.10",
+    "name": "Refleksi belajar",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
  }
 };

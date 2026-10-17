@@ -11,6 +11,7 @@ const out = {};
 for (const d of DOMAINS) {
   d.skills.forEach((s, i) => {
     const acts = SKILL_CONTENT[s.id];
+    if (!acts) throw new Error(`Skill ${s.id} is listed in domains.js but has no content`);
     const micro = [];
     for (let b = 0; b < 10; b++) {
       const block = acts.slice(b * 10, b * 10 + 10);

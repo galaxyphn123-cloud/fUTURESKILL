@@ -37,6 +37,8 @@ export const PROJECTS = [
     prompts: ["Tulis 5 aturan online keluarga.", "Bagaimana membuat kata sandi yang kuat? Tulis contoh cara (jangan tulis kata sandi aslimu).", "Apa saja yang tidak boleh dibagikan di internet?", "Apa yang dilakukan keluargamu kalau menemukan sesuatu yang mencurigakan?"] },
   { id: "p_wel", domain: "WEL", icon: "♡", title: "Peta Perasaan & Kebiasaan", brief: "Selama 3 hari, perhatikan perasaanmu dan kebiasaan sehatmu.",
     prompts: ["Tulis perasaan yang kamu rasakan tiap hari dan penyebabnya.", "Cara apa yang membantumu tenang saat perasaan sulit?", "Pilih satu kebiasaan sehat (tidur, gerak, makan) dan rencana menjalankannya.", "Kepada siapa kamu bisa meminta bantuan bila perlu?"] },
+  { id: "p_lhl", domain: "LHL", icon: "❂", title: "Rencana Belajarku", brief: "Pilih satu hal baru yang ingin kamu pelajari dan rancang cara belajarnya.",
+    prompts: ["Apa yang ingin kamu pelajari dan mengapa?", "Cara belajar apa yang akan kamu pakai (melihat, mendengar, mencoba, menjelaskan)? Mengapa cocok?", "Tulis jadwal belajar kecil selama satu minggu.", "Bagaimana kamu akan mengecek bahwa kamu makin bisa?"] },
   { id: "p_civ", domain: "CIV", icon: "❖", title: "Aksi Peduli Lingkungan", brief: "Rencanakan satu aksi nyata untuk lingkungan sekitarmu.",
     prompts: ["Aksi apa yang kamu pilih dan mengapa penting?", "Langkah-langkah apa yang kamu lakukan?", "Siapa yang kamu ajak, dan bagaimana caranya?", "Apa dampaknya, dan bagaimana kamu mengukurnya?"] },
 ];

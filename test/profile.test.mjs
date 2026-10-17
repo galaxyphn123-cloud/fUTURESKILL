@@ -23,7 +23,7 @@ const play = async (skill, n, correct, isRetry = false) => AttemptService.submit
 
 // empty profile: nothing earned, no recommendation, no crash
 let p = await ProfileService.load(ani.id);
-assert.equal(p.totals.done, 0); assert.equal(p.recommended, null); assert.equal(p.domains.length, 11);
+assert.equal(p.totals.done, 0); assert.equal(p.recommended, null); assert.equal(p.domains.length, (await import("../src/data/domains.js")).DOMAINS.length);
 
 // first answer earns "first_step" once, and only once
 let r = await play("M-01", 1, true);
