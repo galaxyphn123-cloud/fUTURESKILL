@@ -1,11 +1,11 @@
 {
  "total": 11800,
- "needsReview": 656,
+ "needsReview": 292,
  "byRule": {
   "option-long": 183,
   "hint-leak": 2,
-  "length-cue": 560,
-  "too-long": 23
+  "too-long": 23,
+  "length-cue": 177
  },
  "flags": [
   {
@@ -55,54 +55,6 @@
    "n": 20,
    "rule": "option-long",
    "detail": "Salah — hubungan linear bisa melibatkan "
-  },
-  {
-   "skill": "FIN-01",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 120 chars vs 94"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 62,
-   "rule": "length-cue",
-   "detail": "correct 122 chars vs 88"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 76,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 94"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 83,
-   "rule": "length-cue",
-   "detail": "correct 122 chars vs 87"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 89,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 92"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 92,
-   "rule": "length-cue",
-   "detail": "correct 135 chars vs 95"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 95,
-   "rule": "length-cue",
-   "detail": "correct 149 chars vs 96"
-  },
-  {
-   "skill": "FIN-01",
-   "n": 98,
-   "rule": "length-cue",
-   "detail": "correct 137 chars vs 110"
   },
   {
    "skill": "PS-05",
@@ -670,57 +622,9 @@
   },
   {
    "skill": "FIN-02",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 152 chars vs 115"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 63,
-   "rule": "length-cue",
-   "detail": "correct 188 chars vs 135"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 177 chars vs 126"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 77,
-   "rule": "length-cue",
-   "detail": "correct 169 chars vs 119"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 193 chars vs 130"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 166 chars vs 132"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 199 chars vs 133"
-  },
-  {
-   "skill": "FIN-02",
    "n": 90,
    "rule": "option-long",
    "detail": "Amankan kebutuhan & tabungan lebih dulu;"
-  },
-  {
-   "skill": "FIN-02",
-   "n": 90,
-   "rule": "length-cue",
-   "detail": "correct 269 chars vs 161"
   },
   {
    "skill": "FIN-02",
@@ -735,70 +639,10 @@
    "detail": "correct 419 chars vs 227"
   },
   {
-   "skill": "FIN-02",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 189 chars vs 138"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 19,
-   "rule": "length-cue",
-   "detail": "correct 116 chars vs 94"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 24,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 94"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 120 chars vs 99"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 36,
-   "rule": "length-cue",
-   "detail": "correct 122 chars vs 99"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 38,
-   "rule": "length-cue",
-   "detail": "correct 141 chars vs 96"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 45,
-   "rule": "length-cue",
-   "detail": "correct 154 chars vs 120"
-  },
-  {
    "skill": "FIN-03",
    "n": 50,
    "rule": "option-long",
    "detail": "Sisihkan dana darurat kecil dulu, lalu f"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 50,
-   "rule": "length-cue",
-   "detail": "correct 168 chars vs 130"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 159 chars vs 121"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 63,
-   "rule": "length-cue",
-   "detail": "correct 197 chars vs 123"
   },
   {
    "skill": "FIN-03",
@@ -808,27 +652,9 @@
   },
   {
    "skill": "FIN-03",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 248 chars vs 136"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 86,
-   "rule": "length-cue",
-   "detail": "correct 168 chars vs 128"
-  },
-  {
-   "skill": "FIN-03",
    "n": 88,
    "rule": "option-long",
    "detail": "Tetapkan tujuan yang jelas & bermakna ba"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 262 chars vs 162"
   },
   {
    "skill": "FIN-03",
@@ -841,84 +667,6 @@
    "n": 89,
    "rule": "length-cue",
    "detail": "correct 426 chars vs 233"
-  },
-  {
-   "skill": "FIN-03",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 194 chars vs 148"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 22,
-   "rule": "length-cue",
-   "detail": "correct 151 chars vs 120"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 28,
-   "rule": "length-cue",
-   "detail": "correct 153 chars vs 109"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 135 chars vs 107"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 42,
-   "rule": "length-cue",
-   "detail": "correct 154 chars vs 120"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 46,
-   "rule": "length-cue",
-   "detail": "correct 134 chars vs 109"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 50,
-   "rule": "length-cue",
-   "detail": "correct 153 chars vs 109"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 52,
-   "rule": "length-cue",
-   "detail": "correct 142 chars vs 115"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 67,
-   "rule": "length-cue",
-   "detail": "correct 167 chars vs 130"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 71,
-   "rule": "length-cue",
-   "detail": "correct 160 chars vs 121"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 158 chars vs 125"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 228 chars vs 155"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 86,
-   "rule": "length-cue",
-   "detail": "correct 179 chars vs 130"
   },
   {
    "skill": "FIN-04",
@@ -945,36 +693,6 @@
    "detail": "correct 418 chars vs 212"
   },
   {
-   "skill": "FIN-04",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 170 chars vs 141"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 189 chars vs 140"
-  },
-  {
-   "skill": "FIN-04",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 200 chars vs 148"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 8,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 105"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 18,
-   "rule": "length-cue",
-   "detail": "correct 143 chars vs 104"
-  },
-  {
    "skill": "FIN-05",
    "n": 51,
    "rule": "too-long",
@@ -982,75 +700,9 @@
   },
   {
    "skill": "FIN-05",
-   "n": 52,
-   "rule": "length-cue",
-   "detail": "correct 154 chars vs 118"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 56,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 114"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 61,
-   "rule": "length-cue",
-   "detail": "correct 178 chars vs 119"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 63,
-   "rule": "length-cue",
-   "detail": "correct 161 chars vs 126"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 71,
-   "rule": "length-cue",
-   "detail": "correct 145 chars vs 118"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 166 chars vs 118"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 157 chars vs 115"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 75,
-   "rule": "length-cue",
-   "detail": "correct 179 chars vs 118"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 79,
-   "rule": "length-cue",
-   "detail": "correct 207 chars vs 136"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 231 chars vs 132"
-  },
-  {
-   "skill": "FIN-05",
    "n": 82,
    "rule": "option-long",
    "detail": "Iuran wajib warga & badan usaha kepada n"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 84,
-   "rule": "length-cue",
-   "detail": "correct 166 chars vs 127"
   },
   {
    "skill": "FIN-05",
@@ -1086,13 +738,7 @@
    "skill": "FIN-05",
    "n": 91,
    "rule": "length-cue",
-   "detail": "correct 284 chars vs 156"
-  },
-  {
-   "skill": "FIN-05",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 194 chars vs 143"
+   "detail": "correct 284 chars vs 233"
   },
   {
    "skill": "FIN-05",
@@ -1108,18 +754,6 @@
   },
   {
    "skill": "FIN-06",
-   "n": 1,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 101"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 28,
-   "rule": "length-cue",
-   "detail": "correct 146 chars vs 106"
-  },
-  {
-   "skill": "FIN-06",
    "n": 40,
    "rule": "too-long",
    "detail": "469 chars"
@@ -1132,39 +766,9 @@
   },
   {
    "skill": "FIN-06",
-   "n": 49,
-   "rule": "length-cue",
-   "detail": "correct 169 chars vs 127"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 153 chars vs 113"
-  },
-  {
-   "skill": "FIN-06",
    "n": 60,
    "rule": "too-long",
    "detail": "467 chars"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 66,
-   "rule": "length-cue",
-   "detail": "correct 213 chars vs 117"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 150 chars vs 120"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 75,
-   "rule": "length-cue",
-   "detail": "correct 167 chars vs 126"
   },
   {
    "skill": "FIN-06",
@@ -1177,18 +781,6 @@
    "n": 81,
    "rule": "length-cue",
    "detail": "correct 328 chars vs 151"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 82,
-   "rule": "length-cue",
-   "detail": "correct 228 chars vs 142"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 84,
-   "rule": "length-cue",
-   "detail": "correct 160 chars vs 128"
   },
   {
    "skill": "FIN-06",
@@ -1216,33 +808,9 @@
   },
   {
    "skill": "FIN-06",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 239 chars vs 153"
-  },
-  {
-   "skill": "FIN-06",
    "n": 92,
    "rule": "too-long",
    "detail": "659 chars"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 188 chars vs 142"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 155 chars vs 123"
-  },
-  {
-   "skill": "FIN-06",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 191 chars vs 131"
   },
   {
    "skill": "FIN-06",
@@ -1263,76 +831,10 @@
    "detail": "Dipakai bank & lembaga lain untuk menila"
   },
   {
-   "skill": "FIN-07",
-   "n": 28,
-   "rule": "length-cue",
-   "detail": "correct 165 chars vs 123"
-  },
-  {
-   "skill": "FIN-07",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 169 chars vs 134"
-  },
-  {
-   "skill": "FIN-07",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 222 chars vs 144"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 46,
-   "rule": "length-cue",
-   "detail": "correct 141 chars vs 117"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 69,
-   "rule": "length-cue",
-   "detail": "correct 149 chars vs 124"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 150 chars vs 124"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 84,
-   "rule": "length-cue",
-   "detail": "correct 215 chars vs 118"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 175 chars vs 122"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 202 chars vs 130"
-  },
-  {
-   "skill": "FIN-08",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 170 chars vs 133"
-  },
-  {
    "skill": "FIN-09",
    "n": 3,
    "rule": "option-long",
    "detail": "Menabung: prioritas keamanan & mudah dia"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 3,
-   "rule": "length-cue",
-   "detail": "correct 161 chars vs 134"
   },
   {
    "skill": "FIN-09",
@@ -1342,21 +844,9 @@
   },
   {
    "skill": "FIN-09",
-   "n": 25,
-   "rule": "length-cue",
-   "detail": "correct 177 chars vs 127"
-  },
-  {
-   "skill": "FIN-09",
    "n": 26,
    "rule": "option-long",
    "detail": "Memiliki sepotong kecil perusahaan itu; "
-  },
-  {
-   "skill": "FIN-09",
-   "n": 26,
-   "rule": "length-cue",
-   "detail": "correct 170 chars vs 125"
   },
   {
    "skill": "FIN-09",
@@ -1372,21 +862,9 @@
   },
   {
    "skill": "FIN-09",
-   "n": 43,
-   "rule": "length-cue",
-   "detail": "correct 156 chars vs 123"
-  },
-  {
-   "skill": "FIN-09",
    "n": 53,
    "rule": "option-long",
    "detail": "Sangat skeptis: tidak ada yang bisa mema"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 170 chars vs 128"
   },
   {
    "skill": "FIN-09",
@@ -1396,57 +874,9 @@
   },
   {
    "skill": "FIN-09",
-   "n": 59,
-   "rule": "length-cue",
-   "detail": "correct 178 chars vs 137"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 174 chars vs 134"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 169 chars vs 135"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 196 chars vs 136"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 82,
-   "rule": "length-cue",
-   "detail": "correct 183 chars vs 136"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 194 chars vs 142"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 177 chars vs 144"
-  },
-  {
-   "skill": "FIN-09",
    "n": 97,
    "rule": "option-long",
    "detail": "Tabung untuk keamanan, dana darurat, & t"
-  },
-  {
-   "skill": "FIN-09",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 255 chars vs 153"
   },
   {
    "skill": "COM-06",
@@ -1462,51 +892,15 @@
   },
   {
    "skill": "COM-08",
-   "n": 25,
-   "rule": "length-cue",
-   "detail": "correct 140 chars vs 115"
-  },
-  {
-   "skill": "COM-08",
-   "n": 47,
-   "rule": "length-cue",
-   "detail": "correct 158 chars vs 121"
-  },
-  {
-   "skill": "COM-08",
    "n": 55,
    "rule": "option-long",
    "detail": "Minta maaf dengan tulus & spesifik ('Maa"
   },
   {
    "skill": "COM-08",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 168 chars vs 121"
-  },
-  {
-   "skill": "COM-08",
-   "n": 82,
-   "rule": "length-cue",
-   "detail": "correct 154 chars vs 124"
-  },
-  {
-   "skill": "COM-08",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 175 chars vs 116"
-  },
-  {
-   "skill": "COM-08",
    "n": 97,
    "rule": "option-long",
    "detail": "Tulis dengan tujuan jelas & pembaca di b"
-  },
-  {
-   "skill": "COM-08",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 259 chars vs 171"
   },
   {
    "skill": "COL-01",
@@ -1828,129 +1222,9 @@
   },
   {
    "skill": "COL-08",
-   "n": 1,
-   "rule": "length-cue",
-   "detail": "correct 112 chars vs 38"
-  },
-  {
-   "skill": "COL-08",
-   "n": 2,
-   "rule": "length-cue",
-   "detail": "correct 66 chars vs 36"
-  },
-  {
-   "skill": "COL-08",
-   "n": 4,
-   "rule": "length-cue",
-   "detail": "correct 99 chars vs 49"
-  },
-  {
-   "skill": "COL-08",
-   "n": 5,
-   "rule": "length-cue",
-   "detail": "correct 106 chars vs 22"
-  },
-  {
-   "skill": "COL-08",
-   "n": 7,
-   "rule": "length-cue",
-   "detail": "correct 90 chars vs 33"
-  },
-  {
-   "skill": "COL-08",
-   "n": 8,
-   "rule": "length-cue",
-   "detail": "correct 106 chars vs 36"
-  },
-  {
-   "skill": "COL-08",
-   "n": 10,
-   "rule": "length-cue",
-   "detail": "correct 99 chars vs 27"
-  },
-  {
-   "skill": "COL-08",
-   "n": 15,
-   "rule": "length-cue",
-   "detail": "correct 92 chars vs 44"
-  },
-  {
-   "skill": "COL-08",
-   "n": 16,
-   "rule": "length-cue",
-   "detail": "correct 71 chars vs 30"
-  },
-  {
-   "skill": "COL-08",
-   "n": 17,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 44"
-  },
-  {
-   "skill": "COL-08",
-   "n": 18,
-   "rule": "length-cue",
-   "detail": "correct 99 chars vs 37"
-  },
-  {
-   "skill": "COL-08",
-   "n": 22,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 34"
-  },
-  {
-   "skill": "COL-08",
-   "n": 23,
-   "rule": "length-cue",
-   "detail": "correct 108 chars vs 30"
-  },
-  {
-   "skill": "COL-08",
-   "n": 24,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 37"
-  },
-  {
-   "skill": "COL-08",
-   "n": 31,
-   "rule": "length-cue",
-   "detail": "correct 129 chars vs 46"
-  },
-  {
-   "skill": "COL-08",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 42"
-  },
-  {
-   "skill": "COL-08",
-   "n": 36,
-   "rule": "length-cue",
-   "detail": "correct 152 chars vs 33"
-  },
-  {
-   "skill": "COL-08",
    "n": 41,
    "rule": "option-long",
    "detail": "Bahas: apa yang menyebabkan menyimpang? "
-  },
-  {
-   "skill": "COL-08",
-   "n": 41,
-   "rule": "length-cue",
-   "detail": "correct 164 chars vs 44"
-  },
-  {
-   "skill": "COL-08",
-   "n": 42,
-   "rule": "length-cue",
-   "detail": "correct 143 chars vs 42"
-  },
-  {
-   "skill": "COL-08",
-   "n": 43,
-   "rule": "length-cue",
-   "detail": "correct 140 chars vs 41"
   },
   {
    "skill": "COL-08",
@@ -1962,7 +1236,7 @@
    "skill": "COL-08",
    "n": 44,
    "rule": "length-cue",
-   "detail": "correct 179 chars vs 46"
+   "detail": "correct 179 chars vs 142"
   },
   {
    "skill": "COL-08",
@@ -1972,39 +1246,9 @@
   },
   {
    "skill": "COL-08",
-   "n": 46,
-   "rule": "length-cue",
-   "detail": "correct 171 chars vs 25"
-  },
-  {
-   "skill": "COL-08",
-   "n": 47,
-   "rule": "length-cue",
-   "detail": "correct 155 chars vs 36"
-  },
-  {
-   "skill": "COL-08",
-   "n": 48,
-   "rule": "length-cue",
-   "detail": "correct 113 chars vs 26"
-  },
-  {
-   "skill": "COL-08",
    "n": 51,
    "rule": "option-long",
    "detail": "Arahkan ke yang bisa kita kendalikan: 'O"
-  },
-  {
-   "skill": "COL-08",
-   "n": 51,
-   "rule": "length-cue",
-   "detail": "correct 172 chars vs 32"
-  },
-  {
-   "skill": "COL-08",
-   "n": 52,
-   "rule": "length-cue",
-   "detail": "correct 158 chars vs 39"
   },
   {
    "skill": "COL-08",
@@ -2014,33 +1258,9 @@
   },
   {
    "skill": "COL-08",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 172 chars vs 42"
-  },
-  {
-   "skill": "COL-08",
    "n": 54,
    "rule": "option-long",
    "detail": "Akui secara terbuka & spesifik: 'Data ya"
-  },
-  {
-   "skill": "COL-08",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 175 chars vs 41"
-  },
-  {
-   "skill": "COL-08",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 132 chars vs 43"
-  },
-  {
-   "skill": "COL-08",
-   "n": 56,
-   "rule": "length-cue",
-   "detail": "correct 157 chars vs 39"
   },
   {
    "skill": "COL-08",
@@ -2052,127 +1272,31 @@
    "skill": "COL-08",
    "n": 57,
    "rule": "length-cue",
-   "detail": "correct 180 chars vs 61"
-  },
-  {
-   "skill": "COL-08",
-   "n": 64,
-   "rule": "length-cue",
-   "detail": "correct 134 chars vs 52"
-  },
-  {
-   "skill": "COL-08",
-   "n": 65,
-   "rule": "length-cue",
-   "detail": "correct 136 chars vs 27"
-  },
-  {
-   "skill": "COL-08",
-   "n": 67,
-   "rule": "length-cue",
-   "detail": "correct 96 chars vs 29"
-  },
-  {
-   "skill": "COL-08",
-   "n": 69,
-   "rule": "length-cue",
-   "detail": "correct 172 chars vs 33"
-  },
-  {
-   "skill": "COL-08",
-   "n": 71,
-   "rule": "length-cue",
-   "detail": "correct 98 chars vs 31"
-  },
-  {
-   "skill": "COL-08",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 157 chars vs 55"
-  },
-  {
-   "skill": "COL-08",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 93 chars vs 37"
-  },
-  {
-   "skill": "COL-08",
-   "n": 76,
-   "rule": "length-cue",
-   "detail": "correct 157 chars vs 35"
-  },
-  {
-   "skill": "COL-08",
-   "n": 77,
-   "rule": "length-cue",
-   "detail": "correct 140 chars vs 51"
-  },
-  {
-   "skill": "COL-08",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 110 chars vs 45"
-  },
-  {
-   "skill": "COL-08",
-   "n": 79,
-   "rule": "length-cue",
-   "detail": "correct 135 chars vs 40"
+   "detail": "correct 180 chars vs 145"
   },
   {
    "skill": "COL-08",
    "n": 81,
    "rule": "length-cue",
-   "detail": "correct 221 chars vs 61"
+   "detail": "correct 221 chars vs 149"
   },
   {
    "skill": "COL-08",
    "n": 82,
    "rule": "length-cue",
-   "detail": "correct 209 chars vs 50"
+   "detail": "correct 209 chars vs 146"
   },
   {
    "skill": "COL-08",
    "n": 84,
    "rule": "length-cue",
-   "detail": "correct 209 chars vs 39"
-  },
-  {
-   "skill": "COL-08",
-   "n": 86,
-   "rule": "length-cue",
-   "detail": "correct 174 chars vs 41"
+   "detail": "correct 209 chars vs 156"
   },
   {
    "skill": "COL-08",
    "n": 88,
    "rule": "length-cue",
-   "detail": "correct 195 chars vs 43"
-  },
-  {
-   "skill": "COL-08",
-   "n": 89,
-   "rule": "length-cue",
-   "detail": "correct 169 chars vs 51"
-  },
-  {
-   "skill": "COL-08",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 171 chars vs 30"
-  },
-  {
-   "skill": "COL-08",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 114 chars vs 37"
-  },
-  {
-   "skill": "COL-08",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 160 chars vs 43"
+   "detail": "correct 195 chars vs 148"
   },
   {
    "skill": "COL-08",
@@ -2184,271 +1308,7 @@
    "skill": "COL-08",
    "n": 97,
    "rule": "length-cue",
-   "detail": "correct 276 chars vs 42"
-  },
-  {
-   "skill": "COL-08",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 167 chars vs 35"
-  },
-  {
-   "skill": "CRE-01",
-   "n": 36,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 94"
-  },
-  {
-   "skill": "CRE-01",
-   "n": 57,
-   "rule": "length-cue",
-   "detail": "correct 100 chars vs 78"
-  },
-  {
-   "skill": "CRE-01",
-   "n": 71,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 94"
-  },
-  {
-   "skill": "CRE-01",
-   "n": 83,
-   "rule": "length-cue",
-   "detail": "correct 116 chars vs 96"
-  },
-  {
-   "skill": "CRE-01",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 133 chars vs 103"
-  },
-  {
-   "skill": "CRE-01",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 116 chars vs 93"
-  },
-  {
-   "skill": "CRE-02",
-   "n": 26,
-   "rule": "length-cue",
-   "detail": "correct 121 chars vs 98"
-  },
-  {
-   "skill": "CRE-02",
-   "n": 31,
-   "rule": "length-cue",
-   "detail": "correct 136 chars vs 92"
-  },
-  {
-   "skill": "CRE-02",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 98"
-  },
-  {
-   "skill": "CRE-03",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 121 chars vs 100"
-  },
-  {
-   "skill": "CRE-03",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 135 chars vs 102"
-  },
-  {
-   "skill": "CRE-03",
-   "n": 87,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 96"
-  },
-  {
-   "skill": "CRE-03",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 107"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 126 chars vs 102"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 38,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 99"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 126 chars vs 104"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 67,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 106"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 101"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 83,
-   "rule": "length-cue",
-   "detail": "correct 151 chars vs 106"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 100"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 157 chars vs 104"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 125 chars vs 97"
-  },
-  {
-   "skill": "CRE-04",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 149 chars vs 102"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 19,
-   "rule": "length-cue",
-   "detail": "correct 137 chars vs 95"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 35,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 105"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 118 chars vs 96"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 127 chars vs 98"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 127 chars vs 102"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 89,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 102"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 133 chars vs 97"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 98,
-   "rule": "length-cue",
-   "detail": "correct 131 chars vs 103"
-  },
-  {
-   "skill": "CRE-05",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 136 chars vs 104"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 125 chars vs 101"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 68,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 98"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 71,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 106"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 72,
-   "rule": "length-cue",
-   "detail": "correct 123 chars vs 96"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 79,
-   "rule": "length-cue",
-   "detail": "correct 126 chars vs 101"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 86,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 99"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 134 chars vs 101"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 136 chars vs 101"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 127 chars vs 103"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 98,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 105"
-  },
-  {
-   "skill": "CRE-06",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 147 chars vs 110"
+   "detail": "correct 276 chars vs 166"
   },
   {
    "skill": "CRE-07",
@@ -2458,123 +1318,15 @@
   },
   {
    "skill": "CRE-07",
-   "n": 26,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 100"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 33,
-   "rule": "length-cue",
-   "detail": "correct 124 chars vs 97"
-  },
-  {
-   "skill": "CRE-07",
    "n": 40,
    "rule": "too-long",
    "detail": "451 chars"
   },
   {
    "skill": "CRE-07",
-   "n": 47,
-   "rule": "length-cue",
-   "detail": "correct 154 chars vs 104"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 132 chars vs 99"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 59,
-   "rule": "length-cue",
-   "detail": "correct 126 chars vs 96"
-  },
-  {
-   "skill": "CRE-07",
    "n": 60,
    "rule": "too-long",
    "detail": "461 chars"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 107"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 98"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 117 chars vs 97"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 83,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 102"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 87,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 104"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 145 chars vs 101"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 89,
-   "rule": "length-cue",
-   "detail": "correct 134 chars vs 106"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 99"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 135 chars vs 101"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 156 chars vs 107"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 163 chars vs 101"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 98,
-   "rule": "length-cue",
-   "detail": "correct 160 chars vs 107"
-  },
-  {
-   "skill": "CRE-07",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 200 chars vs 119"
   },
   {
    "skill": "DIG-01",
@@ -2613,94 +1365,10 @@
    "detail": "433 chars"
   },
   {
-   "skill": "DIG-06",
-   "n": 17,
-   "rule": "length-cue",
-   "detail": "correct 145 chars vs 120"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 1,
-   "rule": "length-cue",
-   "detail": "correct 103 chars vs 57"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 2,
-   "rule": "length-cue",
-   "detail": "correct 113 chars vs 37"
-  },
-  {
    "skill": "DIG-07",
    "n": 3,
    "rule": "length-cue",
-   "detail": "correct 154 chars vs 58"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 4,
-   "rule": "length-cue",
-   "detail": "correct 99 chars vs 38"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 5,
-   "rule": "length-cue",
-   "detail": "correct 101 chars vs 49"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 6,
-   "rule": "length-cue",
-   "detail": "correct 59 chars vs 47"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 7,
-   "rule": "length-cue",
-   "detail": "correct 77 chars vs 50"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 8,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 31"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 13,
-   "rule": "length-cue",
-   "detail": "correct 115 chars vs 51"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 14,
-   "rule": "length-cue",
-   "detail": "correct 58 chars vs 36"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 15,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 55"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 17,
-   "rule": "length-cue",
-   "detail": "correct 95 chars vs 33"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 18,
-   "rule": "length-cue",
-   "detail": "correct 114 chars vs 51"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 19,
-   "rule": "length-cue",
-   "detail": "correct 121 chars vs 35"
+   "detail": "correct 154 chars vs 128"
   },
   {
    "skill": "DIG-07",
@@ -2710,339 +1378,9 @@
   },
   {
    "skill": "DIG-07",
-   "n": 22,
-   "rule": "length-cue",
-   "detail": "correct 78 chars vs 49"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 24,
-   "rule": "length-cue",
-   "detail": "correct 109 chars vs 53"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 25,
-   "rule": "length-cue",
-   "detail": "correct 131 chars vs 52"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 26,
-   "rule": "length-cue",
-   "detail": "correct 97 chars vs 50"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 29,
-   "rule": "length-cue",
-   "detail": "correct 102 chars vs 63"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 31,
-   "rule": "length-cue",
-   "detail": "correct 112 chars vs 71"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 33,
-   "rule": "length-cue",
-   "detail": "correct 121 chars vs 52"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 113 chars vs 55"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 35,
-   "rule": "length-cue",
-   "detail": "correct 115 chars vs 58"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 36,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 70"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 38,
-   "rule": "length-cue",
-   "detail": "correct 83 chars vs 67"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 39,
-   "rule": "length-cue",
-   "detail": "correct 76 chars vs 35"
-  },
-  {
-   "skill": "DIG-07",
    "n": 40,
    "rule": "too-long",
    "detail": "461 chars"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 41,
-   "rule": "length-cue",
-   "detail": "correct 110 chars vs 56"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 42,
-   "rule": "length-cue",
-   "detail": "correct 107 chars vs 50"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 43,
-   "rule": "length-cue",
-   "detail": "correct 100 chars vs 63"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 44,
-   "rule": "length-cue",
-   "detail": "correct 104 chars vs 34"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 46,
-   "rule": "length-cue",
-   "detail": "correct 100 chars vs 54"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 47,
-   "rule": "length-cue",
-   "detail": "correct 82 chars vs 43"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 48,
-   "rule": "length-cue",
-   "detail": "correct 110 chars vs 62"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 49,
-   "rule": "length-cue",
-   "detail": "correct 150 chars vs 40"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 51,
-   "rule": "length-cue",
-   "detail": "correct 111 chars vs 74"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 97 chars vs 48"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 88 chars vs 53"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 115 chars vs 67"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 57,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 55"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 58,
-   "rule": "length-cue",
-   "detail": "correct 91 chars vs 41"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 59,
-   "rule": "length-cue",
-   "detail": "correct 134 chars vs 76"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 61,
-   "rule": "length-cue",
-   "detail": "correct 129 chars vs 49"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 62,
-   "rule": "length-cue",
-   "detail": "correct 94 chars vs 51"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 63,
-   "rule": "length-cue",
-   "detail": "correct 117 chars vs 56"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 65,
-   "rule": "length-cue",
-   "detail": "correct 108 chars vs 60"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 66,
-   "rule": "length-cue",
-   "detail": "correct 115 chars vs 58"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 67,
-   "rule": "length-cue",
-   "detail": "correct 141 chars vs 57"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 69,
-   "rule": "length-cue",
-   "detail": "correct 106 chars vs 61"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 71,
-   "rule": "length-cue",
-   "detail": "correct 119 chars vs 49"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 72,
-   "rule": "length-cue",
-   "detail": "correct 122 chars vs 75"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 86 chars vs 53"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 74,
-   "rule": "length-cue",
-   "detail": "correct 134 chars vs 61"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 77,
-   "rule": "length-cue",
-   "detail": "correct 98 chars vs 49"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 148 chars vs 72"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 79,
-   "rule": "length-cue",
-   "detail": "correct 114 chars vs 51"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 116 chars vs 60"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 82,
-   "rule": "length-cue",
-   "detail": "correct 94 chars vs 56"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 83,
-   "rule": "length-cue",
-   "detail": "correct 99 chars vs 40"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 84,
-   "rule": "length-cue",
-   "detail": "correct 79 chars vs 47"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 86,
-   "rule": "length-cue",
-   "detail": "correct 146 chars vs 73"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 87,
-   "rule": "length-cue",
-   "detail": "correct 143 chars vs 67"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 88,
-   "rule": "length-cue",
-   "detail": "correct 125 chars vs 64"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 89,
-   "rule": "length-cue",
-   "detail": "correct 130 chars vs 55"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 141 chars vs 61"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 159 chars vs 79"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 94,
-   "rule": "length-cue",
-   "detail": "correct 98 chars vs 55"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 138 chars vs 56"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 128 chars vs 64"
-  },
-  {
-   "skill": "DIG-07",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 175 chars vs 76"
   },
   {
    "skill": "DIG-08",
@@ -3880,705 +2218,69 @@
   },
   {
    "skill": "WEL-07",
-   "n": 2,
-   "rule": "length-cue",
-   "detail": "correct 90 chars vs 40"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 8,
-   "rule": "length-cue",
-   "detail": "correct 48 chars vs 38"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 9,
-   "rule": "length-cue",
-   "detail": "correct 68 chars vs 44"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 10,
-   "rule": "length-cue",
-   "detail": "correct 76 chars vs 57"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 14,
-   "rule": "length-cue",
-   "detail": "correct 58 chars vs 37"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 18,
-   "rule": "length-cue",
-   "detail": "correct 65 chars vs 53"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 22,
-   "rule": "length-cue",
-   "detail": "correct 76 chars vs 44"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 23,
-   "rule": "length-cue",
-   "detail": "correct 37 chars vs 29"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 27,
-   "rule": "length-cue",
-   "detail": "correct 59 chars vs 34"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 29,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 49"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 30,
-   "rule": "length-cue",
-   "detail": "correct 62 chars vs 45"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 54 chars vs 40"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 37,
-   "rule": "length-cue",
-   "detail": "correct 76 chars vs 38"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 39,
-   "rule": "length-cue",
-   "detail": "correct 72 chars vs 55"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 43,
-   "rule": "length-cue",
-   "detail": "correct 71 chars vs 50"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 46,
-   "rule": "length-cue",
-   "detail": "correct 86 chars vs 34"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 47,
-   "rule": "length-cue",
-   "detail": "correct 50 chars vs 39"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 49,
-   "rule": "length-cue",
-   "detail": "correct 74 chars vs 39"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 50,
-   "rule": "length-cue",
-   "detail": "correct 42 chars vs 35"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 51,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 45"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 54"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 83 chars vs 39"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 87 chars vs 50"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 57,
-   "rule": "length-cue",
-   "detail": "correct 78 chars vs 31"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 59,
-   "rule": "length-cue",
-   "detail": "correct 47 chars vs 37"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 60,
-   "rule": "length-cue",
-   "detail": "correct 57 chars vs 34"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 61,
-   "rule": "length-cue",
-   "detail": "correct 81 chars vs 42"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 62,
-   "rule": "length-cue",
-   "detail": "correct 77 chars vs 41"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 63,
-   "rule": "length-cue",
-   "detail": "correct 88 chars vs 45"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 67,
-   "rule": "length-cue",
-   "detail": "correct 72 chars vs 48"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 69,
-   "rule": "length-cue",
-   "detail": "correct 84 chars vs 49"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 72,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 48"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 77 chars vs 42"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 76,
-   "rule": "length-cue",
-   "detail": "correct 104 chars vs 42"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 77,
-   "rule": "length-cue",
-   "detail": "correct 89 chars vs 55"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 77 chars vs 40"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 79,
-   "rule": "length-cue",
-   "detail": "correct 68 chars vs 39"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 80,
-   "rule": "length-cue",
-   "detail": "correct 74 chars vs 33"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 81,
-   "rule": "length-cue",
-   "detail": "correct 68 chars vs 36"
-  },
-  {
-   "skill": "WEL-07",
    "n": 83,
    "rule": "length-cue",
-   "detail": "correct 109 chars vs 41"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 84,
-   "rule": "length-cue",
-   "detail": "correct 94 chars vs 42"
+   "detail": "correct 109 chars vs 89"
   },
   {
    "skill": "WEL-07",
    "n": 85,
    "rule": "length-cue",
-   "detail": "correct 118 chars vs 72"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 86,
-   "rule": "length-cue",
-   "detail": "correct 105 chars vs 40"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 87,
-   "rule": "length-cue",
-   "detail": "correct 72 chars vs 41"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 89,
-   "rule": "length-cue",
-   "detail": "correct 102 chars vs 33"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 90,
-   "rule": "length-cue",
-   "detail": "correct 76 chars vs 40"
+   "detail": "correct 118 chars vs 92"
   },
   {
    "skill": "WEL-07",
    "n": 91,
    "rule": "length-cue",
-   "detail": "correct 117 chars vs 60"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 91 chars vs 52"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 95,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 41"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 71 chars vs 42"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 97,
-   "rule": "length-cue",
-   "detail": "correct 74 chars vs 42"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 98,
-   "rule": "length-cue",
-   "detail": "correct 92 chars vs 43"
-  },
-  {
-   "skill": "WEL-07",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 100 chars vs 45"
+   "detail": "correct 117 chars vs 88"
   },
   {
    "skill": "WEL-07",
    "n": 100,
    "rule": "length-cue",
-   "detail": "correct 139 chars vs 63"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 1,
-   "rule": "length-cue",
-   "detail": "correct 59 chars vs 43"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 3,
-   "rule": "length-cue",
-   "detail": "correct 51 chars vs 37"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 4,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 43"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 5,
-   "rule": "length-cue",
-   "detail": "correct 66 chars vs 38"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 7,
-   "rule": "length-cue",
-   "detail": "correct 83 chars vs 46"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 8,
-   "rule": "length-cue",
-   "detail": "correct 64 chars vs 35"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 9,
-   "rule": "length-cue",
-   "detail": "correct 52 chars vs 43"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 12,
-   "rule": "length-cue",
-   "detail": "correct 70 chars vs 35"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 14,
-   "rule": "length-cue",
-   "detail": "correct 82 chars vs 36"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 16,
-   "rule": "length-cue",
-   "detail": "correct 77 chars vs 42"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 18,
-   "rule": "length-cue",
-   "detail": "correct 69 chars vs 30"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 20,
-   "rule": "length-cue",
-   "detail": "correct 101 chars vs 46"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 22,
-   "rule": "length-cue",
-   "detail": "correct 91 chars vs 40"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 23,
-   "rule": "length-cue",
-   "detail": "correct 56 chars vs 35"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 25,
-   "rule": "length-cue",
-   "detail": "correct 72 chars vs 30"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 26,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 28"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 27,
-   "rule": "length-cue",
-   "detail": "correct 107 chars vs 49"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 30,
-   "rule": "length-cue",
-   "detail": "correct 81 chars vs 39"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 31,
-   "rule": "length-cue",
-   "detail": "correct 70 chars vs 37"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 34,
-   "rule": "length-cue",
-   "detail": "correct 93 chars vs 35"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 35,
-   "rule": "length-cue",
-   "detail": "correct 81 chars vs 50"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 37,
-   "rule": "length-cue",
-   "detail": "correct 70 chars vs 44"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 41,
-   "rule": "length-cue",
-   "detail": "correct 100 chars vs 37"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 42,
-   "rule": "length-cue",
-   "detail": "correct 96 chars vs 39"
+   "detail": "correct 139 chars vs 99"
   },
   {
    "skill": "WEL-08",
    "n": 43,
    "rule": "length-cue",
-   "detail": "correct 130 chars vs 31"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 45,
-   "rule": "length-cue",
-   "detail": "correct 90 chars vs 37"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 46,
-   "rule": "length-cue",
-   "detail": "correct 96 chars vs 41"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 47,
-   "rule": "length-cue",
-   "detail": "correct 76 chars vs 32"
+   "detail": "correct 130 chars vs 98"
   },
   {
    "skill": "WEL-08",
    "n": 49,
    "rule": "length-cue",
-   "detail": "correct 116 chars vs 44"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 50,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 50"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 51,
-   "rule": "length-cue",
-   "detail": "correct 94 chars vs 44"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 53,
-   "rule": "length-cue",
-   "detail": "correct 81 chars vs 41"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 54,
-   "rule": "length-cue",
-   "detail": "correct 94 chars vs 39"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 55,
-   "rule": "length-cue",
-   "detail": "correct 80 chars vs 46"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 57,
-   "rule": "length-cue",
-   "detail": "correct 86 chars vs 45"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 59,
-   "rule": "length-cue",
-   "detail": "correct 96 chars vs 40"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 60,
-   "rule": "length-cue",
-   "detail": "correct 113 chars vs 48"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 61,
-   "rule": "length-cue",
-   "detail": "correct 82 chars vs 35"
+   "detail": "correct 116 chars vs 95"
   },
   {
    "skill": "WEL-08",
    "n": 62,
    "rule": "length-cue",
-   "detail": "correct 130 chars vs 42"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 65,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 49"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 67,
-   "rule": "length-cue",
-   "detail": "correct 82 chars vs 53"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 72,
-   "rule": "length-cue",
-   "detail": "correct 74 chars vs 41"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 73,
-   "rule": "length-cue",
-   "detail": "correct 100 chars vs 52"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 76,
-   "rule": "length-cue",
-   "detail": "correct 118 chars vs 56"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 77,
-   "rule": "length-cue",
-   "detail": "correct 67 chars vs 54"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 78,
-   "rule": "length-cue",
-   "detail": "correct 94 chars vs 42"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 79,
-   "rule": "length-cue",
-   "detail": "correct 87 chars vs 61"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 80,
-   "rule": "length-cue",
-   "detail": "correct 69 chars vs 48"
+   "detail": "correct 130 chars vs 94"
   },
   {
    "skill": "WEL-08",
    "n": 81,
    "rule": "length-cue",
-   "detail": "correct 123 chars vs 43"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 83,
-   "rule": "length-cue",
-   "detail": "correct 89 chars vs 33"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 84,
-   "rule": "length-cue",
-   "detail": "correct 78 chars vs 61"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 85,
-   "rule": "length-cue",
-   "detail": "correct 105 chars vs 39"
+   "detail": "correct 123 chars vs 90"
   },
   {
    "skill": "WEL-08",
    "n": 86,
    "rule": "length-cue",
-   "detail": "correct 123 chars vs 42"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 87,
-   "rule": "length-cue",
-   "detail": "correct 75 chars vs 53"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 90,
-   "rule": "length-cue",
-   "detail": "correct 98 chars vs 44"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 91,
-   "rule": "length-cue",
-   "detail": "correct 105 chars vs 45"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 93,
-   "rule": "length-cue",
-   "detail": "correct 95 chars vs 44"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 95,
-   "rule": "length-cue",
-   "detail": "correct 116 chars vs 39"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 96,
-   "rule": "length-cue",
-   "detail": "correct 86 chars vs 39"
+   "detail": "correct 123 chars vs 99"
   },
   {
    "skill": "WEL-08",
    "n": 97,
    "rule": "length-cue",
-   "detail": "correct 116 chars vs 71"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 98,
-   "rule": "length-cue",
-   "detail": "correct 87 chars vs 58"
-  },
-  {
-   "skill": "WEL-08",
-   "n": 99,
-   "rule": "length-cue",
-   "detail": "correct 87 chars vs 46"
+   "detail": "correct 116 chars vs 92"
   },
   {
    "skill": "WEL-08",
    "n": 100,
    "rule": "length-cue",
-   "detail": "correct 165 chars vs 74"
+   "detail": "correct 165 chars vs 105"
   },
   {
    "skill": "CIV-05",
