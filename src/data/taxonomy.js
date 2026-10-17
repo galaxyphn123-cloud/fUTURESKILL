@@ -10170,5 +10170,95 @@ export const TAXONOMY = {
   "age_entry": "C",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-02"
+ },
+ "LHL-04": {
+  "id": "LHL-04",
+  "domain": "LHL",
+  "name": "Mengatur Waktu Belajar",
+  "micro": [
+   {
+    "id": "LHL-04.01",
+    "name": "Mengenal waktu",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-04.02",
+    "name": "Urutan kegiatan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-04.03",
+    "name": "Jadwal sederhana",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-04.04",
+    "name": "Memperkirakan waktu",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-04.05",
+    "name": "Prioritas",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-04.06",
+    "name": "Menunda",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-04.07",
+    "name": "Menalar waktu",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-04.08",
+    "name": "Kekeliruan jadwal",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-04.09",
+    "name": "Rencana mingguan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-04.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-03"
  }
 };
