@@ -9990,5 +9990,95 @@ export const TAXONOMY = {
   "age_entry": "A",
   "age_source": "heuristic",
   "prerequisite_skill": null
+ },
+ "LHL-02": {
+  "id": "LHL-02",
+  "domain": "LHL",
+  "name": "Fokus & Perhatian",
+  "micro": [
+   {
+    "id": "LHL-02.01",
+    "name": "Apa itu fokus",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LHL-02.02",
+    "name": "Mengenali gangguan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LHL-02.03",
+    "name": "Tubuh yang siap fokus",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LHL-02.04",
+    "name": "Satu tugas satu waktu",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LHL-02.05",
+    "name": "Lingkungan fokus",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LHL-02.06",
+    "name": "Pikiran melantur",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LHL-02.07",
+    "name": "Menalar perhatian",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LHL-02.08",
+    "name": "Menemukan kekeliruan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LHL-02.09",
+    "name": "Rutinitas fokus",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LHL-02.10",
+    "name": "Refleksi dan penerapan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LHL-01"
  }
 };
