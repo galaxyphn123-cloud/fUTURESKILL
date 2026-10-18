@@ -22,6 +22,10 @@ assert.ok(balanceFlags(longRight).some(f => f.rule === "longest-skew"), "long-an
 const absSkew = make((n, i) => { const a = rot(i); const o = ["Dia selalu menang", "Hasilnya pasti sama"]; o.splice(a, 0, "Hasilnya bisa berbeda tiap kali"); return mk(n, a, o); });
 assert.ok(balanceFlags(absSkew).some(f => f.rule === "absolute-skew"), "absolute-word skew must be flagged");
 
+// 3b. justification clause only in wrong options
+const ratSkew = make((n, i) => { const a = rot(i); const o = ["Salah karena alasan yang keliru", "Salah sehingga hasilnya rusak"]; o.splice(a, 0, "Benar dan ringkas saja ya"); return mk(n, a, o); });
+assert.ok(balanceFlags(ratSkew).some(f => f.rule === "rationale-skew"), "rationale-clause skew must be flagged");
+
 // 4. balanced: rotating slots, right answer longest/shortest/middle in equal parts
 const ok = make((n, i) => { const a = rot(i); const len = [["Benar yang paling panjang sekali di sini", "Salah satu yang cukup pendek", "Salah dua yang sedang saja"], ["Benar pendek saja", "Salah satu lebih panjang dari itu", "Salah dua yang paling panjang dari semuanya"], ["Benar yang sedang saja ya", "Salah satu pendek", "Salah dua paling panjang nih ya betul"]][i % 3]; const o = [len[1], len[2]]; o.splice(a, 0, len[0]); return mk(n, a, o); });
 assert.deepEqual(balanceFlags(ok), []);

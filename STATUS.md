@@ -83,3 +83,8 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
   - `scripts/balance-targets.mjs ID` - daftar soal yang perlu diubah + jumlah yang dibutuhkan; `scripts/legacy-edit.mjs show|apply` - edit q/hint/explain/options tanpa mengubah `answer`.
   - `test/balance.test.mjs` menguji mesin sendiri (slot A, jawaban-terpanjang, mutlak, kasus seimbang, ratchet).
 - Catatan jujur: mesin hanya menangkap pola statistik yang bisa diukur; kualitas pengecoh (masuk akal, jelas salah, usia) tetap butuh tinjauan manusia, dan teks baru sejak ronde 2 belum ditinjau manusia. Pada soal numerik pendek (M-25/27/29) beberapa pengecoh diberi anotasi singkat (mis. "5 (nilai c)") agar panjang sebanding; mungkin terasa ganjil.
+
+### Tinjauan sampel (ronde 7b)
+- Sampel acak 72 soal (6 per domain, 12 domain) dibaca manual: tidak ada pengecoh yang ikut benar; beberapa pengecoh terasa "kartun" (mis. LHL-02#61 "jam dinding berputar lebih cepat") tapi tidak salah. Sampel 0,6% - bukan jaminan.
+- **Temuan baru (tell yang dibuat oleh gaya penulisan pengecoh):** klausa alasan (`karena/sebab/supaya/sehingga/agar`) muncul di 23-72% opsi SALAH tetapi hanya 6-14% opsi BENAR (mis. DIG 72% vs 12%, COL 71% vs 10%, FIN 65% vs 13%, PS 60% vs 11%). Anak bisa memilih opsi tanpa "karena...". Metrik `rationale-skew` ditambahkan ke mesin (batas 25 poin untuk skill baru).
+- 72 skill lama melanggar batas ini; dicatat di `scripts/lib/balance-baseline.json` sebagai ratchet (tidak boleh memburuk), BELUM diperbaiki. Perbaikannya: buang klausa alasan dari sebagian pengecoh dan/atau beri alasan pada opsi benar, sambil menjaga panjang tetap seimbang (kalau tidak, longest-skew kembali). Itu ronde tersendiri.

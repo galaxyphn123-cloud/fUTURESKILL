@@ -14,7 +14,7 @@ import { balanceFlags, balanceMetrics } from "./lib/skillBalance.mjs";
 
 const basePath = new URL("./lib/balance-baseline.json", import.meta.url);
 const baseline = fs.existsSync(basePath) ? JSON.parse(fs.readFileSync(basePath, "utf8")) : {};
-const RULE_KEY = { "position-skew": "slotShare", "position-run": "run", "longest-skew": "longest", "shortest-skew": "shortest", "absolute-skew": "absolute" };
+const RULE_KEY = { "position-skew": "slotShare", "position-run": "run", "longest-skew": "longest", "shortest-skew": "shortest", "absolute-skew": "absolute", "rationale-skew": "rationale" };
 
 if (process.argv.includes("--update-baseline")) {
   const next = {};
@@ -23,7 +23,7 @@ if (process.argv.includes("--update-baseline")) {
     if (!cur.length) continue;
     const m = balanceMetrics(acts), old = baseline[id] || {};
     next[id] = {};
-    for (const f of cur) { const v = m[RULE_KEY[f.rule]]; next[id][f.rule] = +Math.min(v, old[f.rule] ?? Infinity).toFixed(3); }
+    for (const f of cur) { const v = m[RULE_KEY[f.rule]]; next[id][f.rule] = Math.ceil(Math.min(v, old[f.rule] ?? Infinity) * 1000) / 1000; }
   }
   fs.writeFileSync(basePath, JSON.stringify(next, null, 1) + "\n");
   console.log("baseline entries:", Object.keys(next).length);

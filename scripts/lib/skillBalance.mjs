@@ -4,17 +4,19 @@
      position-run    >=4 MCQs in a row with the correct option in the same slot
      longest-skew    the right answer is the longest option much more often than chance
      shortest-skew   ... or the shortest
-     absolute-skew   (net) distractors carry "selalu/pasti/..." while the right answer does not, too often
+     rationale-skew  wrong options carry a justification clause (karena/sebab/supaya/sehingga/agar) far more often than the right one
+   absolute-skew   (net) distractors carry "selalu/pasti/..." while the right answer does not, too often
    Thresholds are chance + margin, so 2-, 3- and 4-option items are all handled. */
 const ABSOLUTE = /\b(selalu|pasti|sama sekali|semua orang|tidak pernah|selamanya|apa pun|siapa pun|tidak ada yang|satu-satunya)\b/i;
-export const LIMITS = { position: 0.12, run: 4, longest: 0.17, shortest: 0.12, absolute: 0.12, minMcq: 20 };
+const RATIONALE = /\b(karena|sebab|supaya|sehingga|agar)\b/i;
+export const LIMITS = { position: 0.12, run: 4, longest: 0.17, shortest: 0.12, absolute: 0.12, rationale: 0.25, minMcq: 20 };
 
 export function balanceMetrics(acts) {
   const mcq = acts.filter(a => a.type === "mcq" && Array.isArray(a.options) && Number.isInteger(a.answer));
   const m = { mcq: mcq.length, chance: 0, slotShare: 0, slot: 0, run: 0, longest: 0, shortest: 0, absolute: 0 };
   if (!mcq.length) return m;
   const slots = {};
-  let longest = 0, shortest = 0, absolute = 0, run = 1, maxRun = 1, chance = 0;
+  let longest = 0, shortest = 0, absolute = 0, ratRight = 0, ratWrong = 0, nWrong = 0, run = 1, maxRun = 1, chance = 0;
   mcq.forEach((a, i) => {
     slots[a.answer] = (slots[a.answer] || 0) + 1;
     const L = a.options.map(o => o.length), right = L[a.answer], k = L.length;
@@ -25,11 +27,12 @@ export function balanceMetrics(acts) {
     const abs = a.options.map(o => ABSOLUTE.test(o));
     if (!abs[a.answer] && abs.some((x, j) => x && j !== a.answer)) absolute++;
     else if (abs[a.answer] && !abs.some((x, j) => x && j !== a.answer)) absolute--; // absolutes only in the RIGHT answer cancel out: that is not a tell
+    a.options.forEach((o, j) => { if (j === a.answer) { if (RATIONALE.test(o)) ratRight++; } else { nWrong++; if (RATIONALE.test(o)) ratWrong++; } });
     if (i && mcq[i - 1].answer === a.answer) { run++; maxRun = Math.max(maxRun, run); } else run = 1;
   });
   const [slot, count] = Object.entries(slots).sort((x, y) => y[1] - x[1])[0];
   const n = mcq.length;
-  return { mcq: n, chance: chance / n, slot: +slot, slotShare: count / n, slotChance: 1 / Math.round(n / (chance || 1)), run: maxRun, longest: longest / n, shortest: shortest / n, absolute: absolute / n, avgOptions: n / chance };
+  return { mcq: n, chance: chance / n, slot: +slot, slotShare: count / n, slotChance: 1 / Math.round(n / (chance || 1)), run: maxRun, longest: longest / n, shortest: shortest / n, absolute: absolute / n, rationale: ratWrong / (nWrong || 1) - ratRight / n, avgOptions: n / chance };
 }
 
 /* Returns [{rule, value, limit, detail}]. `baseline` (optional) = previous metrics for a legacy skill:
@@ -47,5 +50,6 @@ export function balanceFlags(acts, baseline = null) {
   test("longest-skew", m.longest, m.chance + LIMITS.longest, `right answer is the longest in ${Math.round(m.longest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%)`);
   test("shortest-skew", m.shortest, m.chance + LIMITS.shortest, `right answer is the shortest in ${Math.round(m.shortest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%)`);
   test("absolute-skew", m.absolute, LIMITS.absolute, `${Math.round(m.absolute * 100)}% of MCQs have absolute words only in distractors`);
+  test("rationale-skew", m.rationale, LIMITS.rationale, `wrong options contain a justification clause ${Math.round(m.rationale * 100)} points more often than the right one`);
   return out;
 }
