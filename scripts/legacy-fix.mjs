@@ -8,15 +8,8 @@ import { pathToFileURL } from "node:url";
 import { SKILL_CONTENT } from "../src/data/skillContent.js";
 import { LHL_SKILLS } from "../src/data/activities/lhl/index.js";
 import { checkSkill } from "./lib/checkSkill.mjs";
+import { fileFor } from "./lib/legacyFiles.mjs";
 
-const root = path.resolve(new URL("..", import.meta.url).pathname);
-const sc = fs.readFileSync(path.join(root, "src/data/skillContent.js"), "utf8");
-const importOf = Object.fromEntries([...sc.matchAll(/import \{ (\w+) \} from "\.\/activities\/(\w+)\.js";/g)].map(m => [m[1], m[2]]));
-const idToExport = Object.fromEntries([...sc.matchAll(/"([A-Z]+-\d+)":\s*(\w+_ACTIVITIES)/g)].map(m => [m[1], m[2]]));
-export function fileFor(id) {
-  const exp = idToExport[id]; if (!exp || !importOf[exp]) return null;
-  return { exp, file: path.join(root, "src/data/activities", importOf[exp] + ".js") };
-}
 const CUES = new Set(["length-cue", "short-cue", "absolute-word"]);
 const lhl = new Set(LHL_SKILLS.map(s => s.id));
 const flagged = id => checkSkill(id, SKILL_CONTENT[id]).filter(f => CUES.has(f.rule)).map(f => f.n);
