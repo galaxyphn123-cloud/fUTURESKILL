@@ -60,3 +60,10 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - Hasil ukur (jawaban benar terpendek / terpanjang / kata mutlak di opsi salah): CRE 23%/43%/11%; FIN 27%/61%/43% -> 19%/50%/13%.
 - `npm test` lolos; `npm run quality`: NEEDS REVIEW 731 (turun dari 1.057): absolute-word 373, short-cue 278, option-long 261, too-long 23, hint-leak 2 (sisa terutama di CT, M, PS, AI dan konten LHL; domain yang sudah dikerjakan tidak lagi kena tiga aturan cue).
 - Masih tersisa: CT, M, PS, AI. Teks baru belum ditinjau manusia; sebagian pengecoh mungkin masih terasa dibuat-buat atau terlalu seragam.
+
+## Perapian cue pengecoh CT, M, PS & AI (ronde 5)
+- Metode sama; dikerjakan lima sub-agen paralel (pengecoh ditulis manual per soal, jawaban benar dan posisinya tidak diubah): CT-01..08, M-02..29, PS-01..08, AI-01..08 (sekitar 1.400 soal).
+- Hasil ukur (benar terpendek / terpanjang / kata mutlak di opsi salah): CT 15%/45%/6%; M 12%/25%/7%; PS 20%/54%/13%; AI 19%/48%/16%.
+- `npm test` lolos. `npm run quality`: NEEDS REVIEW 209 (dari 731): absolute-word 21, short-cue 37 (keduanya hanya di konten LHL baru), option-long 256, too-long 23, hint-leak 2. Semua domain lama bersih dari `length-cue`/`short-cue`/`absolute-word`.
+- Perbaikan data: PS-03 #18 (solutionStrategies.js) kuncinya salah (`answer:2` padahal opsi 0 yang benar) -> `answer:0` dan pengecoh ditulis ulang. M-14 #34: pengecoh lama ("90 + 30 kotak") ternyata ikut benar (=120), diganti.
+- Teks baru belum ditinjau manusia; sebagian pengecoh mungkin masih terasa dibuat-buat atau seragam. Sisa: flag LHL (cue), `option-long`, `too-long`, `hint-leak`.
