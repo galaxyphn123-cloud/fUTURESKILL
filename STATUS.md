@@ -72,3 +72,14 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - 58 soal LHL-01..08 (short-cue/absolute-word) ditulis ulang pengecohnya lewat `scripts/patch-distractors.mjs` + `normalize-file.mjs` (posisi jawaban dirotasi ulang).
 - `npm test` lolos; `npm run quality`: NEEDS REVIEW 152 (dari 209) — hanya `option-long` (flag per-opsi, 256 opsi), `too-long` 23, `hint-leak` 2. Tidak ada lagi flag `length-cue`/`short-cue`/`absolute-word` di seluruh konten.
 - Teks baru belum ditinjau manusia.
+
+## Ronde 7: opsi/pertanyaan panjang, hint-leak, dan mesin gerbang konten
+- `option-long` (256 opsi), `too-long` (23) dan `hint-leak` (2) dibereskan: teks diringkas tanpa mengubah indeks `answer`; pengecoh disesuaikan agar tidak muncul cue baru. `npm run quality`: NEEDS REVIEW **0** dari 11.800 aktivitas.
+- Temuan: setelah cue per-soal bersih, jawaban benar masih opsi TERPANJANG di 50-70% soal pada ~33 skill (peluang 33%). Ini ditandai mesin baru dan diturunkan ke 37-40% dengan memperpanjang SATU pengecoh (klausa keliru yang substantif) di ~10-24 soal per skill; kata mutlak yang hanya muncul di pengecoh LHL/M juga dibersihkan.
+- **Mesin penjaga (untuk domain berikutnya):**
+  - `scripts/lib/skillBalance.mjs` - metrik per skill: `position-skew` (satu slot jawaban, mis. A, melebihi jatah wajar +12%), `position-run` (>=4 soal berturut-turut slot sama), `longest-skew` (benar = terpanjang > peluang +17%), `shortest-skew` (+12%), `absolute-skew` (kata mutlak hanya di pengecoh, neto, >12%). Batas = peluang + margin sehingga 2/3/4 opsi sama-sama ditangani.
+  - `scripts/gate.mjs` (`npm run gate`, ikut `npm test`): gagal bila ada flag per-soal apa pun ATAU pelanggaran per-skill. `scripts/lib/balance-baseline.json` (opsional, ratchet) memungkinkan skill lama tetap di skew tercatat tapi tidak memburuk; skill baru wajib memenuhi batas penuh. Saat ini baseline kosong: seluruh 118 skill lolos batas penuh.
+  - `scripts/check-file.mjs` (validasi saat menulis skill baru) kini juga gagal pada pelanggaran per-skill.
+  - `scripts/balance-targets.mjs ID` - daftar soal yang perlu diubah + jumlah yang dibutuhkan; `scripts/legacy-edit.mjs show|apply` - edit q/hint/explain/options tanpa mengubah `answer`.
+  - `test/balance.test.mjs` menguji mesin sendiri (slot A, jawaban-terpanjang, mutlak, kasus seimbang, ratchet).
+- Catatan jujur: mesin hanya menangkap pola statistik yang bisa diukur; kualitas pengecoh (masuk akal, jelas salah, usia) tetap butuh tinjauan manusia, dan teks baru sejak ronde 2 belum ditinjau manusia. Pada soal numerik pendek (M-25/27/29) beberapa pengecoh diberi anotasi singkat (mis. "5 (nilai c)") agar panjang sebanding; mungkin terasa ganjil.

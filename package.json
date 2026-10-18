@@ -7,9 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "test": "node test/adaptive.test.mjs && node test/sessions.test.mjs && node test/profile.test.mjs && node test/missions.test.mjs && node scripts/gate.mjs",
+    "test": "node test/adaptive.test.mjs && node test/sessions.test.mjs && node test/profile.test.mjs && node test/missions.test.mjs && node test/balance.test.mjs && node scripts/gate.mjs",
     "quality": "node scripts/quality-check.mjs",
-    "gate": "node scripts/gate.mjs"
+    "gate": "node test/balance.test.mjs && node scripts/gate.mjs"
   },
   "dependencies": {
     "react": "^18.3.1",
