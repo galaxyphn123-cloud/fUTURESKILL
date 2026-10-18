@@ -54,3 +54,9 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - Hasil ukur (jawaban benar terpendek / terpanjang / kata mutlak di opsi salah): CIV 57%/-/38% -> 17%/33%/14%; COL 43%/-/ -> 21%/43%/14%; COM 45%/43%/38% -> 23%/43%/5%.
 - Checker: semua 24 skill di atas bersih dari `length-cue`/`short-cue`/`absolute-word` (`npm run quality`: NEEDS REVIEW 1.057, turun dari 1.671).
 - Masih tersisa: CT, M, PS, AI, FIN, CRE (kebanyakan `short-cue`, `option-long`) dan 12 item FIN lama. Teks baru belum ditinjau manusia; sebagian pengecoh mungkin masih terasa dibuat-buat.
+
+## Perapian cue pengecoh CRE & FIN (ronde 4)
+- Metode sama: pengecoh ditulis ulang manual untuk soal yang terflag `length-cue`/`short-cue`/`absolute-word`; jawaban benar dan posisinya tidak diubah. CRE-01..08 dan FIN-01..09 selesai.
+- Hasil ukur (jawaban benar terpendek / terpanjang / kata mutlak di opsi salah): CRE 23%/43%/11%; FIN 27%/61%/43% -> 19%/50%/13%.
+- `npm test` lolos; `npm run quality`: NEEDS REVIEW 731 (turun dari 1.057): absolute-word 373, short-cue 278, option-long 261, too-long 23, hint-leak 2 (sisa terutama di CT, M, PS, AI dan konten LHL; domain yang sudah dikerjakan tidak lagi kena tiga aturan cue).
+- Masih tersisa: CT, M, PS, AI. Teks baru belum ditinjau manusia; sebagian pengecoh mungkin masih terasa dibuat-buat atau terlalu seragam.
