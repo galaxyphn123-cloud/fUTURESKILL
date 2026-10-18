@@ -24,5 +24,11 @@ for (const id of process.argv.slice(2)) {
     });
   }
   const abs = flags.find(f => f.rule === "absolute-skew");
-  if (abs) console.log("-- absolute-skew: " + abs.detail + "; give the RIGHT answer a hedge-free but absolute-looking word or strip it from distractors");
+  if (abs) {
+    const A = /\b(selalu|pasti|sama sekali|semua orang|tidak pernah|selamanya|apa pun|siapa pun|tidak ada yang|satu-satunya)\b/i;
+    const rows = acts.filter(a => a.type === "mcq" && !A.test(a.options[a.answer]) && a.options.some((o, i) => i !== a.answer && A.test(o)));
+    const need = Math.ceil(m.mcq * (m.absolute - 0.04));
+    console.log(`-- absolute-skew: ${abs.detail}. Remove the absolute word from distractors (reword to a plausible hedged-but-wrong claim) in ~${need} of these ${rows.length}:`);
+    rows.forEach(a => { console.log(`${a.n}. ${a.q}`); a.options.forEach((o, i) => console.log(`   ${i === a.answer ? "*" : " "}${i} (${o.length}) ${o}`)); });
+  }
 }

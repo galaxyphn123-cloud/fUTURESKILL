@@ -4,7 +4,7 @@
      position-run    >=4 MCQs in a row with the correct option in the same slot
      longest-skew    the right answer is the longest option much more often than chance
      shortest-skew   ... or the shortest
-     absolute-skew   distractors carry "selalu/pasti/..." while the right answer does not, too often
+     absolute-skew   (net) distractors carry "selalu/pasti/..." while the right answer does not, too often
    Thresholds are chance + margin, so 2-, 3- and 4-option items are all handled. */
 const ABSOLUTE = /\b(selalu|pasti|sama sekali|semua orang|tidak pernah|selamanya|apa pun|siapa pun|tidak ada yang|satu-satunya)\b/i;
 export const LIMITS = { position: 0.12, run: 4, longest: 0.17, shortest: 0.12, absolute: 0.12, minMcq: 20 };
@@ -24,6 +24,7 @@ export function balanceMetrics(acts) {
     if (right === Math.min(...L)) shortest += 1 / ties;
     const abs = a.options.map(o => ABSOLUTE.test(o));
     if (!abs[a.answer] && abs.some((x, j) => x && j !== a.answer)) absolute++;
+    else if (abs[a.answer] && !abs.some((x, j) => x && j !== a.answer)) absolute--; // absolutes only in the RIGHT answer cancel out: that is not a tell
     if (i && mcq[i - 1].answer === a.answer) { run++; maxRun = Math.max(maxRun, run); } else run = 1;
   });
   const [slot, count] = Object.entries(slots).sort((x, y) => y[1] - x[1])[0];
