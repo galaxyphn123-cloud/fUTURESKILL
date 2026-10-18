@@ -42,3 +42,9 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - 4.591 → 12 item ditandai. Sisa 12 ada di FIN-02..06/09: opsi benar sudah melewati batas panjang checker, jadi distraktor tidak bisa disamakan panjangnya.
 - ~80 distraktor (FIN, COL) diperpanjang dengan klausa pengisi generik (mis. ", tanpa dicek lagi"); DIG/WEL banyak distraktor wordy dan belum ditinjau satu per satu. Layak ditinjau manusia bila ada waktu.
 - Agen WEL berhenti karena rate limit; `stats` menunjukkan WEL tidak ada flag tersisa, tetapi kualitas bacaannya belum diperiksa.
+
+## Perapian cue pengecoh DIG & WEL (ronde 2)
+- Checker kini punya aturan `short-cue` (jawaban benar unik terpendek, kebalikan `length-cue`) dan `absolute-word` (opsi benar tanpa kata mutlak sementara >=2 pengecoh memuatnya: selalu/pasti/sama sekali/...). `scripts/legacy-fix.mjs stats|show` memakai ketiga aturan.
+- DIG-01..08 dan WEL-01..08 (sekitar 1.150 soal pilihan ganda) ditulis ulang: pengecoh berupa kesalahpahaman yang masuk akal, panjang sebanding dengan jawaban benar, tanpa klausa pengisi.
+- Hasil ukur (jawaban benar terpendek / terpanjang / kata mutlak di opsi salah): DIG 69%/22%/61% -> 17%/35%/13%; WEL 67%/25%/53% -> 21%/35%/15%.
+- Belum disentuh: domain lain (CT, M, PS, AI, FIN, COM, COL, CRE, CIV) masih punya sekitar 1.100+ item yang terflag aturan baru, plus 12 item FIN lama. Tidak ada tinjauan manusia atas teks baru.
