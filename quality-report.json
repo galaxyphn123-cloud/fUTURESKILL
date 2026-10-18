@@ -1,10 +1,10 @@
 {
  "total": 11800,
- "needsReview": 731,
+ "needsReview": 260,
  "byRule": {
-  "absolute-word": 373,
-  "short-cue": 278,
-  "option-long": 261,
+  "absolute-word": 53,
+  "short-cue": 62,
+  "option-long": 256,
   "hint-leak": 2,
   "too-long": 23
  },
@@ -358,322 +358,10 @@
    "detail": "correct 48 chars vs 59"
   },
   {
-   "skill": "CT-01",
-   "n": 22,
-   "rule": "short-cue",
-   "detail": "correct 61 chars vs 74"
-  },
-  {
-   "skill": "CT-01",
-   "n": 40,
-   "rule": "short-cue",
-   "detail": "correct 28 chars vs 37"
-  },
-  {
-   "skill": "CT-01",
-   "n": 53,
-   "rule": "short-cue",
-   "detail": "correct 39 chars vs 49"
-  },
-  {
-   "skill": "CT-01",
-   "n": 66,
-   "rule": "short-cue",
-   "detail": "correct 38 chars vs 53"
-  },
-  {
-   "skill": "CT-01",
-   "n": 76,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-02",
-   "n": 70,
-   "rule": "short-cue",
-   "detail": "correct 50 chars vs 62"
-  },
-  {
-   "skill": "CT-05",
-   "n": 1,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 12,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 14,
-   "rule": "short-cue",
-   "detail": "correct 44 chars vs 70"
-  },
-  {
-   "skill": "CT-05",
-   "n": 20,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 33,
-   "rule": "short-cue",
-   "detail": "correct 41 chars vs 51"
-  },
-  {
-   "skill": "CT-05",
-   "n": 33,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 34,
-   "rule": "short-cue",
-   "detail": "correct 37 chars vs 52"
-  },
-  {
-   "skill": "CT-05",
-   "n": 37,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
+   "skill": "CT-08",
    "n": 45,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 47,
-   "rule": "short-cue",
-   "detail": "correct 50 chars vs 61"
-  },
-  {
-   "skill": "CT-05",
-   "n": 53,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 57,
-   "rule": "short-cue",
-   "detail": "correct 38 chars vs 49"
-  },
-  {
-   "skill": "CT-05",
-   "n": 60,
-   "rule": "short-cue",
-   "detail": "correct 96 chars vs 119"
-  },
-  {
-   "skill": "CT-05",
-   "n": 66,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 69,
-   "rule": "short-cue",
-   "detail": "correct 86 chars vs 110"
-  },
-  {
-   "skill": "CT-05",
-   "n": 69,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 81,
-   "rule": "short-cue",
-   "detail": "correct 43 chars vs 63"
-  },
-  {
-   "skill": "CT-05",
-   "n": 85,
-   "rule": "short-cue",
-   "detail": "correct 91 chars vs 127"
-  },
-  {
-   "skill": "CT-05",
-   "n": 87,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-05",
-   "n": 96,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 7,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 16,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 27,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 33,
-   "rule": "short-cue",
-   "detail": "correct 41 chars vs 53"
-  },
-  {
-   "skill": "CT-06",
-   "n": 37,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 39,
-   "rule": "short-cue",
-   "detail": "correct 57 chars vs 74"
-  },
-  {
-   "skill": "CT-06",
-   "n": 45,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 57,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-06",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-07",
-   "n": 5,
-   "rule": "short-cue",
-   "detail": "correct 44 chars vs 54"
-  },
-  {
-   "skill": "CT-07",
-   "n": 7,
-   "rule": "short-cue",
-   "detail": "correct 53 chars vs 64"
-  },
-  {
-   "skill": "CT-07",
-   "n": 10,
-   "rule": "short-cue",
-   "detail": "correct 50 chars vs 62"
-  },
-  {
-   "skill": "CT-07",
-   "n": 12,
-   "rule": "short-cue",
-   "detail": "correct 34 chars vs 55"
-  },
-  {
-   "skill": "CT-07",
-   "n": 37,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-07",
-   "n": 39,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-07",
-   "n": 45,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-07",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-07",
-   "n": 81,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-07",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 4,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 5,
-   "rule": "short-cue",
-   "detail": "correct 91 chars vs 113"
-  },
-  {
-   "skill": "CT-08",
-   "n": 5,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 24,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 37,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "rule": "option-long",
+   "detail": "guru mungkin ingin menyulitkan murid di "
   },
   {
    "skill": "CT-08",
@@ -682,244 +370,10 @@
    "detail": "guru mungkin mengejar materi yang tertin"
   },
   {
-   "skill": "CT-08",
-   "n": 45,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 49,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 67,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 72,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 94,
-   "rule": "short-cue",
-   "detail": "correct 74 chars vs 110"
-  },
-  {
-   "skill": "CT-08",
-   "n": 96,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "CT-08",
-   "n": 97,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-02",
-   "n": 2,
-   "rule": "short-cue",
-   "detail": "correct 22 chars vs 27"
-  },
-  {
-   "skill": "M-02",
-   "n": 46,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-02",
-   "n": 70,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-02",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-03",
-   "n": 30,
-   "rule": "short-cue",
-   "detail": "correct 34 chars vs 46"
-  },
-  {
-   "skill": "M-03",
-   "n": 47,
-   "rule": "short-cue",
-   "detail": "correct 24 chars vs 40"
-  },
-  {
-   "skill": "M-03",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-03",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-04",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-04",
-   "n": 80,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-05",
-   "n": 60,
-   "rule": "short-cue",
-   "detail": "correct 50 chars vs 69"
-  },
-  {
-   "skill": "M-05",
-   "n": 70,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-06",
-   "n": 60,
-   "rule": "short-cue",
-   "detail": "correct 51 chars vs 68"
-  },
-  {
-   "skill": "M-07",
-   "n": 12,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-07",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-07",
-   "n": 70,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-07",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
    "skill": "M-08",
    "n": 40,
    "rule": "option-long",
    "detail": "Bayangkan membulatkan 47.000 ke atas men"
-  },
-  {
-   "skill": "M-08",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-08",
-   "n": 70,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-08",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-08",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-09",
-   "n": 20,
-   "rule": "short-cue",
-   "detail": "correct 57 chars vs 73"
-  },
-  {
-   "skill": "M-09",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-09",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-10",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-10",
-   "n": 56,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 103"
-  },
-  {
-   "skill": "M-10",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-10",
-   "n": 74,
-   "rule": "short-cue",
-   "detail": "correct 75 chars vs 94"
-  },
-  {
-   "skill": "M-10",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-10",
-   "n": 80,
-   "rule": "short-cue",
-   "detail": "correct 86 chars vs 105"
   },
   {
    "skill": "M-11",
@@ -932,102 +386,6 @@
    "n": 31,
    "rule": "hint-leak",
    "detail": "hint contains the correct option"
-  },
-  {
-   "skill": "M-11",
-   "n": 34,
-   "rule": "short-cue",
-   "detail": "correct 28 chars vs 36"
-  },
-  {
-   "skill": "M-11",
-   "n": 39,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-11",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-11",
-   "n": 66,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-11",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-11",
-   "n": 70,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-11",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-11",
-   "n": 78,
-   "rule": "short-cue",
-   "detail": "correct 100 chars vs 121"
-  },
-  {
-   "skill": "M-11",
-   "n": 80,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 98"
-  },
-  {
-   "skill": "M-12",
-   "n": 18,
-   "rule": "short-cue",
-   "detail": "correct 48 chars vs 60"
-  },
-  {
-   "skill": "M-12",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-12",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-12",
-   "n": 66,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-12",
-   "n": 70,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "M-12",
-   "n": 80,
-   "rule": "short-cue",
-   "detail": "correct 78 chars vs 104"
-  },
-  {
-   "skill": "M-12",
-   "n": 80,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "M-13",
@@ -1396,958 +754,10 @@
    "detail": "2 of 2 distractors"
   },
   {
-   "skill": "PS-01",
-   "n": 1,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 6,
-   "rule": "short-cue",
-   "detail": "correct 39 chars vs 86"
-  },
-  {
-   "skill": "PS-01",
-   "n": 7,
-   "rule": "short-cue",
-   "detail": "correct 52 chars vs 82"
-  },
-  {
-   "skill": "PS-01",
-   "n": 13,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 15,
-   "rule": "short-cue",
-   "detail": "correct 61 chars vs 86"
-  },
-  {
-   "skill": "PS-01",
-   "n": 16,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 18,
-   "rule": "short-cue",
-   "detail": "correct 54 chars vs 88"
-  },
-  {
-   "skill": "PS-01",
-   "n": 19,
-   "rule": "short-cue",
-   "detail": "correct 63 chars vs 83"
-  },
-  {
-   "skill": "PS-01",
-   "n": 22,
-   "rule": "short-cue",
-   "detail": "correct 58 chars vs 85"
-  },
-  {
-   "skill": "PS-01",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 45 chars vs 92"
-  },
-  {
-   "skill": "PS-01",
-   "n": 24,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 25,
-   "rule": "short-cue",
-   "detail": "correct 69 chars vs 91"
-  },
-  {
-   "skill": "PS-01",
-   "n": 28,
-   "rule": "short-cue",
-   "detail": "correct 66 chars vs 85"
-  },
-  {
-   "skill": "PS-01",
-   "n": 28,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 29,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 34,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 38,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 47,
-   "rule": "short-cue",
-   "detail": "correct 63 chars vs 90"
-  },
-  {
-   "skill": "PS-01",
-   "n": 52,
-   "rule": "short-cue",
-   "detail": "correct 68 chars vs 97"
-  },
-  {
-   "skill": "PS-01",
-   "n": 54,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 66,
-   "rule": "short-cue",
-   "detail": "correct 71 chars vs 95"
-  },
-  {
-   "skill": "PS-01",
-   "n": 69,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 73,
-   "rule": "short-cue",
-   "detail": "correct 74 chars vs 95"
-  },
-  {
-   "skill": "PS-01",
-   "n": 79,
-   "rule": "short-cue",
-   "detail": "correct 73 chars vs 99"
-  },
-  {
-   "skill": "PS-01",
-   "n": 88,
-   "rule": "short-cue",
-   "detail": "correct 86 chars vs 111"
-  },
-  {
-   "skill": "PS-01",
-   "n": 92,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-01",
-   "n": 99,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 102"
-  },
-  {
-   "skill": "PS-01",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 3,
-   "rule": "short-cue",
-   "detail": "correct 47 chars vs 75"
-  },
-  {
-   "skill": "AI-01",
-   "n": 7,
-   "rule": "short-cue",
-   "detail": "correct 102 chars vs 125"
-  },
-  {
-   "skill": "AI-01",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 21,
-   "rule": "short-cue",
-   "detail": "correct 64 chars vs 88"
-  },
-  {
-   "skill": "AI-01",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 56 chars vs 83"
-  },
-  {
-   "skill": "AI-01",
-   "n": 29,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 31,
-   "rule": "short-cue",
-   "detail": "correct 71 chars vs 88"
-  },
-  {
-   "skill": "AI-01",
-   "n": 42,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 48,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 50,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 52,
-   "rule": "short-cue",
-   "detail": "correct 119 chars vs 147"
-  },
-  {
-   "skill": "AI-01",
-   "n": 52,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 65,
-   "rule": "short-cue",
-   "detail": "correct 55 chars vs 91"
-  },
-  {
-   "skill": "AI-01",
-   "n": 69,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 84,
-   "rule": "short-cue",
-   "detail": "correct 85 chars vs 106"
-  },
-  {
-   "skill": "AI-01",
-   "n": 88,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 93,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-01",
-   "n": 98,
-   "rule": "short-cue",
-   "detail": "correct 134 chars vs 162"
-  },
-  {
-   "skill": "AI-01",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-02",
-   "n": 1,
-   "rule": "short-cue",
-   "detail": "correct 74 chars vs 101"
-  },
-  {
-   "skill": "PS-02",
-   "n": 2,
-   "rule": "short-cue",
-   "detail": "correct 69 chars vs 96"
-  },
-  {
-   "skill": "PS-02",
-   "n": 4,
-   "rule": "short-cue",
-   "detail": "correct 80 chars vs 97"
-  },
-  {
-   "skill": "PS-02",
-   "n": 9,
-   "rule": "short-cue",
-   "detail": "correct 38 chars vs 92"
-  },
-  {
-   "skill": "PS-02",
-   "n": 10,
-   "rule": "short-cue",
-   "detail": "correct 56 chars vs 91"
-  },
-  {
-   "skill": "PS-02",
-   "n": 11,
-   "rule": "short-cue",
-   "detail": "correct 68 chars vs 90"
-  },
-  {
-   "skill": "PS-02",
-   "n": 13,
-   "rule": "short-cue",
-   "detail": "correct 72 chars vs 94"
-  },
-  {
-   "skill": "PS-02",
-   "n": 17,
-   "rule": "short-cue",
-   "detail": "correct 68 chars vs 90"
-  },
-  {
-   "skill": "PS-02",
-   "n": 21,
-   "rule": "short-cue",
-   "detail": "correct 65 chars vs 91"
-  },
-  {
-   "skill": "PS-02",
-   "n": 21,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-02",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 69 chars vs 96"
-  },
-  {
-   "skill": "PS-02",
-   "n": 28,
-   "rule": "short-cue",
-   "detail": "correct 51 chars vs 94"
-  },
-  {
-   "skill": "PS-02",
-   "n": 31,
-   "rule": "short-cue",
-   "detail": "correct 57 chars vs 100"
-  },
-  {
-   "skill": "PS-02",
-   "n": 36,
-   "rule": "short-cue",
-   "detail": "correct 79 chars vs 96"
-  },
-  {
-   "skill": "PS-02",
-   "n": 39,
-   "rule": "short-cue",
-   "detail": "correct 78 chars vs 100"
-  },
-  {
-   "skill": "PS-02",
-   "n": 41,
-   "rule": "short-cue",
-   "detail": "correct 76 chars vs 98"
-  },
-  {
-   "skill": "PS-02",
-   "n": 42,
-   "rule": "short-cue",
-   "detail": "correct 67 chars vs 99"
-  },
-  {
-   "skill": "PS-02",
-   "n": 43,
-   "rule": "short-cue",
-   "detail": "correct 77 chars vs 97"
-  },
-  {
-   "skill": "PS-02",
-   "n": 45,
-   "rule": "short-cue",
-   "detail": "correct 80 chars vs 101"
-  },
-  {
-   "skill": "PS-02",
-   "n": 52,
-   "rule": "short-cue",
-   "detail": "correct 71 chars vs 95"
-  },
-  {
-   "skill": "PS-02",
-   "n": 55,
-   "rule": "short-cue",
-   "detail": "correct 65 chars vs 98"
-  },
-  {
-   "skill": "PS-02",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-02",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-02",
-   "n": 69,
-   "rule": "short-cue",
-   "detail": "correct 66 chars vs 102"
-  },
-  {
-   "skill": "PS-02",
-   "n": 78,
-   "rule": "short-cue",
-   "detail": "correct 66 chars vs 94"
-  },
-  {
-   "skill": "PS-02",
-   "n": 87,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 106"
-  },
-  {
-   "skill": "PS-02",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-03",
-   "n": 2,
-   "rule": "short-cue",
-   "detail": "correct 68 chars vs 84"
-  },
-  {
-   "skill": "PS-03",
-   "n": 4,
-   "rule": "short-cue",
-   "detail": "correct 40 chars vs 91"
-  },
-  {
-   "skill": "PS-03",
-   "n": 6,
-   "rule": "short-cue",
-   "detail": "correct 58 chars vs 92"
-  },
-  {
-   "skill": "PS-03",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-03",
-   "n": 13,
-   "rule": "short-cue",
-   "detail": "correct 56 chars vs 97"
-  },
-  {
-   "skill": "PS-03",
-   "n": 26,
-   "rule": "short-cue",
-   "detail": "correct 72 chars vs 93"
-  },
-  {
-   "skill": "PS-03",
-   "n": 28,
-   "rule": "short-cue",
-   "detail": "correct 61 chars vs 94"
-  },
-  {
-   "skill": "PS-03",
-   "n": 34,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 104"
-  },
-  {
-   "skill": "PS-03",
-   "n": 37,
-   "rule": "short-cue",
-   "detail": "correct 62 chars vs 95"
-  },
-  {
-   "skill": "PS-03",
-   "n": 44,
-   "rule": "short-cue",
-   "detail": "correct 74 chars vs 102"
-  },
-  {
-   "skill": "PS-03",
-   "n": 49,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-03",
-   "n": 50,
-   "rule": "short-cue",
-   "detail": "correct 69 chars vs 100"
-  },
-  {
-   "skill": "PS-03",
-   "n": 54,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 101"
-  },
-  {
-   "skill": "PS-03",
-   "n": 62,
-   "rule": "short-cue",
-   "detail": "correct 82 chars vs 101"
-  },
-  {
-   "skill": "PS-03",
-   "n": 67,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-03",
-   "n": 71,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-03",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-03",
-   "n": 76,
-   "rule": "short-cue",
-   "detail": "correct 67 chars vs 105"
-  },
-  {
-   "skill": "PS-03",
-   "n": 82,
-   "rule": "short-cue",
-   "detail": "correct 85 chars vs 105"
-  },
-  {
-   "skill": "PS-03",
-   "n": 90,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 101"
-  },
-  {
-   "skill": "PS-03",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-04",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-04",
-   "n": 14,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 103"
-  },
-  {
-   "skill": "PS-04",
-   "n": 14,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-04",
-   "n": 47,
-   "rule": "short-cue",
-   "detail": "correct 76 chars vs 106"
-  },
-  {
-   "skill": "PS-04",
-   "n": 50,
-   "rule": "short-cue",
-   "detail": "correct 75 chars vs 105"
-  },
-  {
-   "skill": "PS-04",
-   "n": 53,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-04",
-   "n": 69,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-04",
-   "n": 75,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-04",
-   "n": 78,
-   "rule": "short-cue",
-   "detail": "correct 78 chars vs 110"
-  },
-  {
-   "skill": "PS-04",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 1,
-   "rule": "short-cue",
-   "detail": "correct 68 chars vs 93"
-  },
-  {
-   "skill": "PS-05",
-   "n": 2,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 98"
-  },
-  {
-   "skill": "PS-05",
-   "n": 4,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 5,
-   "rule": "short-cue",
-   "detail": "correct 54 chars vs 87"
-  },
-  {
-   "skill": "PS-05",
-   "n": 7,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 11,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 103"
-  },
-  {
-   "skill": "PS-05",
-   "n": 15,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 17,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 102"
-  },
-  {
-   "skill": "PS-05",
-   "n": 17,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 23,
-   "rule": "short-cue",
-   "detail": "correct 59 chars vs 103"
-  },
-  {
-   "skill": "PS-05",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 86 chars vs 105"
-  },
-  {
-   "skill": "PS-05",
-   "n": 43,
-   "rule": "short-cue",
-   "detail": "correct 67 chars vs 101"
-  },
-  {
-   "skill": "PS-05",
-   "n": 44,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 45,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 49,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 58,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 59,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 68,
-   "rule": "short-cue",
-   "detail": "correct 80 chars vs 105"
-  },
-  {
-   "skill": "PS-05",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 69,
-   "rule": "short-cue",
-   "detail": "correct 82 chars vs 110"
-  },
-  {
-   "skill": "PS-05",
-   "n": 71,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 72,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 75,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 89,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-05",
-   "n": 96,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
    "skill": "PS-05",
    "n": 99,
    "rule": "option-long",
    "detail": "Hasilkan banyak ide beragam dengan menun"
-  },
-  {
-   "skill": "PS-06",
-   "n": 1,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 3,
-   "rule": "short-cue",
-   "detail": "correct 64 chars vs 100"
-  },
-  {
-   "skill": "PS-06",
-   "n": 6,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 103"
-  },
-  {
-   "skill": "PS-06",
-   "n": 7,
-   "rule": "short-cue",
-   "detail": "correct 63 chars vs 103"
-  },
-  {
-   "skill": "PS-06",
-   "n": 9,
-   "rule": "short-cue",
-   "detail": "correct 88 chars vs 112"
-  },
-  {
-   "skill": "PS-06",
-   "n": 11,
-   "rule": "short-cue",
-   "detail": "correct 69 chars vs 105"
-  },
-  {
-   "skill": "PS-06",
-   "n": 13,
-   "rule": "short-cue",
-   "detail": "correct 77 chars vs 104"
-  },
-  {
-   "skill": "PS-06",
-   "n": 22,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 23,
-   "rule": "short-cue",
-   "detail": "correct 75 chars vs 106"
-  },
-  {
-   "skill": "PS-06",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 79 chars vs 106"
-  },
-  {
-   "skill": "PS-06",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 27,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 106"
-  },
-  {
-   "skill": "PS-06",
-   "n": 28,
-   "rule": "short-cue",
-   "detail": "correct 91 chars vs 110"
-  },
-  {
-   "skill": "PS-06",
-   "n": 32,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 42,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 50,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 71,
-   "rule": "short-cue",
-   "detail": "correct 72 chars vs 110"
-  },
-  {
-   "skill": "PS-06",
-   "n": 72,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-06",
-   "n": 98,
-   "rule": "short-cue",
-   "detail": "correct 73 chars vs 103"
-  },
-  {
-   "skill": "PS-06",
-   "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "PS-06",
@@ -2369,114 +779,6 @@
   },
   {
    "skill": "PS-07",
-   "n": 1,
-   "rule": "short-cue",
-   "detail": "correct 69 chars vs 99"
-  },
-  {
-   "skill": "PS-07",
-   "n": 12,
-   "rule": "short-cue",
-   "detail": "correct 68 chars vs 99"
-  },
-  {
-   "skill": "PS-07",
-   "n": 17,
-   "rule": "short-cue",
-   "detail": "correct 66 chars vs 95"
-  },
-  {
-   "skill": "PS-07",
-   "n": 18,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 23,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 33,
-   "rule": "short-cue",
-   "detail": "correct 83 chars vs 108"
-  },
-  {
-   "skill": "PS-07",
-   "n": 36,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 38,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 105"
-  },
-  {
-   "skill": "PS-07",
-   "n": 41,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 49,
-   "rule": "short-cue",
-   "detail": "correct 87 chars vs 107"
-  },
-  {
-   "skill": "PS-07",
-   "n": 52,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 55,
-   "rule": "short-cue",
-   "detail": "correct 82 chars vs 110"
-  },
-  {
-   "skill": "PS-07",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 67,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 75,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-07",
-   "n": 79,
-   "rule": "short-cue",
-   "detail": "correct 83 chars vs 109"
-  },
-  {
-   "skill": "PS-07",
-   "n": 95,
-   "rule": "short-cue",
-   "detail": "correct 70 chars vs 110"
-  },
-  {
-   "skill": "PS-07",
    "n": 99,
    "rule": "option-long",
    "detail": "Tantang asumsi, bingkai ulang masalah, g"
@@ -2488,184 +790,16 @@
    "detail": "Cari ide seaneh mungkin lalu langsung di"
   },
   {
-   "skill": "PS-08",
-   "n": 1,
-   "rule": "short-cue",
-   "detail": "correct 56 chars vs 93"
-  },
-  {
-   "skill": "PS-08",
-   "n": 1,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 3,
-   "rule": "short-cue",
-   "detail": "correct 75 chars vs 100"
-  },
-  {
-   "skill": "PS-08",
-   "n": 7,
-   "rule": "short-cue",
-   "detail": "correct 56 chars vs 99"
-  },
-  {
-   "skill": "PS-08",
-   "n": 7,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 14,
-   "rule": "short-cue",
-   "detail": "correct 67 chars vs 105"
-  },
-  {
-   "skill": "PS-08",
-   "n": 18,
-   "rule": "short-cue",
-   "detail": "correct 83 chars vs 105"
-  },
-  {
-   "skill": "PS-08",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 27,
-   "rule": "short-cue",
-   "detail": "correct 77 chars vs 99"
-  },
-  {
-   "skill": "PS-08",
-   "n": 28,
+   "skill": "PS-07",
+   "n": 99,
    "rule": "option-long",
-   "detail": "Daftar keputusan masa lalu yang sudah pe"
-  },
-  {
-   "skill": "PS-08",
-   "n": 28,
-   "rule": "short-cue",
-   "detail": "correct 128 chars vs 155"
-  },
-  {
-   "skill": "PS-08",
-   "n": 31,
-   "rule": "short-cue",
-   "detail": "correct 79 chars vs 104"
-  },
-  {
-   "skill": "PS-08",
-   "n": 32,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 33,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 38,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Kreativitas hanya untuk orang yang berba"
   },
   {
    "skill": "PS-08",
    "n": 50,
    "rule": "option-long",
    "detail": "Salahkan orang yang memberi masukan kepa"
-  },
-  {
-   "skill": "PS-08",
-   "n": 52,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 54,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 58,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 62,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 71,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 79,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 82,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 87,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 93,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 96,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "PS-08",
-   "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "PS-08",
@@ -2687,126 +821,6 @@
   },
   {
    "skill": "AI-02",
-   "n": 2,
-   "rule": "short-cue",
-   "detail": "correct 50 chars vs 69"
-  },
-  {
-   "skill": "AI-02",
-   "n": 4,
-   "rule": "option-long",
-   "detail": "Langsung tahu semua jawaban sejak awal t"
-  },
-  {
-   "skill": "AI-02",
-   "n": 4,
-   "rule": "option-long",
-   "detail": "Menghafal satu contoh saja lalu berhenti"
-  },
-  {
-   "skill": "AI-02",
-   "n": 4,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 17,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 18,
-   "rule": "short-cue",
-   "detail": "correct 57 chars vs 99"
-  },
-  {
-   "skill": "AI-02",
-   "n": 19,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 102"
-  },
-  {
-   "skill": "AI-02",
-   "n": 19,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 25,
-   "rule": "short-cue",
-   "detail": "correct 77 chars vs 95"
-  },
-  {
-   "skill": "AI-02",
-   "n": 54,
-   "rule": "option-long",
-   "detail": "Waktu tonton adalah ukuran yang sempurna"
-  },
-  {
-   "skill": "AI-02",
-   "n": 54,
-   "rule": "option-long",
-   "detail": "Ukuran yang dipilih tidak berpengaruh ap"
-  },
-  {
-   "skill": "AI-02",
-   "n": 54,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 56,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 58,
-   "rule": "short-cue",
-   "detail": "correct 93 chars vs 112"
-  },
-  {
-   "skill": "AI-02",
-   "n": 58,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 61,
-   "rule": "short-cue",
-   "detail": "correct 70 chars vs 106"
-  },
-  {
-   "skill": "AI-02",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 86,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-02",
    "n": 98,
    "rule": "option-long",
    "detail": "Mesin belajar dengan berpikir seperti ma"
@@ -2824,202 +838,16 @@
    "detail": "Mesin 'belajar' dengan menyesuaikan mode"
   },
   {
-   "skill": "AI-02",
+   "skill": "AI-03",
    "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 1,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 3,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 5,
-   "rule": "short-cue",
-   "detail": "correct 63 chars vs 110"
-  },
-  {
-   "skill": "AI-03",
-   "n": 7,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 13,
-   "rule": "short-cue",
-   "detail": "correct 91 chars vs 118"
-  },
-  {
-   "skill": "AI-03",
-   "n": 13,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 114"
-  },
-  {
-   "skill": "AI-03",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 27,
-   "rule": "short-cue",
-   "detail": "correct 101 chars vs 122"
-  },
-  {
-   "skill": "AI-03",
-   "n": 31,
-   "rule": "short-cue",
-   "detail": "correct 99 chars vs 122"
-  },
-  {
-   "skill": "AI-03",
-   "n": 32,
-   "rule": "short-cue",
-   "detail": "correct 106 chars vs 131"
-  },
-  {
-   "skill": "AI-03",
-   "n": 37,
-   "rule": "short-cue",
-   "detail": "correct 89 chars vs 116"
-  },
-  {
-   "skill": "AI-03",
-   "n": 37,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 45,
-   "rule": "short-cue",
-   "detail": "correct 93 chars vs 122"
-  },
-  {
-   "skill": "AI-03",
-   "n": 48,
-   "rule": "short-cue",
-   "detail": "correct 95 chars vs 121"
-  },
-  {
-   "skill": "AI-03",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 56,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 59,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 62,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 65,
-   "rule": "short-cue",
-   "detail": "correct 158 chars vs 190"
-  },
-  {
-   "skill": "AI-03",
-   "n": 69,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 72,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 75,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 76,
-   "rule": "short-cue",
-   "detail": "correct 107 chars vs 129"
-  },
-  {
-   "skill": "AI-03",
-   "n": 76,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 86,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 93,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 95,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-03",
-   "n": 96,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "rule": "option-long",
+   "detail": "Data bersifat netral dan model bersifat "
   },
   {
    "skill": "AI-03",
    "n": 98,
    "rule": "option-long",
-   "detail": "Data selalu netral dan model selalu obje"
-  },
-  {
-   "skill": "AI-03",
-   "n": 98,
-   "rule": "option-long",
-   "detail": "Bias tidak mungkin diukur oleh siapa pun"
+   "detail": "Bias mustahil diukur, jadi tidak usah di"
   },
   {
    "skill": "AI-03",
@@ -3028,154 +856,16 @@
    "detail": "Data mencerminkan dunia yang timpang & p"
   },
   {
-   "skill": "AI-03",
-   "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "skill": "AI-04",
+   "n": 50,
+   "rule": "option-long",
+   "detail": "Tidak perlu mempertimbangkan apa-apa, se"
   },
   {
    "skill": "AI-04",
-   "n": 1,
-   "rule": "short-cue",
-   "detail": "correct 88 chars vs 110"
-  },
-  {
-   "skill": "AI-04",
-   "n": 15,
-   "rule": "short-cue",
-   "detail": "correct 82 chars vs 116"
-  },
-  {
-   "skill": "AI-04",
-   "n": 15,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 25,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 26,
-   "rule": "short-cue",
-   "detail": "correct 98 chars vs 118"
-  },
-  {
-   "skill": "AI-04",
-   "n": 27,
-   "rule": "short-cue",
-   "detail": "correct 89 chars vs 121"
-  },
-  {
-   "skill": "AI-04",
-   "n": 33,
-   "rule": "short-cue",
-   "detail": "correct 90 chars vs 124"
-  },
-  {
-   "skill": "AI-04",
-   "n": 37,
-   "rule": "short-cue",
-   "detail": "correct 82 chars vs 120"
-  },
-  {
-   "skill": "AI-04",
-   "n": 41,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 42,
-   "rule": "short-cue",
-   "detail": "correct 58 chars vs 99"
-  },
-  {
-   "skill": "AI-04",
-   "n": 45,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 46,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 54,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 56,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 62,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 75,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 81,
-   "rule": "short-cue",
-   "detail": "correct 79 chars vs 112"
-  },
-  {
-   "skill": "AI-04",
-   "n": 82,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 84,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 87,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 90,
-   "rule": "short-cue",
-   "detail": "correct 152 chars vs 191"
-  },
-  {
-   "skill": "AI-04",
-   "n": 92,
-   "rule": "short-cue",
-   "detail": "correct 165 chars vs 204"
-  },
-  {
-   "skill": "AI-04",
-   "n": 92,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "n": 50,
+   "rule": "option-long",
+   "detail": "Layanan AI dari perusahaan besar diangga"
   },
   {
    "skill": "AI-04",
@@ -3187,7 +877,7 @@
    "skill": "AI-04",
    "n": 93,
    "rule": "option-long",
-   "detail": "AI selalu objektif dan tidak pernah keli"
+   "detail": "AI bersifat objektif dan keliru jarang t"
   },
   {
    "skill": "AI-04",
@@ -3196,142 +886,16 @@
    "detail": "AI ada di banyak layanan sehari-hari seb"
   },
   {
-   "skill": "AI-04",
-   "n": 93,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 95,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-04",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 10,
-   "rule": "short-cue",
-   "detail": "correct 77 chars vs 109"
-  },
-  {
-   "skill": "AI-05",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 12,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 110"
-  },
-  {
-   "skill": "AI-05",
-   "n": 13,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 16,
-   "rule": "short-cue",
-   "detail": "correct 100 chars vs 122"
-  },
-  {
-   "skill": "AI-05",
-   "n": 16,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 19,
-   "rule": "short-cue",
-   "detail": "correct 89 chars vs 120"
-  },
-  {
-   "skill": "AI-05",
-   "n": 24,
-   "rule": "short-cue",
-   "detail": "correct 76 chars vs 118"
-  },
-  {
-   "skill": "AI-05",
-   "n": 24,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 27,
-   "rule": "short-cue",
-   "detail": "correct 89 chars vs 119"
-  },
-  {
-   "skill": "AI-05",
-   "n": 27,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 35,
-   "rule": "short-cue",
-   "detail": "correct 102 chars vs 125"
-  },
-  {
-   "skill": "AI-05",
-   "n": 35,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 43,
-   "rule": "short-cue",
-   "detail": "correct 92 chars vs 117"
-  },
-  {
    "skill": "AI-05",
    "n": 44,
    "rule": "option-long",
-   "detail": "Tidak pernah cocok untuk tugas apa pun j"
+   "detail": "Cocok untuk tugas yang menyangkut data p"
   },
   {
    "skill": "AI-05",
    "n": 44,
    "rule": "option-long",
    "detail": "Menghasilkan/menyusun/menjelaskan sesuat"
-  },
-  {
-   "skill": "AI-05",
-   "n": 44,
-   "rule": "option-long",
-   "detail": "Selalu cocok untuk semua tugas tanpa kec"
-  },
-  {
-   "skill": "AI-05",
-   "n": 44,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 50,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-05",
@@ -3349,397 +913,25 @@
    "skill": "AI-05",
    "n": 56,
    "rule": "option-long",
-   "detail": "AI tidak pernah membuang waktu siapa pun"
-  },
-  {
-   "skill": "AI-05",
-   "n": 56,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 58,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 59,
-   "rule": "short-cue",
-   "detail": "correct 80 chars vs 123"
-  },
-  {
-   "skill": "AI-05",
-   "n": 71,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 76,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 81,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 82,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 86,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 87,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "AI jarang membuang waktu orang, sebab ja"
   },
   {
    "skill": "AI-05",
    "n": 93,
    "rule": "option-long",
-   "detail": "Percaya semua jawaban AI dan serahkan se"
+   "detail": "Percaya jawaban AI dan serahkan tugas ke"
   },
   {
    "skill": "AI-05",
    "n": 93,
    "rule": "option-long",
-   "detail": "Jangan pernah memakai AI untuk apa pun d"
+   "detail": "Jangan memakai AI dalam keadaan apa saja"
   },
   {
    "skill": "AI-05",
    "n": 93,
    "rule": "option-long",
    "detail": "Beri konteks & instruksi yang jelas; per"
-  },
-  {
-   "skill": "AI-05",
-   "n": 93,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 95,
-   "rule": "short-cue",
-   "detail": "correct 102 chars vs 125"
-  },
-  {
-   "skill": "AI-05",
-   "n": 95,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-05",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 2,
-   "rule": "short-cue",
-   "detail": "correct 83 chars vs 124"
-  },
-  {
-   "skill": "AI-06",
-   "n": 3,
-   "rule": "short-cue",
-   "detail": "correct 83 chars vs 128"
-  },
-  {
-   "skill": "AI-06",
-   "n": 3,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 5,
-   "rule": "short-cue",
-   "detail": "correct 90 chars vs 117"
-  },
-  {
-   "skill": "AI-06",
-   "n": 5,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 7,
-   "rule": "short-cue",
-   "detail": "correct 88 chars vs 115"
-  },
-  {
-   "skill": "AI-06",
-   "n": 12,
-   "rule": "short-cue",
-   "detail": "correct 97 chars vs 117"
-  },
-  {
-   "skill": "AI-06",
-   "n": 15,
-   "rule": "short-cue",
-   "detail": "correct 97 chars vs 130"
-  },
-  {
-   "skill": "AI-06",
-   "n": 21,
-   "rule": "short-cue",
-   "detail": "correct 95 chars vs 125"
-  },
-  {
-   "skill": "AI-06",
-   "n": 22,
-   "rule": "short-cue",
-   "detail": "correct 106 chars vs 129"
-  },
-  {
-   "skill": "AI-06",
-   "n": 23,
-   "rule": "short-cue",
-   "detail": "correct 96 chars vs 124"
-  },
-  {
-   "skill": "AI-06",
-   "n": 23,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 25,
-   "rule": "short-cue",
-   "detail": "correct 100 chars vs 131"
-  },
-  {
-   "skill": "AI-06",
-   "n": 25,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 27,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 28,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 33,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 35,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 36,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 39,
-   "rule": "short-cue",
-   "detail": "correct 94 chars vs 124"
-  },
-  {
-   "skill": "AI-06",
-   "n": 41,
-   "rule": "short-cue",
-   "detail": "correct 74 chars vs 116"
-  },
-  {
-   "skill": "AI-06",
-   "n": 42,
-   "rule": "short-cue",
-   "detail": "correct 99 chars vs 122"
-  },
-  {
-   "skill": "AI-06",
-   "n": 43,
-   "rule": "short-cue",
-   "detail": "correct 85 chars vs 130"
-  },
-  {
-   "skill": "AI-06",
-   "n": 44,
-   "rule": "short-cue",
-   "detail": "correct 98 chars vs 121"
-  },
-  {
-   "skill": "AI-06",
-   "n": 46,
-   "rule": "short-cue",
-   "detail": "correct 86 chars vs 124"
-  },
-  {
-   "skill": "AI-06",
-   "n": 48,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 49,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 50,
-   "rule": "short-cue",
-   "detail": "correct 99 chars vs 135"
-  },
-  {
-   "skill": "AI-06",
-   "n": 54,
-   "rule": "short-cue",
-   "detail": "correct 85 chars vs 129"
-  },
-  {
-   "skill": "AI-06",
-   "n": 54,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 56,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 58,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 59,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 65,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 68,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 72,
-   "rule": "short-cue",
-   "detail": "correct 103 chars vs 137"
-  },
-  {
-   "skill": "AI-06",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 76,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 78,
-   "rule": "short-cue",
-   "detail": "correct 161 chars vs 202"
-  },
-  {
-   "skill": "AI-06",
-   "n": 78,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 79,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 84,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 89,
-   "rule": "short-cue",
-   "detail": "correct 178 chars vs 219"
-  },
-  {
-   "skill": "AI-06",
-   "n": 89,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-06",
@@ -3768,146 +960,20 @@
   {
    "skill": "AI-06",
    "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-06",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 3,
-   "rule": "short-cue",
-   "detail": "correct 81 chars vs 113"
-  },
-  {
-   "skill": "AI-07",
-   "n": 11,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 15,
-   "rule": "short-cue",
-   "detail": "correct 73 chars vs 113"
-  },
-  {
-   "skill": "AI-07",
-   "n": 16,
-   "rule": "short-cue",
-   "detail": "correct 64 chars vs 123"
-  },
-  {
-   "skill": "AI-07",
-   "n": 17,
-   "rule": "short-cue",
-   "detail": "correct 98 chars vs 119"
-  },
-  {
-   "skill": "AI-07",
-   "n": 19,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 22,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 26,
-   "rule": "short-cue",
-   "detail": "correct 104 chars vs 128"
-  },
-  {
-   "skill": "AI-07",
-   "n": 29,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "rule": "option-long",
+   "detail": "AI itu netral dan bertanggung jawab atas"
   },
   {
    "skill": "AI-07",
    "n": 31,
    "rule": "option-long",
-   "detail": "Tidak punya ide sama sekali dan berharap"
-  },
-  {
-   "skill": "AI-07",
-   "n": 31,
-   "rule": "option-long",
-   "detail": "Ingin menghindari semua usaha dan latiha"
+   "detail": "Ingin menghindari usaha dan latihan, seh"
   },
   {
    "skill": "AI-07",
    "n": 31,
    "rule": "option-long",
    "detail": "Punya ide tapi keterbatasan keterampilan"
-  },
-  {
-   "skill": "AI-07",
-   "n": 31,
-   "rule": "short-cue",
-   "detail": "correct 164 chars vs 197"
-  },
-  {
-   "skill": "AI-07",
-   "n": 31,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 32,
-   "rule": "short-cue",
-   "detail": "correct 63 chars vs 128"
-  },
-  {
-   "skill": "AI-07",
-   "n": 32,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 33,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 39,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 41,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 43,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 44,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 46,
-   "rule": "short-cue",
-   "detail": "correct 103 chars vs 125"
   },
   {
    "skill": "AI-07",
@@ -3919,61 +985,19 @@
    "skill": "AI-07",
    "n": 52,
    "rule": "option-long",
-   "detail": "Tidak ada kekhawatiran sama sekali, kare"
+   "detail": "Tidak perlu khawatir, karena makin serin"
   },
   {
    "skill": "AI-07",
-   "n": 52,
+   "n": 55,
    "rule": "option-long",
-   "detail": "Keterampilan akan tumbuh otomatis walaup"
+   "detail": "Sembunyikan bahwa AI dipakai supaya peni"
   },
   {
    "skill": "AI-07",
    "n": 55,
    "rule": "option-long",
    "detail": "Jelaskan kontribusi kreatifmu (visi, kur"
-  },
-  {
-   "skill": "AI-07",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 71,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 77,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 79,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 81,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 89,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 90,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-07",
@@ -3985,61 +1009,13 @@
    "skill": "AI-07",
    "n": 91,
    "rule": "option-long",
-   "detail": "AI generatif sama sekali tidak berguna u"
+   "detail": "AI generatif tidak berguna untuk berkary"
   },
   {
    "skill": "AI-07",
    "n": 91,
    "rule": "option-long",
    "detail": "AI generatif menghasilkan konten baru de"
-  },
-  {
-   "skill": "AI-07",
-   "n": 91,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 96,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-07",
-   "n": 99,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 5,
-   "rule": "short-cue",
-   "detail": "correct 98 chars vs 125"
-  },
-  {
-   "skill": "AI-08",
-   "n": 8,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 10,
-   "rule": "short-cue",
-   "detail": "correct 84 chars vs 113"
-  },
-  {
-   "skill": "AI-08",
-   "n": 10,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 15,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-08",
@@ -4051,19 +1027,7 @@
    "skill": "AI-08",
    "n": 17,
    "rule": "option-long",
-   "detail": "Semua pekerjaan manusia akan hilang selu"
-  },
-  {
-   "skill": "AI-08",
-   "n": 17,
-   "rule": "option-long",
-   "detail": "Tidak ada yang akan berubah sama sekali "
-  },
-  {
-   "skill": "AI-08",
-   "n": 17,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Seluruh pekerjaan manusia akan hilang da"
   },
   {
    "skill": "AI-08",
@@ -4076,12 +1040,6 @@
    "n": 19,
    "rule": "option-long",
    "detail": "Abaikan saja perkembangannya, karena AI "
-  },
-  {
-   "skill": "AI-08",
-   "n": 19,
-   "rule": "option-long",
-   "detail": "Panik dan hindari semua teknologi sejak "
   },
   {
    "skill": "AI-08",
@@ -4099,13 +1057,7 @@
    "skill": "AI-08",
    "n": 21,
    "rule": "option-long",
-   "detail": "Hal ini tidak pernah terjadi, sebab mode"
-  },
-  {
-   "skill": "AI-08",
-   "n": 22,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Hal ini tak terjadi, sebab model bahasa "
   },
   {
    "skill": "AI-08",
@@ -4117,25 +1069,13 @@
    "skill": "AI-08",
    "n": 25,
    "rule": "option-long",
-   "detail": "Belajar dan berubah kepribadiannya setia"
+   "detail": "Belajar dan berubah kepribadiannya tiap "
   },
   {
    "skill": "AI-08",
    "n": 25,
    "rule": "option-long",
-   "detail": "Tidak pernah dilatih ulang sepanjang hid"
-  },
-  {
-   "skill": "AI-08",
-   "n": 25,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 26,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Tidak dilatih ulang sepanjang hidupnya, "
   },
   {
    "skill": "AI-08",
@@ -4159,43 +1099,19 @@
    "skill": "AI-08",
    "n": 34,
    "rule": "option-long",
-   "detail": "Ketakutan selalu membantu kita bersiap, "
+   "detail": "Ketakutan membantu kita bersiap, jadi ma"
   },
   {
    "skill": "AI-08",
    "n": 34,
    "rule": "option-long",
-   "detail": "Tidak ada risiko nyata dari AI sama seka"
-  },
-  {
-   "skill": "AI-08",
-   "n": 34,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 35,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 38,
-   "rule": "short-cue",
-   "detail": "correct 102 chars vs 129"
-  },
-  {
-   "skill": "AI-08",
-   "n": 38,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Tidak ada risiko nyata dari AI, karena k"
   },
   {
    "skill": "AI-08",
    "n": 39,
    "rule": "option-long",
-   "detail": "Tidak mungkin ada perubahan sama sekali "
+   "detail": "Tidak mungkin ada perubahan pada pekerja"
   },
   {
    "skill": "AI-08",
@@ -4207,13 +1123,7 @@
    "skill": "AI-08",
    "n": 39,
    "rule": "option-long",
-   "detail": "Sudah pasti terjadi tahun depan secara m"
-  },
-  {
-   "skill": "AI-08",
-   "n": 39,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Terjadi tahun depan secara menyeluruh, s"
   },
   {
    "skill": "AI-08",
@@ -4225,7 +1135,7 @@
    "skill": "AI-08",
    "n": 42,
    "rule": "option-long",
-   "detail": "AI tidak pernah dipakai di tempat mana p"
+   "detail": "AI tak dipakai di tempat mana pun, sehin"
   },
   {
    "skill": "AI-08",
@@ -4235,33 +1145,9 @@
   },
   {
    "skill": "AI-08",
-   "n": 44,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 46,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
    "n": 48,
    "rule": "option-long",
    "detail": "Menetapkan syarat minimum (uji keamanan,"
-  },
-  {
-   "skill": "AI-08",
-   "n": 48,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 49,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-08",
@@ -4277,12 +1163,6 @@
   },
   {
    "skill": "AI-08",
-   "n": 52,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
    "n": 54,
    "rule": "option-long",
    "detail": "Perhatikan risiko yang sudah ada sekaran"
@@ -4291,19 +1171,13 @@
    "skill": "AI-08",
    "n": 54,
    "rule": "option-long",
-   "detail": "Hanya risiko masa depan yang jauh saja y"
+   "detail": "Hanya risiko masa depan yang jauh yang p"
   },
   {
    "skill": "AI-08",
    "n": 54,
    "rule": "option-long",
    "detail": "Hanya risiko yang sudah terjadi sekarang"
-  },
-  {
-   "skill": "AI-08",
-   "n": 54,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-08",
@@ -4321,97 +1195,13 @@
    "skill": "AI-08",
    "n": 55,
    "rule": "option-long",
-   "detail": "Tidak ada pengaruh sama sekali, karena a"
-  },
-  {
-   "skill": "AI-08",
-   "n": 55,
-   "rule": "short-cue",
-   "detail": "correct 170 chars vs 204"
-  },
-  {
-   "skill": "AI-08",
-   "n": 55,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "Tak ada pengaruh, karena arah AI ditentu"
   },
   {
    "skill": "AI-08",
    "n": 56,
    "rule": "option-long",
    "detail": "AI seperti mesin yang sangat kuat — ke m"
-  },
-  {
-   "skill": "AI-08",
-   "n": 59,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 61,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 62,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 64,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 67,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 68,
-   "rule": "short-cue",
-   "detail": "correct 172 chars vs 211"
-  },
-  {
-   "skill": "AI-08",
-   "n": 69,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 71,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 73,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 74,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 77,
-   "rule": "short-cue",
-   "detail": "correct 108 chars vs 135"
-  },
-  {
-   "skill": "AI-08",
-   "n": 79,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
   },
   {
    "skill": "AI-08",
@@ -4429,13 +1219,7 @@
    "skill": "AI-08",
    "n": 81,
    "rule": "option-long",
-   "detail": "AI tidak punya keterbatasan sama sekali "
-  },
-  {
-   "skill": "AI-08",
-   "n": 81,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "AI tidak punya keterbatasan dalam hal te"
   },
   {
    "skill": "AI-08",
@@ -4469,18 +1253,6 @@
   },
   {
    "skill": "AI-08",
-   "n": 95,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
-  },
-  {
-   "skill": "AI-08",
-   "n": 96,
-   "rule": "short-cue",
-   "detail": "correct 182 chars vs 219"
-  },
-  {
-   "skill": "AI-08",
    "n": 98,
    "rule": "option-long",
    "detail": "AI adalah alat berbasis pola dengan kema"
@@ -4489,19 +1261,7 @@
    "skill": "AI-08",
    "n": 98,
    "rule": "option-long",
-   "detail": "AI akan menentukan masa depan sendirian "
-  },
-  {
-   "skill": "AI-08",
-   "n": 98,
-   "rule": "option-long",
-   "detail": "Masa depan AI sudah pasti dan sepenuhnya"
-  },
-  {
-   "skill": "AI-08",
-   "n": 98,
-   "rule": "absolute-word",
-   "detail": "2 of 2 distractors"
+   "detail": "AI akan menentukan masa depan sendiri ta"
   },
   {
    "skill": "AI-08",
@@ -4520,12 +1280,6 @@
    "n": 99,
    "rule": "option-long",
    "detail": "Adalah makhluk cerdas yang mengatur diri"
-  },
-  {
-   "skill": "AI-08",
-   "n": 99,
-   "rule": "short-cue",
-   "detail": "correct 375 chars vs 468"
   },
   {
    "skill": "FIN-02",
