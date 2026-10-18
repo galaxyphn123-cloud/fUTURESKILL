@@ -67,3 +67,8 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - `npm test` lolos. `npm run quality`: NEEDS REVIEW 209 (dari 731): absolute-word 21, short-cue 37 (keduanya hanya di konten LHL baru), option-long 256, too-long 23, hint-leak 2. Semua domain lama bersih dari `length-cue`/`short-cue`/`absolute-word`.
 - Perbaikan data: PS-03 #18 (solutionStrategies.js) kuncinya salah (`answer:2` padahal opsi 0 yang benar) -> `answer:0` dan pengecoh ditulis ulang. M-14 #34: pengecoh lama ("90 + 30 kotak") ternyata ikut benar (=120), diganti.
 - Teks baru belum ditinjau manusia; sebagian pengecoh mungkin masih terasa dibuat-buat atau seragam. Sisa: flag LHL (cue), `option-long`, `too-long`, `hint-leak`.
+
+## Perapian cue pengecoh LHL (ronde 6)
+- 58 soal LHL-01..08 (short-cue/absolute-word) ditulis ulang pengecohnya lewat `scripts/patch-distractors.mjs` + `normalize-file.mjs` (posisi jawaban dirotasi ulang).
+- `npm test` lolos; `npm run quality`: NEEDS REVIEW 152 (dari 209) — hanya `option-long` (flag per-opsi, 256 opsi), `too-long` 23, `hint-leak` 2. Tidak ada lagi flag `length-cue`/`short-cue`/`absolute-word` di seluruh konten.
+- Teks baru belum ditinjau manusia.
