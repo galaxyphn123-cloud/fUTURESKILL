@@ -48,3 +48,9 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - DIG-01..08 dan WEL-01..08 (sekitar 1.150 soal pilihan ganda) ditulis ulang: pengecoh berupa kesalahpahaman yang masuk akal, panjang sebanding dengan jawaban benar, tanpa klausa pengisi.
 - Hasil ukur (jawaban benar terpendek / terpanjang / kata mutlak di opsi salah): DIG 69%/22%/61% -> 17%/35%/13%; WEL 67%/25%/53% -> 21%/35%/15%.
 - Belum disentuh: domain lain (CT, M, PS, AI, FIN, COM, COL, CRE, CIV) masih punya sekitar 1.100+ item yang terflag aturan baru, plus 12 item FIN lama. Tidak ada tinjauan manusia atas teks baru.
+
+## Perapian cue pengecoh CIV, COL & COM (ronde 3)
+- Metode sama seperti DIG/WEL: aturan `length-cue`/`short-cue`/`absolute-word` dipakai sebagai daftar sasaran, lalu pengecoh ditulis ulang manual (jawaban benar dan posisinya tidak diubah). CIV-01..08, COL-01..08, COM-01..08 selesai (sekitar 1.700 soal pilihan ganda).
+- Hasil ukur (jawaban benar terpendek / terpanjang / kata mutlak di opsi salah): CIV 57%/-/38% -> 17%/33%/14%; COL 43%/-/ -> 21%/43%/14%; COM 45%/43%/38% -> 23%/43%/5%.
+- Checker: semua 24 skill di atas bersih dari `length-cue`/`short-cue`/`absolute-word` (`npm run quality`: NEEDS REVIEW 1.057, turun dari 1.671).
+- Masih tersisa: CT, M, PS, AI, FIN, CRE (kebanyakan `short-cue`, `option-long`) dan 12 item FIN lama. Teks baru belum ditinjau manusia; sebagian pengecoh mungkin masih terasa dibuat-buat.
