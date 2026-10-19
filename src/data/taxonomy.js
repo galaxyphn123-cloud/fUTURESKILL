@@ -11340,5 +11340,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "SYS-07"
+ },
+ "DEC-01": {
+  "id": "DEC-01",
+  "domain": "DEC",
+  "name": "Mengenali Pilihan",
+  "micro": [
+   {
+    "id": "DEC-01.01",
+    "name": "Pilihan ada di mana-mana",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-01.02",
+    "name": "Pilihan dalam sehari",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-01.03",
+    "name": "Pilihan dan akibatnya",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-01.04",
+    "name": "Pilihan kecil dan besar",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-01.05",
+    "name": "Tidak memilih juga pilihan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-01.06",
+    "name": "Siapa berhak memutuskan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-01.07",
+    "name": "Menemukan opsi tersembunyi",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-01.08",
+    "name": "Menimbang untung dan rugi",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-01.09",
+    "name": "Memutuskan di bawah tekanan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-01.10",
+    "name": "Memutuskan dengan bijak",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "DEC-02": {
+  "id": "DEC-02",
+  "domain": "DEC",
+  "name": "Prioritas & Kriteria",
+  "micro": [
+   {
+    "id": "DEC-02.01",
+    "name": "Mengenal pilihan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-02.02",
+    "name": "Kebutuhan dan keinginan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-02.03",
+    "name": "Mengenal kriteria",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-02.04",
+    "name": "Menentukan prioritas",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-02.05",
+    "name": "Harga dan manfaat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-02.06",
+    "name": "Waktu dan keselamatan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-02.07",
+    "name": "Memberi bobot",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-02.08",
+    "name": "Tabel perbandingan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-02.09",
+    "name": "Menimbang untung rugi",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-02.10",
+    "name": "Keputusan menyeluruh",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-01"
+ },
+ "DEC-03": {
+  "id": "DEC-03",
+  "domain": "DEC",
+  "name": "Mengumpulkan Informasi",
+  "micro": [
+   {
+    "id": "DEC-03.01",
+    "name": "Mengenal informasi",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-03.02",
+    "name": "Apa yang perlu diketahui",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-03.03",
+    "name": "Fakta dan pendapat",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-03.04",
+    "name": "Sumber yang tepercaya",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-03.05",
+    "name": "Bertanya pada orang tepat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-03.06",
+    "name": "Pertanyaan yang baik",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-03.07",
+    "name": "Membandingkan sumber",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-03.08",
+    "name": "Cukup atau belum cukup",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-03.09",
+    "name": "Batas waktu keputusan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-03.10",
+    "name": "Mengumpulkan dan memutuskan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-02"
+ },
+ "DEC-04": {
+  "id": "DEC-04",
+  "domain": "DEC",
+  "name": "Risiko & Peluang",
+  "micro": [
+   {
+    "id": "DEC-04.01",
+    "name": "Mengenal risiko",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-04.02",
+    "name": "Aman atau berbahaya",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-04.03",
+    "name": "Risiko kecil atau besar",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-04.04",
+    "name": "Kemungkinan dan dampak",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-04.05",
+    "name": "Bahaya di jalan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-04.06",
+    "name": "Bahaya air dan rumah",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-04.07",
+    "name": "Risiko online",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-04.08",
+    "name": "Rencana cadangan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-04.09",
+    "name": "Risiko sepadan manfaat",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-04.10",
+    "name": "Menimbang peluang",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-03"
+ },
+ "DEC-05": {
+  "id": "DEC-05",
+  "domain": "DEC",
+  "name": "Konsekuensi Jangka Pendek & Panjang",
+  "micro": [
+   {
+    "id": "DEC-05.01",
+    "name": "Sekarang dan nanti",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-05.02",
+    "name": "Akibat dari tindakan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-05.03",
+    "name": "Untung sekarang rugi nanti",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-05.04",
+    "name": "Menunda kepuasan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-05.05",
+    "name": "Dampak pada orang lain",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-05.06",
+    "name": "Siapa yang terkena",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-05.07",
+    "name": "Akibat berantai",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-05.08",
+    "name": "Menimbang untung dan rugi",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-05.09",
+    "name": "Dampak bersama dan lingkungan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-05.10",
+    "name": "Keputusan bijak menyeluruh",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-04"
+ },
+ "DEC-06": {
+  "id": "DEC-06",
+  "domain": "DEC",
+  "name": "Emosi & Bias dalam Memilih",
+  "micro": [
+   {
+    "id": "DEC-06.01",
+    "name": "Perasaan dan pilihan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-06.02",
+    "name": "Berhenti sebelum bertindak",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-06.03",
+    "name": "Marah, lapar, lelah",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-06.04",
+    "name": "FOMO dan ikut-ikutan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-06.05",
+    "name": "Tekanan teman",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-06.06",
+    "name": "Bias konfirmasi",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-06.07",
+    "name": "Efek bingkai",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-06.08",
+    "name": "Sudah terlanjur",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-06.09",
+    "name": "Teknik jeda",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-06.10",
+    "name": "Menimbang bias bersama",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-05"
+ },
+ "DEC-07": {
+  "id": "DEC-07",
+  "domain": "DEC",
+  "name": "Memutuskan Bersama",
+  "micro": [
+   {
+    "id": "DEC-07.01",
+    "name": "Memilih bersama",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-07.02",
+    "name": "Giliran dan mendengar",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-07.03",
+    "name": "Pendapat beralasan",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-07.04",
+    "name": "Voting",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-07.05",
+    "name": "Musyawarah",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-07.06",
+    "name": "Mencari konsensus",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-07.07",
+    "name": "Menerima keputusan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-07.08",
+    "name": "Sendiri atau bersama",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-07.09",
+    "name": "Menengahi perbedaan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-07.10",
+    "name": "Keputusan yang adil",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-06"
+ },
+ "DEC-08": {
+  "id": "DEC-08",
+  "domain": "DEC",
+  "name": "Mengevaluasi & Belajar dari Keputusan",
+  "micro": [
+   {
+    "id": "DEC-08.01",
+    "name": "Hasil dari pilihan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "DEC-08.02",
+    "name": "Salah itu boleh",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "DEC-08.03",
+    "name": "Keputusan baik, hasil baik?",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "DEC-08.04",
+    "name": "Peran keberuntungan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "DEC-08.05",
+    "name": "Meninjau keputusan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "DEC-08.06",
+    "name": "Mengakui tanpa menyalahkan diri",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "DEC-08.07",
+    "name": "Memisahkan proses dan hasil",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "DEC-08.08",
+    "name": "Menyadari bias saat meninjau",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "DEC-08.09",
+    "name": "Mencatat dan memakai pelajaran",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "DEC-08.10",
+    "name": "Memperbaiki proses memilih",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "DEC-07"
  }
 };

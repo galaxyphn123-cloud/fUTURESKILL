@@ -109,10 +109,12 @@ import { WATER_ENERGY_ACTIVITIES } from "./activities/waterEnergy.js";
 import { CLIMATE_ACTION_ACTIVITIES } from "./activities/climateAction.js";
 import { ACTIVE_CITIZEN_ACTIVITIES } from "./activities/activeCitizen.js";
 import { LHL_SKILLS, LHL_DOMAIN_NAME } from "./activities/lhl/index.js";
+import { DEC_SKILLS, DEC_DOMAIN_NAME } from "./activities/dec/index.js";
 import { SYS_SKILLS, SYS_DOMAIN_NAME } from "./activities/sys/index.js";
 
 export const SKILL_CONTENT = {
   ...Object.fromEntries(LHL_SKILLS.map(s => [s.id, s.activities])),
+  ...Object.fromEntries(DEC_SKILLS.map(s => [s.id, s.activities])),
   ...Object.fromEntries(SYS_SKILLS.map(s => [s.id, s.activities])),
   "CT-01": OBSERVATION_ACTIVITIES, "CT-02": COMPARISON_ACTIVITIES, "CT-03": CLASSIFICATION_ACTIVITIES,
   "CT-04": PATTERN_ACTIVITIES,
@@ -278,5 +280,6 @@ export const LIVE_SKILLS = [
   { id: "CIV-07", domain: "Kewargaan & Lingkungan", name: "Perubahan Iklim & Aksi Nyata" },
   { id: "CIV-08", domain: "Kewargaan & Lingkungan", name: "Menjadi Warga yang Peduli & Berkontribusi" },
   ...LHL_SKILLS.map(s => ({ id: s.id, domain: LHL_DOMAIN_NAME, name: s.name })),
+  ...DEC_SKILLS.map(s => ({ id: s.id, domain: DEC_DOMAIN_NAME, name: s.name })),
   ...SYS_SKILLS.map(s => ({ id: s.id, domain: SYS_DOMAIN_NAME, name: s.name })),
 ];

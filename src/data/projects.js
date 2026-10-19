@@ -43,4 +43,6 @@ export const PROJECTS = [
     prompts: ["Aksi apa yang kamu pilih dan mengapa penting?", "Langkah-langkah apa yang kamu lakukan?", "Siapa yang kamu ajak, dan bagaimana caranya?", "Apa dampaknya, dan bagaimana kamu mengukurnya?"] },
   { id: "p_sys", domain: "SYS", icon: "⌬", title: "Peta Sistem Sekitarku", brief: "Pilih satu sistem di rumah atau sekolah (mis. kantin, sampah, perjalanan ke sekolah) dan gambarkan bagian-bagiannya.",
     prompts: ["Sistem apa yang kamu pilih, dan apa saja bagian-bagiannya?", "Gambarkan panah sebab-akibat antar bagian. Mana yang saling memengaruhi?", "Adakah lingkaran umpan balik (penguat atau penyeimbang)? Jelaskan.", "Satu perubahan kecil apa yang bisa memperbaiki sistem itu, dan apa dampak tak terdugamya?"] },
+  { id: "p_dec", domain: "DEC", icon: "⇄", title: "Keputusan Pentingku", brief: "Pilih satu keputusan nyata (mis. memilih ekskul atau cara memakai uang saku) dan putuskan dengan langkah yang jelas.",
+    prompts: ["Keputusan apa yang kamu hadapi, dan apa saja pilihannya?","Apa kriteria yang paling penting bagimu? Bandingkan pilihanmu dengan kriteria itu.","Apa risiko dan akibat jangka pendek maupun panjang dari tiap pilihan?","Apa keputusanmu, dan bagaimana kamu akan meninjau hasilnya nanti?"] },
 ];

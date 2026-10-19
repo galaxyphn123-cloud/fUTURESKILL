@@ -33,6 +33,9 @@ assert.deepEqual(balanceFlags(ok), []);
 // 5. baseline ratchet: a legacy skill may stay at its recorded skew but not worsen
 const flags = balanceFlags(longRight);
 const longest = flags.find(f => f.rule === "longest-skew").value;
-assert.deepEqual(balanceFlags(longRight, { "longest-skew": longest }), []);
-assert.ok(balanceFlags(longRight, { "longest-skew": longest - 0.1 }).length > 0);
+assert.deepEqual(balanceFlags(longRight, { "longest-skew": longest }).filter(f => f.rule === "longest-skew"), []);
+assert.ok(balanceFlags(longRight, { "longest-skew": longest - 0.1 }).some(f => f.rule === "longest-skew"));
+// 6. upside-down tells: right answer is never the longest
+const neverLongest = make((n, i) => { const a = rot(i); const o = ["Pengecoh yang lebih panjang satu", "Pengecoh yang lebih panjang dua"]; o.splice(a, 0, "Jawaban benar pendek"); return mk(n, a, o); });
+assert.ok(balanceFlags(neverLongest).some(f => f.rule === "longest-low"), "never-longest must be flagged");
 console.log("balance engine: all assertions passed");
