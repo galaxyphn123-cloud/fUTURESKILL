@@ -45,4 +45,6 @@ export const PROJECTS = [
     prompts: ["Sistem apa yang kamu pilih, dan apa saja bagian-bagiannya?", "Gambarkan panah sebab-akibat antar bagian. Mana yang saling memengaruhi?", "Adakah lingkaran umpan balik (penguat atau penyeimbang)? Jelaskan.", "Satu perubahan kecil apa yang bisa memperbaiki sistem itu, dan apa dampak tak terdugamya?"] },
   { id: "p_dec", domain: "DEC", icon: "⇄", title: "Keputusan Pentingku", brief: "Pilih satu keputusan nyata (mis. memilih ekskul atau cara memakai uang saku) dan putuskan dengan langkah yang jelas.",
     prompts: ["Keputusan apa yang kamu hadapi, dan apa saja pilihannya?","Apa kriteria yang paling penting bagimu? Bandingkan pilihanmu dengan kriteria itu.","Apa risiko dan akibat jangka pendek maupun panjang dari tiap pilihan?","Apa keputusanmu, dan bagaimana kamu akan meninjau hasilnya nanti?"] },
+  { id: "p_ldr", domain: "LDR", icon: "⚑", title: "Aku Memimpin Satu Kegiatan", brief: "Pimpin satu kegiatan kecil bersama teman (mis. kerja bakti kelas atau lomba mini) dari rencana sampai evaluasi.",
+    prompts: ["Apa tujuan kegiatanmu, dan bagaimana kamu melibatkan teman-temanmu?","Bagaimana kamu membagi tugas dan memastikan semua mendapat bagian yang adil?","Apa yang sulit saat memimpin, dan bagaimana kamu menanganinya?","Apa yang kamu pelajari tentang dirimu sebagai pemimpin, dan apa yang akan kamu ubah?"] },
 ];

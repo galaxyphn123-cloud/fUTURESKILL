@@ -1,5 +1,6 @@
 import { COLORS } from "../theme.js";
 import { LHL_SKILLS, LHL_DOMAIN_NAME } from "./activities/lhl/index.js";
+import { LDR_SKILLS, LDR_DOMAIN_NAME } from "./activities/ldr/index.js";
 import { DEC_SKILLS, DEC_DOMAIN_NAME } from "./activities/dec/index.js";
 import { SYS_SKILLS, SYS_DOMAIN_NAME } from "./activities/sys/index.js";
 
@@ -153,6 +154,8 @@ export const DOMAINS = [
     skills: SYS_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
   { id: "DEC", group: "Pikiran Masa Depan", name: DEC_DOMAIN_NAME, icon: "⇄", color: COLORS.amber,
     skills: DEC_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
+  { id: "LDR", group: "Pikiran Masa Depan", name: LDR_DOMAIN_NAME, icon: "⚑", color: COLORS.coral,
+    skills: LDR_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
 ];
 
 export const PHASES = [

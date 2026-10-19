@@ -12060,5 +12060,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "DEC-07"
+ },
+ "LDR-01": {
+  "id": "LDR-01",
+  "domain": "LDR",
+  "name": "Memimpin Diri",
+  "micro": [
+   {
+    "id": "LDR-01.01",
+    "name": "Mengenal diri sendiri",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-01.02",
+    "name": "Tanggung jawab pribadi",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-01.03",
+    "name": "Disiplin dan rutinitas",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-01.04",
+    "name": "Tujuan pribadi",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-01.05",
+    "name": "Langkah menuju tujuan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-01.06",
+    "name": "Mengelola emosi",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-01.07",
+    "name": "Menghadapi godaan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-01.08",
+    "name": "Kebiasaan baik",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-01.09",
+    "name": "Menjadi teladan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-01.10",
+    "name": "Memimpin diri dan orang lain",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "LDR-02": {
+  "id": "LDR-02",
+  "domain": "LDR",
+  "name": "Inisiatif",
+  "micro": [
+   {
+    "id": "LDR-02.01",
+    "name": "Melihat kebutuhan sekitar",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-02.02",
+    "name": "Memulai tanpa disuruh",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-02.03",
+    "name": "Inisiatif di rumah",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-02.04",
+    "name": "Mengajukan ide",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-02.05",
+    "name": "Meminta izin",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-02.06",
+    "name": "Menyusun langkah kecil",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-02.07",
+    "name": "Menindaklanjuti sampai selesai",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-02.08",
+    "name": "Menghormati batas",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-02.09",
+    "name": "Menimbang risiko dan manfaat",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-02.10",
+    "name": "Inisiatif bersama dan refleksi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-01"
+ },
+ "LDR-03": {
+  "id": "LDR-03",
+  "domain": "LDR",
+  "name": "Menetapkan Tujuan Bersama",
+  "micro": [
+   {
+    "id": "LDR-03.01",
+    "name": "Mengenal tujuan bersama",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-03.02",
+    "name": "Tujuan yang jelas",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-03.03",
+    "name": "Tujuan yang terukur",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-03.04",
+    "name": "Mendengar semua suara",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-03.05",
+    "name": "Memecah jadi langkah",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-03.06",
+    "name": "Membagi peran",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-03.07",
+    "name": "Menyepakati bersama",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-03.08",
+    "name": "Memeriksa kemajuan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-03.09",
+    "name": "Mengatasi hambatan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-03.10",
+    "name": "Memimpin tujuan utuh",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-02"
+ },
+ "LDR-04": {
+  "id": "LDR-04",
+  "domain": "LDR",
+  "name": "Mendengarkan & Memotivasi",
+  "micro": [
+   {
+    "id": "LDR-04.01",
+    "name": "Mendengar dengan baik",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-04.02",
+    "name": "Tanda mendengarkan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-04.03",
+    "name": "Bertanya untuk memahami",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-04.04",
+    "name": "Memahami kebutuhan teman",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-04.05",
+    "name": "Apresiasi yang tulus",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-04.06",
+    "name": "Memberi semangat",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-04.07",
+    "name": "Umpan balik membangun",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-04.08",
+    "name": "Menyemangati yang kesulitan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-04.09",
+    "name": "Memotivasi kelompok",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-04.10",
+    "name": "Pemimpin yang mendengar",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-03"
+ },
+ "LDR-05": {
+  "id": "LDR-05",
+  "domain": "LDR",
+  "name": "Membagi Tugas & Mempercayai",
+  "micro": [
+   {
+    "id": "LDR-05.01",
+    "name": "Mengenal tugas bersama",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-05.02",
+    "name": "Tugas sesuai kekuatan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-05.03",
+    "name": "Berbagi, bukan menguasai",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-05.04",
+    "name": "Adil dalam beban",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-05.05",
+    "name": "Menjelaskan tugas dengan jelas",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-05.06",
+    "name": "Percaya tanpa mengekang",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-05.07",
+    "name": "Memantau dengan bijak",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-05.08",
+    "name": "Membantu saat diperlukan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-05.09",
+    "name": "Menangani masalah tugas",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-05.10",
+    "name": "Memimpin tim sendiri",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-04"
+ },
+ "LDR-06": {
+  "id": "LDR-06",
+  "domain": "LDR",
+  "name": "Teladan & Integritas",
+  "micro": [
+   {
+    "id": "LDR-06.01",
+    "name": "Mengenal kejujuran",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-06.02",
+    "name": "Kata dan perbuatan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-06.03",
+    "name": "Menepati janji",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-06.04",
+    "name": "Adil kepada semua",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-06.05",
+    "name": "Mengakui kesalahan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-06.06",
+    "name": "Menolak jalan curang",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-06.07",
+    "name": "Jujur saat berisiko",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-06.08",
+    "name": "Konsisten tanpa pengawasan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-06.09",
+    "name": "Teladan bagi orang lain",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-06.10",
+    "name": "Integritas seorang pemimpin",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-05"
+ },
+ "LDR-07": {
+  "id": "LDR-07",
+  "domain": "LDR",
+  "name": "Memimpin saat Sulit",
+  "micro": [
+   {
+    "id": "LDR-07.01",
+    "name": "Mengenali emosi sulit",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-07.02",
+    "name": "Tenang dan bernapas",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-07.03",
+    "name": "Mendengar dengan adil",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-07.04",
+    "name": "Menengahi perselisihan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-07.05",
+    "name": "Menyemangati tim",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-07.06",
+    "name": "Tidak menyalahkan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-07.07",
+    "name": "Belajar dari kegagalan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-07.08",
+    "name": "Keputusan sulit yang adil",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-07.09",
+    "name": "Memulihkan semangat tim",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-07.10",
+    "name": "Memimpin di tengah krisis",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-06"
+ },
+ "LDR-08": {
+  "id": "LDR-08",
+  "domain": "LDR",
+  "name": "Memimpin dengan Melayani",
+  "micro": [
+   {
+    "id": "LDR-08.01",
+    "name": "Mengenal melayani",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LDR-08.02",
+    "name": "Peka pada kebutuhan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LDR-08.03",
+    "name": "Rendah hati",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LDR-08.04",
+    "name": "Berbagi pujian",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LDR-08.05",
+    "name": "Mendengar sebelum memutuskan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LDR-08.06",
+    "name": "Kepemimpinan bergilir",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LDR-08.07",
+    "name": "Dampak keputusan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LDR-08.08",
+    "name": "Menimbang kepentingan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LDR-08.09",
+    "name": "Menyiapkan penerus",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LDR-08.10",
+    "name": "Memimpin sepenuh hati",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LDR-07"
  }
 };
