@@ -92,6 +92,6 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 ### Ronde 8: klausa alasan (rationale-skew)
 - 12 sub-agen menulis ulang pengecoh di 72 skill (CT-06/08, PS, FIN, AI-02..08, COM, COL, CRE, DIG, WEL, CIV-02..08): pengecoh yang memuat `karena/sebab/supaya/sehingga/agar` ditulis ulang jadi klaim salah langsung (kalimat utuh, bukan potongan), sebagian kecil opsi benar diberi alasan singkat. Menghapus klausa memendekkan pengecoh dan sempat menaikkan `longest-skew`; itu diperbaiki per skill dengan memperpanjang pengecoh secara substantif.
 - Selisih (% opsi salah berklausa - % opsi benar berklausa) turun dari 30-74 poin menjadi sekitar -4..+16 poin. Metrik kini dua arah (nilai absolut), supaya tidak berbalik jadi tell sebaliknya; batas 25 poin.
-- `balance-baseline.json` dikosongkan: seluruh 118 skill lolos batas penuh. Skill dengan selisih tertinggi sekarang (belum dikerjakan, tepat di batas): AI-01 dan WEL-06 (25), CIV-01 (22), CT-05 (21).
+- `balance-baseline.json` dikosongkan: seluruh 118 skill lolos batas penuh. Empat skill yang tadinya dekat batas (AI-01 dan WEL-06 25, CIV-01 22, CT-05 21) dirapikan ke 9-13 poin.
 - `npm test` (termasuk gate) lolos; `npm run quality`: NEEDS REVIEW 0 dari 11.800.
 - Catatan jujur: ribuan pengecoh ditulis ulang oleh sub-agen tanpa tinjauan manusia; pola penulisan baru ("klaim; alasan", "dianggap", "jadi") bisa menjadi tell baru yang belum terukur. Rekomendasi: tinjauan manusia atas sampel acak per domain dan uji coba dengan anak.

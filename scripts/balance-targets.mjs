@@ -31,7 +31,7 @@ for (const id of process.argv.slice(2)) {
     console.log(`-- absolute-skew: ${abs.detail}. Remove the absolute word from distractors (reword to a plausible hedged-but-wrong claim) in ~${need} of these ${rows.length}:`);
     rows.forEach(a => { console.log(`${a.n}. ${a.q}`); a.options.forEach((o, i) => console.log(`   ${i === a.answer ? "*" : " "}${i} (${o.length}) ${o}`)); });
   }
-  const rat = flags.find(f => f.rule === "rationale-skew");
+  const rat = flags.find(f => f.rule === "rationale-skew") || (Math.abs(m.rationale) > 0.15 ? { detail: `rationale gap ${Math.round(m.rationale * 100)} points (soft target <= 15)` } : null);
   if (rat) {
     const R = /\b(karena|sebab|supaya|sehingga|agar)\b/i;
     const nW = acts.filter(a => a.type === "mcq").reduce((t, a) => t + a.options.length - 1, 0);
