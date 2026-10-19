@@ -14,14 +14,14 @@ import { balanceFlags, balanceMetrics } from "./lib/skillBalance.mjs";
 
 const basePath = new URL("./lib/balance-baseline.json", import.meta.url);
 const baseline = fs.existsSync(basePath) ? JSON.parse(fs.readFileSync(basePath, "utf8")) : {};
-const RULE_KEY = { "position-skew": "slotShare", "position-run": "run", "longest-skew": "longest", "shortest-skew": "shortest", "absolute-skew": "absolute", "rationale-skew": "rationale" };
+const RULE_KEY = { "position-skew": "slotShare", "position-run": "run", "longest-skew": "longest", "shortest-skew": "shortest", "absolute-skew": "absolute", "rationale-skew": "rationaleAbs" };
 
 if (process.argv.includes("--update-baseline")) {
   const next = {};
   for (const [id, acts] of Object.entries(SKILL_CONTENT)) {
     const cur = balanceFlags(acts); // violations vs plain limits only
     if (!cur.length) continue;
-    const m = balanceMetrics(acts), old = baseline[id] || {};
+    const m = balanceMetrics(acts); m.rationaleAbs = Math.abs(m.rationale); const old = baseline[id] || {};
     next[id] = {};
     for (const f of cur) { const v = m[RULE_KEY[f.rule]]; next[id][f.rule] = Math.ceil(Math.min(v, old[f.rule] ?? Infinity) * 1000) / 1000; }
   }

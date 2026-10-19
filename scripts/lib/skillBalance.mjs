@@ -50,6 +50,6 @@ export function balanceFlags(acts, baseline = null) {
   test("longest-skew", m.longest, m.chance + LIMITS.longest, `right answer is the longest in ${Math.round(m.longest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%)`);
   test("shortest-skew", m.shortest, m.chance + LIMITS.shortest, `right answer is the shortest in ${Math.round(m.shortest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%)`);
   test("absolute-skew", m.absolute, LIMITS.absolute, `${Math.round(m.absolute * 100)}% of MCQs have absolute words only in distractors`);
-  test("rationale-skew", m.rationale, LIMITS.rationale, `wrong options contain a justification clause ${Math.round(m.rationale * 100)} points more often than the right one`);
+  test("rationale-skew", Math.abs(m.rationale), LIMITS.rationale, `wrong and right options differ by ${Math.round(m.rationale * 100)} points in how often they carry a justification clause`);
   return out;
 }
