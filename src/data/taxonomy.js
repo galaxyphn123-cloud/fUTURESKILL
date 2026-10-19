@@ -10620,5 +10620,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "LHL-07"
+ },
+ "SYS-01": {
+  "id": "SYS-01",
+  "domain": "SYS",
+  "name": "Bagian & Keseluruhan",
+  "micro": [
+   {
+    "id": "SYS-01.01",
+    "name": "Mengenal bagian",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-01.02",
+    "name": "Bagian membentuk keseluruhan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-01.03",
+    "name": "Fungsi tiap bagian",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-01.04",
+    "name": "Hubungan antarbagian",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-01.05",
+    "name": "Bagian hilang atau rusak",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-01.06",
+    "name": "Bagian kecil, dampak besar",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-01.07",
+    "name": "Sistem dalam kehidupan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-01.08",
+    "name": "Rantai pengaruh",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-01.09",
+    "name": "Menganalisis sistem",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-01.10",
+    "name": "Merancang dan memperbaiki",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "SYS-02": {
+  "id": "SYS-02",
+  "domain": "SYS",
+  "name": "Sebab-Akibat Berantai",
+  "micro": [
+   {
+    "id": "SYS-02.01",
+    "name": "Sebab dan akibat",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-02.02",
+    "name": "Rantai dua langkah",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-02.03",
+    "name": "Rantai yang lebih panjang",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-02.04",
+    "name": "Mencari penyebab",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-02.05",
+    "name": "Pengaruh bolak-balik",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-02.06",
+    "name": "Lingkaran menguat dan menyeimbang",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-02.07",
+    "name": "Efek samping",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-02.08",
+    "name": "Akibat yang tertunda",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-02.09",
+    "name": "Memutus dan mengubah rantai",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-02.10",
+    "name": "Menimbang sistem utuh",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-01"
+ },
+ "SYS-03": {
+  "id": "SYS-03",
+  "domain": "SYS",
+  "name": "Umpan Balik (Feedback)",
+  "micro": [
+   {
+    "id": "SYS-03.01",
+    "name": "Mengenal umpan balik",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-03.02",
+    "name": "Lingkaran sebab-akibat",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-03.03",
+    "name": "Penguat: makin besar",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-03.04",
+    "name": "Penyeimbang: menjaga seimbang",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-03.05",
+    "name": "Termostat dan perangkat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-03.06",
+    "name": "Kebiasaan dan tabungan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-03.07",
+    "name": "Penguat atau penyeimbang",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-03.08",
+    "name": "Jeda dan akibat tak terduga",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-03.09",
+    "name": "Menggambar lingkaran sistem",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-03.10",
+    "name": "Merancang umpan balik",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-02"
+ },
+ "SYS-04": {
+  "id": "SYS-04",
+  "domain": "SYS",
+  "name": "Pola & Perubahan Seiring Waktu",
+  "micro": [
+   {
+    "id": "SYS-04.01",
+    "name": "Naik, turun, tetap",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-04.02",
+    "name": "Pola berulang",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-04.03",
+    "name": "Siklus harian dan musim",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-04.04",
+    "name": "Membaca grafik sederhana",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-04.05",
+    "name": "Cepat dan lambat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-04.06",
+    "name": "Tren dari data",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-04.07",
+    "name": "Jeda waktu",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-04.08",
+    "name": "Pertumbuhan bertahap dan berlipat",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-04.09",
+    "name": "Meramal pola dan batasnya",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-04.10",
+    "name": "Pola sistem dalam kasus",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-03"
+ },
+ "SYS-05": {
+  "id": "SYS-05",
+  "domain": "SYS",
+  "name": "Sistem Alam & Daur",
+  "micro": [
+   {
+    "id": "SYS-05.01",
+    "name": "Makhluk hidup dan lingkungan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-05.02",
+    "name": "Daur air dasar",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-05.03",
+    "name": "Rantai makanan",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-05.04",
+    "name": "Produsen, konsumen, pengurai",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-05.05",
+    "name": "Jaring makanan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-05.06",
+    "name": "Ekosistem dan habitat",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-05.07",
+    "name": "Keseimbangan alam",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-05.08",
+    "name": "Gangguan dan pencemaran",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-05.09",
+    "name": "Efek berantai",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-05.10",
+    "name": "Pemulihan dan pelestarian",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-04"
+ },
+ "SYS-06": {
+  "id": "SYS-06",
+  "domain": "SYS",
+  "name": "Sistem Buatan Manusia",
+  "micro": [
+   {
+    "id": "SYS-06.01",
+    "name": "Mengenal sistem buatan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-06.02",
+    "name": "Masukan dan keluaran",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-06.03",
+    "name": "Proses di tengah",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-06.04",
+    "name": "Pelaku dan perannya",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-06.05",
+    "name": "Aturan sistem",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-06.06",
+    "name": "Saling bergantung",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-06.07",
+    "name": "Titik macet",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-06.08",
+    "name": "Rantai pasok makanan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-06.09",
+    "name": "Sistem dalam sistem",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-06.10",
+    "name": "Merancang dan memperbaiki",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-05"
+ },
+ "SYS-07": {
+  "id": "SYS-07",
+  "domain": "SYS",
+  "name": "Dampak Tak Terduga & Titik Ungkit",
+  "micro": [
+   {
+    "id": "SYS-07.01",
+    "name": "Akibat dari tindakan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-07.02",
+    "name": "Dekat dan jauh",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-07.03",
+    "name": "Efek samping",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-07.04",
+    "name": "Solusi cepat",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-07.05",
+    "name": "Solusi sementara",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-07.06",
+    "name": "Efek berantai",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-07.07",
+    "name": "Titik ungkit kecil",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-07.08",
+    "name": "Memilih titik ungkit",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-07.09",
+    "name": "Menimbang jangka panjang",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-07.10",
+    "name": "Merancang aksi bijak",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-06"
+ },
+ "SYS-08": {
+  "id": "SYS-08",
+  "domain": "SYS",
+  "name": "Merancang & Memperbaiki Sistem",
+  "micro": [
+   {
+    "id": "SYS-08.01",
+    "name": "Mengenal bagian sistem",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "SYS-08.02",
+    "name": "Membaca panah hubungan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "SYS-08.03",
+    "name": "Memetakan sistem sederhana",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "SYS-08.04",
+    "name": "Lingkaran sebab-akibat",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "SYS-08.05",
+    "name": "Mencari akar masalah",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "SYS-08.06",
+    "name": "Dampak tak terduga",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "SYS-08.07",
+    "name": "Sudut pandang pemangku",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "SYS-08.08",
+    "name": "Menguji perubahan kecil",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "SYS-08.09",
+    "name": "Mengevaluasi hasil",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "SYS-08.10",
+    "name": "Merancang dan memperbaiki",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "SYS-07"
  }
 };

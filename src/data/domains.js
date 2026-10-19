@@ -1,5 +1,6 @@
 import { COLORS } from "../theme.js";
 import { LHL_SKILLS, LHL_DOMAIN_NAME } from "./activities/lhl/index.js";
+import { SYS_SKILLS, SYS_DOMAIN_NAME } from "./activities/sys/index.js";
 
 export const DOMAINS = [
   { id: "MATH", group: "Fondasi Sekolah", name: "Matematika", icon: "◆", color: COLORS.sky,
@@ -147,6 +148,8 @@ export const DOMAINS = [
     ] },
   { id: "LHL", group: "Pikiran Masa Depan", name: LHL_DOMAIN_NAME, icon: "❂", color: COLORS.moss,
     skills: LHL_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
+  { id: "SYS", group: "Pikiran Masa Depan", name: SYS_DOMAIN_NAME, icon: "⌬", color: COLORS.sky,
+    skills: SYS_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
 ];
 
 export const PHASES = [

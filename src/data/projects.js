@@ -41,4 +41,6 @@ export const PROJECTS = [
     prompts: ["Apa yang ingin kamu pelajari dan mengapa?", "Cara belajar apa yang akan kamu pakai (melihat, mendengar, mencoba, menjelaskan)? Mengapa cocok?", "Tulis jadwal belajar kecil selama satu minggu.", "Bagaimana kamu akan mengecek bahwa kamu makin bisa?"] },
   { id: "p_civ", domain: "CIV", icon: "❖", title: "Aksi Peduli Lingkungan", brief: "Rencanakan satu aksi nyata untuk lingkungan sekitarmu.",
     prompts: ["Aksi apa yang kamu pilih dan mengapa penting?", "Langkah-langkah apa yang kamu lakukan?", "Siapa yang kamu ajak, dan bagaimana caranya?", "Apa dampaknya, dan bagaimana kamu mengukurnya?"] },
+  { id: "p_sys", domain: "SYS", icon: "⌬", title: "Peta Sistem Sekitarku", brief: "Pilih satu sistem di rumah atau sekolah (mis. kantin, sampah, perjalanan ke sekolah) dan gambarkan bagian-bagiannya.",
+    prompts: ["Sistem apa yang kamu pilih, dan apa saja bagian-bagiannya?", "Gambarkan panah sebab-akibat antar bagian. Mana yang saling memengaruhi?", "Adakah lingkaran umpan balik (penguat atau penyeimbang)? Jelaskan.", "Satu perubahan kecil apa yang bisa memperbaiki sistem itu, dan apa dampak tak terdugamya?"] },
 ];

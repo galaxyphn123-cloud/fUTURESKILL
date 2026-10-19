@@ -2,14 +2,15 @@
    *statistical* ones a child (or a test-wise model) can exploit across a whole skill file:
      position-skew   one answer slot (e.g. "A"/index 0) holds far more than its fair share of right answers
      position-run    >=4 MCQs in a row with the correct option in the same slot
-     longest-skew    the right answer is the longest option much more often than chance
+     longest-skew    the right answer is the longest option much more often than chance (or much LESS often:
+                   'the longest option is never right' is the same tell upside down; likewise shortest)
      shortest-skew   ... or the shortest
      rationale-skew  wrong options carry a justification clause (karena/sebab/supaya/sehingga/agar) far more often than the right one
    absolute-skew   (net) distractors carry "selalu/pasti/..." while the right answer does not, too often
    Thresholds are chance + margin, so 2-, 3- and 4-option items are all handled. */
 const ABSOLUTE = /\b(selalu|pasti|sama sekali|semua orang|tidak pernah|selamanya|apa pun|siapa pun|tidak ada yang|satu-satunya)\b/i;
 const RATIONALE = /\b(karena|sebab|supaya|sehingga|agar)\b/i;
-export const LIMITS = { position: 0.12, run: 4, longest: 0.17, shortest: 0.12, absolute: 0.12, rationale: 0.25, minMcq: 20 };
+export const LIMITS = { longestLow: 0.2, shortestLow: 0.25, position: 0.12, run: 4, longest: 0.17, shortest: 0.12, absolute: 0.12, rationale: 0.25, minMcq: 20 };
 
 export function balanceMetrics(acts) {
   const mcq = acts.filter(a => a.type === "mcq" && Array.isArray(a.options) && Number.isInteger(a.answer));
@@ -50,6 +51,9 @@ export function balanceFlags(acts, baseline = null) {
   test("longest-skew", m.longest, m.chance + LIMITS.longest, `right answer is the longest in ${Math.round(m.longest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%)`);
   test("shortest-skew", m.shortest, m.chance + LIMITS.shortest, `right answer is the shortest in ${Math.round(m.shortest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%)`);
   test("absolute-skew", m.absolute, LIMITS.absolute, `${Math.round(m.absolute * 100)}% of MCQs have absolute words only in distractors`);
+  // Upside-down tells: "never pick the longest/shortest" is just as exploitable.
+  if (m.longest < m.chance - LIMITS.longestLow) out.push({ rule: "longest-low", value: +m.longest.toFixed(3), limit: +(m.chance - LIMITS.longestLow).toFixed(3), detail: `right answer is the longest in only ${Math.round(m.longest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%): lengthen some right answers` });
+  if (m.shortest < m.chance - LIMITS.shortestLow) out.push({ rule: "shortest-low", value: +m.shortest.toFixed(3), limit: +(m.chance - LIMITS.shortestLow).toFixed(3), detail: `right answer is the shortest in only ${Math.round(m.shortest * 100)}% (chance ≈ ${Math.round(m.chance * 100)}%): shorten some right answers` });
   test("rationale-skew", Math.abs(m.rationale), LIMITS.rationale, `wrong and right options differ by ${Math.round(m.rationale * 100)} points in how often they carry a justification clause`);
   return out;
 }

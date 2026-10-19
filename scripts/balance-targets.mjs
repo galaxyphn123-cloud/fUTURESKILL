@@ -23,6 +23,14 @@ for (const id of process.argv.slice(2)) {
       a.options.forEach((o, i) => console.log(`   ${i === a.answer ? "*" : " "}${i} (${o.length}) ${o}`));
     });
   }
+  const low = flags.filter(f => f.rule === "longest-low" || f.rule === "shortest-low");
+  for (const f of low) {
+    const kind = f.rule === "longest-low" ? "longest" : "shortest";
+    const need = Math.ceil(m.mcq * (m.chance - 0.1 - m[kind]));
+    console.log(`-- ${f.rule}: ${f.detail}. Rewrite ~${need} items so the RIGHT answer becomes the ${kind} option (by lengthening/shortening the right answer or distractors; keep it natural):`);
+    const rows = acts.filter(a => a.type === "mcq").map(a => { const L = a.options.map(o => o.length), r = L[a.answer], o = L.filter((_, i) => i !== a.answer); return { a, gap: kind === "longest" ? Math.max(...o) - r : r - Math.min(...o) }; }).filter(r => r.gap > 0).sort((x, y) => x.gap - y.gap).slice(0, need * 2);
+    rows.sort((x, y) => x.a.n - y.a.n).forEach(({ a }) => { console.log(`${a.n}. ${a.q}`); a.options.forEach((o, i) => console.log(`   ${i === a.answer ? "*" : " "}${i} (${o.length}) ${o}`)); });
+  }
   const abs = flags.find(f => f.rule === "absolute-skew");
   if (abs) {
     const A = /\b(selalu|pasti|sama sekali|semua orang|tidak pernah|selamanya|apa pun|siapa pun|tidak ada yang|satu-satunya)\b/i;
