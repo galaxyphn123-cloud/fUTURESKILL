@@ -31,4 +31,13 @@ for (const id of process.argv.slice(2)) {
     console.log(`-- absolute-skew: ${abs.detail}. Remove the absolute word from distractors (reword to a plausible hedged-but-wrong claim) in ~${need} of these ${rows.length}:`);
     rows.forEach(a => { console.log(`${a.n}. ${a.q}`); a.options.forEach((o, i) => console.log(`   ${i === a.answer ? "*" : " "}${i} (${o.length}) ${o}`)); });
   }
+  const rat = flags.find(f => f.rule === "rationale-skew");
+  if (rat) {
+    const R = /\b(karena|sebab|supaya|sehingga|agar)\b/i;
+    const nW = acts.filter(a => a.type === "mcq").reduce((t, a) => t + a.options.length - 1, 0);
+    const need = Math.ceil(nW * (m.rationale - 0.17));
+    const rows = acts.filter(a => a.type === "mcq" && !R.test(a.options[a.answer]) && a.options.some((o, i) => i !== a.answer && R.test(o)));
+    console.log(`-- rationale-skew: ${rat.detail}. Remove ~${need} justification clauses from WRONG options (rewrite as a plain wrong claim, NOT a shorter stub) and/or add a short natural reason to the RIGHT answer, across these ${rows.length} items (spread over all strands):`);
+    rows.forEach(a => { console.log(`${a.n}. ${a.q}`); a.options.forEach((o, i) => console.log(`   ${i === a.answer ? "*" : " "}${i} (${o.length}) ${R.test(o) ? "[R] " : ""}${o}`)); });
+  }
 }
