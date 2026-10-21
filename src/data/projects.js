@@ -51,4 +51,6 @@ export const PROJECTS = [
     prompts: ["Kesulitan apa yang kamu pilih, dan apa yang kamu rasakan saat itu?","Cara apa yang membantumu tenang dan bangkit?","Kepada siapa kamu bisa meminta dukungan, dan bagaimana caranya?","Apa rencana langkah kecilmu jika kesulitan itu datang lagi?"] },
   { id: "p_mil", domain: "MIL", icon: "▣", title: "Detektif Informasi", brief: "Pilih satu pesan atau berita yang beredar (boleh contoh buatan) dan periksa apakah layak dipercaya dan dibagikan.",
     prompts: ["Pesan atau berita apa yang kamu pilih, dan siapa pembuatnya?","Apa tujuan pesan itu: memberi tahu, menghibur, atau membujuk?","Langkah apa yang kamu pakai untuk memeriksa kebenarannya, dan apa hasilnya?","Apakah kamu akan membagikannya? Jelaskan alasanmu."] },
+  { id: "p_lif", domain: "LIF", icon: "✿", title: "Rencana Mandiriku", brief: "Pilih satu keterampilan hidup (mis. menyiapkan sarapan sederhana atau merapikan kamar) dan latih selama satu minggu.",
+    prompts: ["Keterampilan apa yang kamu pilih, dan mengapa penting?","Langkah-langkah apa yang kamu lakukan, dan apa yang perlu kamu waspadai demi keselamatan?","Siapa orang dewasa yang bisa membantumu jika kesulitan?","Apa yang berhasil dan apa yang akan kamu perbaiki minggu depan?"] },
 ];

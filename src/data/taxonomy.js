@@ -14220,5 +14220,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "MIL-07"
+ },
+ "LIF-01": {
+  "id": "LIF-01",
+  "domain": "LIF",
+  "name": "Merawat Diri & Rumah",
+  "micro": [
+   {
+    "id": "LIF-01.01",
+    "name": "Kebersihan badan dasar",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-01.02",
+    "name": "Cuci tangan benar",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-01.03",
+    "name": "Sikat gigi sehat",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-01.04",
+    "name": "Rutinitas pagi dan malam",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-01.05",
+    "name": "Pakaian dan barang pribadi",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-01.06",
+    "name": "Merapikan kamar",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-01.07",
+    "name": "Tugas rumah sederhana",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-01.08",
+    "name": "Rumah dan lingkungan bersih",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-01.09",
+    "name": "Berbagi tugas keluarga",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-01.10",
+    "name": "Mandiri mengatur rumah",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "LIF-02": {
+  "id": "LIF-02",
+  "domain": "LIF",
+  "name": "Rutinitas Harian",
+  "micro": [
+   {
+    "id": "LIF-02.01",
+    "name": "Pagi dan malam hari",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-02.02",
+    "name": "Bangun dan tidur teratur",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-02.03",
+    "name": "Bersiap ke sekolah",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-02.04",
+    "name": "Urutan kegiatan harian",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-02.05",
+    "name": "Jadwal sederhana",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-02.06",
+    "name": "Tas dan perlengkapan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-02.07",
+    "name": "Menjaga waktu",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-02.08",
+    "name": "Rutinitas libur dan sakit",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-02.09",
+    "name": "Menyesuaikan rutinitas",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-02.10",
+    "name": "Rencana dan evaluasi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-01"
+ },
+ "LIF-03": {
+  "id": "LIF-03",
+  "domain": "LIF",
+  "name": "Makan Sehat & Dapur Sederhana",
+  "micro": [
+   {
+    "id": "LIF-03.01",
+    "name": "Mengenal makanan sehat",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-03.02",
+    "name": "Bersih sebelum makan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-03.03",
+    "name": "Isi Piringku",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-03.04",
+    "name": "Minum cukup air",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-03.05",
+    "name": "Keamanan dapur",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-03.06",
+    "name": "Menyiapkan makanan sederhana",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-03.07",
+    "name": "Menyimpan makanan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-03.08",
+    "name": "Tanggal dan label",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-03.09",
+    "name": "Alergi makanan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-03.10",
+    "name": "Rencana makan sehat",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-02"
+ },
+ "LIF-04": {
+  "id": "LIF-04",
+  "domain": "LIF",
+  "name": "Keselamatan Sehari-hari",
+  "micro": [
+   {
+    "id": "LIF-04.01",
+    "name": "Mengenal tanda bahaya",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-04.02",
+    "name": "Orang asing dan dewasa tepercaya",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-04.03",
+    "name": "Listrik dan colokan",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-04.04",
+    "name": "Api dan benda panas",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-04.05",
+    "name": "Benda tajam dan alat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-04.06",
+    "name": "Bahan kimia rumah",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-04.07",
+    "name": "Air dan kolam",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-04.08",
+    "name": "Tangga dan ketinggian",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-04.09",
+    "name": "Sentuhan dan batas tubuh",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-04.10",
+    "name": "Rencana keselamatan pribadi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-03"
+ },
+ "LIF-05": {
+  "id": "LIF-05",
+  "domain": "LIF",
+  "name": "Bepergian & Transportasi",
+  "micro": [
+   {
+    "id": "LIF-05.01",
+    "name": "Rambu dan marka dasar",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-05.02",
+    "name": "Aman di tepi jalan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-05.03",
+    "name": "Menyeberang dengan aman",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-05.04",
+    "name": "Sepeda dan helm",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-05.05",
+    "name": "Sabuk pengaman dan boncengan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-05.06",
+    "name": "Kendaraan umum",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-05.07",
+    "name": "Membaca peta dan petunjuk",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-05.08",
+    "name": "Tersesat atau terpisah",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-05.09",
+    "name": "Rencana perjalanan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-05.10",
+    "name": "Perjalanan mandiri bertanggung jawab",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-04"
+ },
+ "LIF-06": {
+  "id": "LIF-06",
+  "domain": "LIF",
+  "name": "Merawat Barang & Pakaian",
+  "micro": [
+   {
+    "id": "LIF-06.01",
+    "name": "Pakaian bersih dan kotor",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-06.02",
+    "name": "Mencuci dan menjemur",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-06.03",
+    "name": "Melipat dan menata pakaian",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-06.04",
+    "name": "Merawat sepatu",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-06.05",
+    "name": "Merawat tas dan perlengkapan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-06.06",
+    "name": "Menyimpan agar awet",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-06.07",
+    "name": "Perbaikan kecil",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-06.08",
+    "name": "Menggunakan kembali barang",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-06.09",
+    "name": "Memberi barang bekas layak",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-06.10",
+    "name": "Meminjam dan mengembalikan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-05"
+ },
+ "LIF-07": {
+  "id": "LIF-07",
+  "domain": "LIF",
+  "name": "Keadaan Darurat",
+  "micro": [
+   {
+    "id": "LIF-07.01",
+    "name": "Tetap tenang",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-07.02",
+    "name": "Nomor darurat",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-07.03",
+    "name": "Melapor dengan jelas",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-07.04",
+    "name": "Kapan minta orang dewasa",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-07.05",
+    "name": "P3K luka kecil",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-07.06",
+    "name": "Mimisan dan luka bakar ringan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-07.07",
+    "name": "Evakuasi kebakaran",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-07.08",
+    "name": "Gempa bumi",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-07.09",
+    "name": "Menilai situasi darurat",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-07.10",
+    "name": "Rencana darurat keluarga",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-06"
+ },
+ "LIF-08": {
+  "id": "LIF-08",
+  "domain": "LIF",
+  "name": "Mandiri & Mengurus Diri Sendiri",
+  "micro": [
+   {
+    "id": "LIF-08.01",
+    "name": "Mengurus diri sehari-hari",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "LIF-08.02",
+    "name": "Rutinitas pagi dan malam",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "LIF-08.03",
+    "name": "Perlengkapan sekolah",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "LIF-08.04",
+    "name": "Tugas tanpa disuruh",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "LIF-08.05",
+    "name": "Tanggung jawab di rumah",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "LIF-08.06",
+    "name": "Tahu kapan minta bantuan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "LIF-08.07",
+    "name": "Belajar dengan sabar",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "LIF-08.08",
+    "name": "Mandiri dan batas aman",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "LIF-08.09",
+    "name": "Mengambil keputusan sendiri",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "LIF-08.10",
+    "name": "Menuju remaja mandiri",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "LIF-07"
  }
 };
