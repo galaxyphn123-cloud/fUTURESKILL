@@ -47,4 +47,6 @@ export const PROJECTS = [
     prompts: ["Keputusan apa yang kamu hadapi, dan apa saja pilihannya?","Apa kriteria yang paling penting bagimu? Bandingkan pilihanmu dengan kriteria itu.","Apa risiko dan akibat jangka pendek maupun panjang dari tiap pilihan?","Apa keputusanmu, dan bagaimana kamu akan meninjau hasilnya nanti?"] },
   { id: "p_ldr", domain: "LDR", icon: "⚑", title: "Aku Memimpin Satu Kegiatan", brief: "Pimpin satu kegiatan kecil bersama teman (mis. kerja bakti kelas atau lomba mini) dari rencana sampai evaluasi.",
     prompts: ["Apa tujuan kegiatanmu, dan bagaimana kamu melibatkan teman-temanmu?","Bagaimana kamu membagi tugas dan memastikan semua mendapat bagian yang adil?","Apa yang sulit saat memimpin, dan bagaimana kamu menanganinya?","Apa yang kamu pelajari tentang dirimu sebagai pemimpin, dan apa yang akan kamu ubah?"] },
+  { id: "p_res", domain: "RES", icon: "☂", title: "Rencana Bangkitku", brief: "Pilih satu kesulitan kecil yang pernah kamu alami dan susun rencana untuk menghadapinya jika terjadi lagi.",
+    prompts: ["Kesulitan apa yang kamu pilih, dan apa yang kamu rasakan saat itu?","Cara apa yang membantumu tenang dan bangkit?","Kepada siapa kamu bisa meminta dukungan, dan bagaimana caranya?","Apa rencana langkah kecilmu jika kesulitan itu datang lagi?"] },
 ];

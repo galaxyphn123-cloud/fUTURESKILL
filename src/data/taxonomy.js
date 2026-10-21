@@ -12780,5 +12780,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "LDR-07"
+ },
+ "RES-01": {
+  "id": "RES-01",
+  "domain": "RES",
+  "name": "Mengenali Kesulitan",
+  "micro": [
+   {
+    "id": "RES-01.01",
+    "name": "Kesulitan itu wajar",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-01.02",
+    "name": "Kecil dan besar",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-01.03",
+    "name": "Sementara dan lama",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-01.04",
+    "name": "Tanda di tubuh",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-01.05",
+    "name": "Tanda pikiran dan perasaan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-01.06",
+    "name": "Bisa atau tidak bisa diubah",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-01.07",
+    "name": "Menimbang ukuran masalah",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-01.08",
+    "name": "Kapan perlu bantuan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-01.09",
+    "name": "Memilih dan meminta bantuan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-01.10",
+    "name": "Membaca kesulitan sendiri",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "RES-02": {
+  "id": "RES-02",
+  "domain": "RES",
+  "name": "Mengelola Kekecewaan",
+  "micro": [
+   {
+    "id": "RES-02.01",
+    "name": "Mengenali rasa kecewa",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-02.02",
+    "name": "Menamai perasaan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-02.03",
+    "name": "Tanda di tubuh dan pikiran",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-02.04",
+    "name": "Menenangkan diri",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-02.05",
+    "name": "Memberi diri waktu",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-02.06",
+    "name": "Kalah dengan sportif",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-02.07",
+    "name": "Tidak melampiaskan ke orang lain",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-02.08",
+    "name": "Gagal terpilih dan rencana batal",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-02.09",
+    "name": "Berpikir ulang secara seimbang",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-02.10",
+    "name": "Bangkit dan belajar",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-01"
+ },
+ "RES-03": {
+  "id": "RES-03",
+  "domain": "RES",
+  "name": "Bangkit dari Kegagalan",
+  "micro": [
+   {
+    "id": "RES-03.01",
+    "name": "Gagal itu biasa",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-03.02",
+    "name": "Perasaan saat gagal",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-03.03",
+    "name": "Gagal bukan akhir",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-03.04",
+    "name": "Aku gagal, bukan orang gagal",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-03.05",
+    "name": "Mencari penyebab",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-03.06",
+    "name": "Apa yang bisa diperbaiki",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-03.07",
+    "name": "Mencoba cara berbeda",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-03.08",
+    "name": "Kisah orang bangkit",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-03.09",
+    "name": "Bertahan dan dukungan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-03.10",
+    "name": "Rencana bangkit",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-02"
+ },
+ "RES-04": {
+  "id": "RES-04",
+  "domain": "RES",
+  "name": "Optimisme Realistis",
+  "micro": [
+   {
+    "id": "RES-04.01",
+    "name": "Melihat sisi cerah",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-04.02",
+    "name": "Bisa diubah atau tidak",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-04.03",
+    "name": "Bahasa diri yang membantu",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-04.04",
+    "name": "Kata belum dan proses",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-04.05",
+    "name": "Syukur sehari-hari",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-04.06",
+    "name": "Pelajaran dari kesulitan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-04.07",
+    "name": "Harapan dengan rencana",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-04.08",
+    "name": "Optimis atau menyangkal",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-04.09",
+    "name": "Optimis atau pesimis berlebihan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-04.10",
+    "name": "Optimisme untuk diri dan sesama",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-03"
+ },
+ "RES-05": {
+  "id": "RES-05",
+  "domain": "RES",
+  "name": "Mencari Dukungan",
+  "micro": [
+   {
+    "id": "RES-05.01",
+    "name": "Orang dewasa tepercaya",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-05.02",
+    "name": "Mengenali perasaan dan kebutuhan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-05.03",
+    "name": "Pilihan tempat bercerita",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-05.04",
+    "name": "Cara meminta tolong",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-05.05",
+    "name": "Waktu dan cara yang tepat",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-05.06",
+    "name": "Menjadi pendengar bagi teman",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-05.07",
+    "name": "Kapan memberi tahu orang dewasa",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-05.08",
+    "name": "Jaringan dukungan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-05.09",
+    "name": "Bila bantuan belum berhasil",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-05.10",
+    "name": "Saling mendukung dan refleksi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-04"
+ },
+ "RES-06": {
+  "id": "RES-06",
+  "domain": "RES",
+  "name": "Beradaptasi pada Perubahan",
+  "micro": [
+   {
+    "id": "RES-06.01",
+    "name": "Mengenal perubahan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-06.02",
+    "name": "Perasaan saat berubah",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-06.03",
+    "name": "Rutinitas baru",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-06.04",
+    "name": "Rencana yang berubah",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-06.05",
+    "name": "Tempat dan sekolah baru",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-06.06",
+    "name": "Teman dan guru baru",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-06.07",
+    "name": "Fleksibel berpikir",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-06.08",
+    "name": "Sisi positif perubahan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-06.09",
+    "name": "Menjaga yang tetap sama",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-06.10",
+    "name": "Strategi adaptasi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-05"
+ },
+ "RES-07": {
+  "id": "RES-07",
+  "domain": "RES",
+  "name": "Menghadapi Tekanan & Ketakutan",
+  "micro": [
+   {
+    "id": "RES-07.01",
+    "name": "Mengenali rasa gugup",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-07.02",
+    "name": "Napas pelan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-07.03",
+    "name": "Menenangkan tubuh",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-07.04",
+    "name": "Takut hal baru",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-07.05",
+    "name": "Gugup sebelum ujian",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-07.06",
+    "name": "Gugup saat tampil",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-07.07",
+    "name": "Memecah jadi langkah",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-07.08",
+    "name": "Berani bukan tanpa takut",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-07.09",
+    "name": "Tekanan teman",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-07.10",
+    "name": "Target dan rencana",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-06"
+ },
+ "RES-08": {
+  "id": "RES-08",
+  "domain": "RES",
+  "name": "Membangun Ketangguhan Jangka Panjang",
+  "micro": [
+   {
+    "id": "RES-08.01",
+    "name": "Kebiasaan penjaga",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "RES-08.02",
+    "name": "Tidur dan bergerak",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "RES-08.03",
+    "name": "Hobi penguat hati",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "RES-08.04",
+    "name": "Pertemanan yang menguatkan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "RES-08.05",
+    "name": "Tujuan bermakna",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "RES-08.06",
+    "name": "Belajar dari kesulitan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "RES-08.07",
+    "name": "Merawat diri",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "RES-08.08",
+    "name": "Menolong orang bangkit",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "RES-08.09",
+    "name": "Rencana saat sulit",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "RES-08.10",
+    "name": "Ketangguhan jangka panjang",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "RES-07"
  }
 };
