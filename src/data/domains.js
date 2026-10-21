@@ -1,5 +1,6 @@
 import { COLORS } from "../theme.js";
 import { LHL_SKILLS, LHL_DOMAIN_NAME } from "./activities/lhl/index.js";
+import { ETH_SKILLS, ETH_DOMAIN_NAME } from "./activities/eth/index.js";
 import { LIF_SKILLS, LIF_DOMAIN_NAME } from "./activities/lif/index.js";
 import { MIL_SKILLS, MIL_DOMAIN_NAME } from "./activities/mil/index.js";
 import { RES_SKILLS, RES_DOMAIN_NAME } from "./activities/res/index.js";
@@ -165,6 +166,8 @@ export const DOMAINS = [
     skills: MIL_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
   { id: "LIF", group: "Kehidupan", name: LIF_DOMAIN_NAME, icon: "✿", color: COLORS.moss,
     skills: LIF_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
+  { id: "ETH", group: "Kehidupan", name: ETH_DOMAIN_NAME, icon: "❋", color: COLORS.lilac,
+    skills: ETH_SKILLS.map(s => ({ id: s.id, name: s.name, status: "live" })) },
 ];
 
 export const PHASES = [

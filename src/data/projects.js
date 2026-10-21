@@ -53,4 +53,6 @@ export const PROJECTS = [
     prompts: ["Pesan atau berita apa yang kamu pilih, dan siapa pembuatnya?","Apa tujuan pesan itu: memberi tahu, menghibur, atau membujuk?","Langkah apa yang kamu pakai untuk memeriksa kebenarannya, dan apa hasilnya?","Apakah kamu akan membagikannya? Jelaskan alasanmu."] },
   { id: "p_lif", domain: "LIF", icon: "✿", title: "Rencana Mandiriku", brief: "Pilih satu keterampilan hidup (mis. menyiapkan sarapan sederhana atau merapikan kamar) dan latih selama satu minggu.",
     prompts: ["Keterampilan apa yang kamu pilih, dan mengapa penting?","Langkah-langkah apa yang kamu lakukan, dan apa yang perlu kamu waspadai demi keselamatan?","Siapa orang dewasa yang bisa membantumu jika kesulitan?","Apa yang berhasil dan apa yang akan kamu perbaiki minggu depan?"] },
+  { id: "p_eth", domain: "ETH", icon: "❋", title: "Kisah Pilihan Baikku", brief: "Ceritakan satu situasi sehari-hari yang menguji karakter (kejujuran, keadilan, atau keberanian) dan bagaimana kamu memilih bertindak.",
+    prompts: ["Situasi apa yang kamu pilih, dan nilai apa yang sedang diuji?","Apa saja pilihanmu, dan siapa yang terkena akibat dari tiap pilihan?","Pilihan mana yang kamu ambil dan apa alasanmu?","Apa yang kamu pelajari tentang dirimu, dan apa yang akan kamu lakukan lain kali?"] },
 ];

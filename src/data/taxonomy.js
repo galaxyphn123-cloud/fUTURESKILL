@@ -14940,5 +14940,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "LIF-07"
+ },
+ "ETH-01": {
+  "id": "ETH-01",
+  "domain": "ETH",
+  "name": "Jujur & Dapat Dipercaya",
+  "micro": [
+   {
+    "id": "ETH-01.01",
+    "name": "Benar dan bohong",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-01.02",
+    "name": "Jujur hal kecil",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-01.03",
+    "name": "Berkata benar dengan santun",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-01.04",
+    "name": "Menepati janji",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-01.05",
+    "name": "Mengakui kesalahan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-01.06",
+    "name": "Barang dan uang orang lain",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-01.07",
+    "name": "Menyontek dan plagiat",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-01.08",
+    "name": "Rahasia dan berbohong",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-01.09",
+    "name": "Membangun kepercayaan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-01.10",
+    "name": "Dilema dan keputusan jujur",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "ETH-02": {
+  "id": "ETH-02",
+  "domain": "ETH",
+  "name": "Adil & Setara",
+  "micro": [
+   {
+    "id": "ETH-02.01",
+    "name": "Aturan main adil",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-02.02",
+    "name": "Memberi giliran",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-02.03",
+    "name": "Membagi adil",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-02.04",
+    "name": "Memperlakukan setara",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-02.05",
+    "name": "Adil bukan sama rata",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-02.06",
+    "name": "Mengenali prasangka",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-02.07",
+    "name": "Stereotip",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-02.08",
+    "name": "Menegur dengan santun",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-02.09",
+    "name": "Membela yang tertindas",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-02.10",
+    "name": "Menimbang keadilan rumit",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-01"
+ },
+ "ETH-03": {
+  "id": "ETH-03",
+  "domain": "ETH",
+  "name": "Hormat & Empati",
+  "micro": [
+   {
+    "id": "ETH-03.01",
+    "name": "Sapaan sopan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-03.02",
+    "name": "Kata ajaib",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-03.03",
+    "name": "Hormat pada yang lebih tua",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-03.04",
+    "name": "Menghargai teman sebaya",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-03.05",
+    "name": "Batas orang lain",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-03.06",
+    "name": "Memahami perasaan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-03.07",
+    "name": "Kata yang melukai",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-03.08",
+    "name": "Maaf dan memaafkan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-03.09",
+    "name": "Kebaikan kecil",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-03.10",
+    "name": "Hormat dan empati terpadu",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-02"
+ },
+ "ETH-04": {
+  "id": "ETH-04",
+  "domain": "ETH",
+  "name": "Tanggung Jawab & Akibat",
+  "micro": [
+   {
+    "id": "ETH-04.01",
+    "name": "Akibat tindakan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-04.02",
+    "name": "Mengakui kesalahan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-04.03",
+    "name": "Tanpa menyalahkan",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-04.04",
+    "name": "Memperbaiki kerusakan",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-04.05",
+    "name": "Minta maaf yang tulus",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-04.06",
+    "name": "Tugas dan janji",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-04.07",
+    "name": "Tanggung jawab bersama",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-04.08",
+    "name": "Konsekuensi yang adil",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-04.09",
+    "name": "Menimbang sebelum bertindak",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-04.10",
+    "name": "Kasus tanggung jawab rumit",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-03"
+ },
+ "ETH-05": {
+  "id": "ETH-05",
+  "domain": "ETH",
+  "name": "Berani Berbuat Benar",
+  "micro": [
+   {
+    "id": "ETH-05.01",
+    "name": "Benar dan salah",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-05.02",
+    "name": "Berani itu apa",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-05.03",
+    "name": "Berkata tidak",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-05.04",
+    "name": "Tekanan teman",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-05.05",
+    "name": "Mengaku salah",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-05.06",
+    "name": "Membela dengan aman",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-05.07",
+    "name": "Berani atau nekat",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-05.08",
+    "name": "Tahu kapan minta bantuan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-05.09",
+    "name": "Menghadapi tekanan kelompok",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-05.10",
+    "name": "Keberanian sehari-hari",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-04"
+ },
+ "ETH-06": {
+  "id": "ETH-06",
+  "domain": "ETH",
+  "name": "Dilema Moral",
+  "micro": [
+   {
+    "id": "ETH-06.01",
+    "name": "Mengenal pilihan sulit",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-06.02",
+    "name": "Dua nilai bertentangan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-06.03",
+    "name": "Akibat bagi orang lain",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-06.04",
+    "name": "Aturan dan menolong",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-06.05",
+    "name": "Jujur dan setia kawan",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-06.06",
+    "name": "Menimbang untung rugi",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-06.07",
+    "name": "Mencari pilihan ketiga",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-06.08",
+    "name": "Alasan di balik pilihan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-06.09",
+    "name": "Alasan kuat dan lemah",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-06.10",
+    "name": "Dilema kompleks",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-05"
+ },
+ "ETH-07": {
+  "id": "ETH-07",
+  "domain": "ETH",
+  "name": "Nilai, Budaya & Perbedaan",
+  "micro": [
+   {
+    "id": "ETH-07.01",
+    "name": "Nilai yang kita sama",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-07.02",
+    "name": "Keluarga yang berbeda",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-07.03",
+    "name": "Budaya dan tradisi",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-07.04",
+    "name": "Menghargai tanpa menghakimi",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-07.05",
+    "name": "Hak dan batas diri",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-07.06",
+    "name": "Toleransi dan batasnya",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-07.07",
+    "name": "Kebiasaan baik lintas budaya",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-07.08",
+    "name": "Menalar perbedaan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-07.09",
+    "name": "Belajar dari perbedaan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-07.10",
+    "name": "Menjembatani perbedaan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-06"
+ },
+ "ETH-08": {
+  "id": "ETH-08",
+  "domain": "ETH",
+  "name": "Karakter di Dunia Digital & Masa Depan",
+  "micro": [
+   {
+    "id": "ETH-08.01",
+    "name": "Sopan dan baik hati",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "ETH-08.02",
+    "name": "Jujur saat sendirian",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "ETH-08.03",
+    "name": "Bahasa baik saat online",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "ETH-08.04",
+    "name": "Berpikir sebelum mengirim",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "ETH-08.05",
+    "name": "Jujur memakai AI",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "ETH-08.06",
+    "name": "Karya sendiri dan penghargaan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "ETH-08.07",
+    "name": "Dampak teknologi pada orang lain",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "ETH-08.08",
+    "name": "Membangun reputasi baik",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "ETH-08.09",
+    "name": "Berani bersikap benar",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "ETH-08.10",
+    "name": "Karakter pilihan sehari-hari",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "ETH-07"
  }
 };

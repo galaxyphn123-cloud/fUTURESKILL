@@ -22,7 +22,7 @@ Cek: `npm test` (engine adaptif + sesi/analitik) · `npm run quality` (Phase 27 
 | 27 Quality check | **Baru:** `scripts/quality-check.mjs` — 0 duplikat, 0 opsi kembar, 0 jawaban di luar rentang; **140 aktivitas NEEDS REVIEW** (teks panjang, 2 hint membocorkan jawaban) |
 
 ## Belum ada (urutan pengerjaan yang disarankan)
-1. **Domain tersisa** dari 19: Systems Thinking, Decision Making, Leadership, Resilience, Media & Information Literacy, Life Skills, Ethics/Character (7 domain) — plus pemetaan ulang domain gabungan (WEL→SEL+Resilience, CIV→Civic & Global). Learning How to Learn sudah selesai.
+1. ~~Domain tersisa~~ ketujuh domain (Systems Thinking, Decision Making, Leadership, Resilience, Media & Information Literacy, Life Skills, Ethics/Character) selesai — lihat "Ronde 9". Masih: pemetaan ulang domain gabungan (WEL→SEL+Resilience, CIV→Civic & Global). Learning How to Learn sudah selesai.
 2. ~~Taksonomi micro-skill~~ selesai (lihat atas); tinggal tinjau age_level/prerequisite per skill.
 3. **Penempatan usia/mastery** (Age A–E) dan kembali ke fondasi untuk anak yang belum kuat.
 4. ~~Sesi guru~~ selesai di mode lokal. **Batas penting:** data tersimpan di localStorage satu browser, jadi siswa di perangkat lain belum bisa memakai kode sesi. Itu butuh backend Supabase (adapter sudah ada; skema tabel + RLS + migrasi belum ditulis). PIN guru bukan autentikasi sungguhan.
@@ -95,3 +95,11 @@ Alat penulisan skill baru: `scripts/check-file.mjs` (validasi per file), `patch-
 - `balance-baseline.json` dikosongkan: seluruh 118 skill lolos batas penuh. Empat skill yang tadinya dekat batas (AI-01 dan WEL-06 25, CIV-01 22, CT-05 21) dirapikan ke 9-13 poin.
 - `npm test` (termasuk gate) lolos; `npm run quality`: NEEDS REVIEW 0 dari 11.800.
 - Catatan jujur: ribuan pengecoh ditulis ulang oleh sub-agen tanpa tinjauan manusia; pola penulisan baru ("klaim; alasan", "dianggap", "jadi") bisa menjadi tell baru yang belum terukur. Rekomendasi: tinjauan manusia atas sampel acak per domain dan uji coba dengan anak.
+
+## Ronde 9: tujuh domain baru (56 skill, 5.600 aktivitas)
+- Ditambahkan: SYS Berpikir Sistem, DEC Pengambilan Keputusan, LDR Kepemimpinan, RES Ketangguhan, MIL Literasi Media & Informasi, LIF Keterampilan Hidup, ETH Etika & Karakter (masing-masing 8 skill x 100 aktivitas, fase A-E, 10 micro-skill per skill). Total sekarang **19 domain, 174 skill, 17.400 aktivitas**; `npm test` (termasuk gerbang konten) lolos, `npm run quality` NEEDS REVIEW 0, build Vite sukses.
+- Cara kerja: tiap skill ditulis satu sub-agen di bawah aturan mesin gerbang (BRIEF dengan batas panjang opsi, posisi jawaban, kata mutlak, klausa alasan), lalu `normalize-file.mjs` + `check-file.mjs` sampai bersih; pendaftaran lewat `scripts/add-domain.mjs <spec.json>` (domains.js, skillContent.js, projects.js, taxonomy). Tiap domain punya satu project baru (p_sys, p_dec, p_ldr, p_res, p_mil, p_lif, p_eth).
+- Mesin diperluas: tell terbalik (`longest-low`/`shortest-low`), `legacyFiles` mendukung domain bergaya direktori, `balance-targets` dan `legacy-edit` bekerja untuk semua domain.
+- **Perlu verifikasi manusia (fakta):** nomor darurat Indonesia di LIF-07 (112 diyakini akurat; 110, 113, 119 belum diverifikasi ke sumber resmi), layanan SAPA 129 di RES-05 (soal 76 dan 99), fakta kesehatan/keselamatan LIF-01/03/04/05 (cuci tangan, fluoride, P3K, lalu lintas). Konten ETH (nilai, budaya, dilema) perlu tinjauan kurikulum dan kepekaan budaya.
+- **Insiden:** seorang sub-agen menjalankan `git checkout -- .` sehingga LIF-01 dan LIF-05 sempat kembali ke draf; dikerjakan ulang dan diverifikasi. Seluruh brief kini melarang perintah git bagi sub-agen.
+- Seperti ronde sebelumnya: seluruh teks ditulis AI tanpa tinjauan manusia; gerbang hanya menangkap pola statistik, bukan mutu pedagogis, akurasi, atau kecocokan usia. Bundel JS membesar (semua konten diimpor langsung); code-splitting per skill tetap disarankan.
