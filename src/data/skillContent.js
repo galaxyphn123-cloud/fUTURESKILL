@@ -109,6 +109,7 @@ import { WATER_ENERGY_ACTIVITIES } from "./activities/waterEnergy.js";
 import { CLIMATE_ACTION_ACTIVITIES } from "./activities/climateAction.js";
 import { ACTIVE_CITIZEN_ACTIVITIES } from "./activities/activeCitizen.js";
 import { LHL_SKILLS, LHL_DOMAIN_NAME } from "./activities/lhl/index.js";
+import { MIL_SKILLS, MIL_DOMAIN_NAME } from "./activities/mil/index.js";
 import { RES_SKILLS, RES_DOMAIN_NAME } from "./activities/res/index.js";
 import { LDR_SKILLS, LDR_DOMAIN_NAME } from "./activities/ldr/index.js";
 import { DEC_SKILLS, DEC_DOMAIN_NAME } from "./activities/dec/index.js";
@@ -116,6 +117,7 @@ import { SYS_SKILLS, SYS_DOMAIN_NAME } from "./activities/sys/index.js";
 
 export const SKILL_CONTENT = {
   ...Object.fromEntries(LHL_SKILLS.map(s => [s.id, s.activities])),
+  ...Object.fromEntries(MIL_SKILLS.map(s => [s.id, s.activities])),
   ...Object.fromEntries(RES_SKILLS.map(s => [s.id, s.activities])),
   ...Object.fromEntries(LDR_SKILLS.map(s => [s.id, s.activities])),
   ...Object.fromEntries(DEC_SKILLS.map(s => [s.id, s.activities])),
@@ -284,6 +286,7 @@ export const LIVE_SKILLS = [
   { id: "CIV-07", domain: "Kewargaan & Lingkungan", name: "Perubahan Iklim & Aksi Nyata" },
   { id: "CIV-08", domain: "Kewargaan & Lingkungan", name: "Menjadi Warga yang Peduli & Berkontribusi" },
   ...LHL_SKILLS.map(s => ({ id: s.id, domain: LHL_DOMAIN_NAME, name: s.name })),
+  ...MIL_SKILLS.map(s => ({ id: s.id, domain: MIL_DOMAIN_NAME, name: s.name })),
   ...RES_SKILLS.map(s => ({ id: s.id, domain: RES_DOMAIN_NAME, name: s.name })),
   ...LDR_SKILLS.map(s => ({ id: s.id, domain: LDR_DOMAIN_NAME, name: s.name })),
   ...DEC_SKILLS.map(s => ({ id: s.id, domain: DEC_DOMAIN_NAME, name: s.name })),

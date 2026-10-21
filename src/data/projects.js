@@ -49,4 +49,6 @@ export const PROJECTS = [
     prompts: ["Apa tujuan kegiatanmu, dan bagaimana kamu melibatkan teman-temanmu?","Bagaimana kamu membagi tugas dan memastikan semua mendapat bagian yang adil?","Apa yang sulit saat memimpin, dan bagaimana kamu menanganinya?","Apa yang kamu pelajari tentang dirimu sebagai pemimpin, dan apa yang akan kamu ubah?"] },
   { id: "p_res", domain: "RES", icon: "☂", title: "Rencana Bangkitku", brief: "Pilih satu kesulitan kecil yang pernah kamu alami dan susun rencana untuk menghadapinya jika terjadi lagi.",
     prompts: ["Kesulitan apa yang kamu pilih, dan apa yang kamu rasakan saat itu?","Cara apa yang membantumu tenang dan bangkit?","Kepada siapa kamu bisa meminta dukungan, dan bagaimana caranya?","Apa rencana langkah kecilmu jika kesulitan itu datang lagi?"] },
+  { id: "p_mil", domain: "MIL", icon: "▣", title: "Detektif Informasi", brief: "Pilih satu pesan atau berita yang beredar (boleh contoh buatan) dan periksa apakah layak dipercaya dan dibagikan.",
+    prompts: ["Pesan atau berita apa yang kamu pilih, dan siapa pembuatnya?","Apa tujuan pesan itu: memberi tahu, menghibur, atau membujuk?","Langkah apa yang kamu pakai untuk memeriksa kebenarannya, dan apa hasilnya?","Apakah kamu akan membagikannya? Jelaskan alasanmu."] },
 ];

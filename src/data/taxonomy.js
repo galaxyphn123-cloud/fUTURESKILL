@@ -13500,5 +13500,725 @@ export const TAXONOMY = {
   "age_entry": "D",
   "age_source": "heuristic",
   "prerequisite_skill": "RES-07"
+ },
+ "MIL-01": {
+  "id": "MIL-01",
+  "domain": "MIL",
+  "name": "Mengenal Jenis Media",
+  "micro": [
+   {
+    "id": "MIL-01.01",
+    "name": "Apa itu media",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-01.02",
+    "name": "Cetak dan siaran",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-01.03",
+    "name": "Digital dan sosial",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-01.04",
+    "name": "Ciri tiap media",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-01.05",
+    "name": "Tujuan media",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-01.06",
+    "name": "Mengenali tujuan pesan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-01.07",
+    "name": "Siapa pembuat pesan",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-01.08",
+    "name": "Jalur pesan sampai",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-01.09",
+    "name": "Membandingkan media",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-01.10",
+    "name": "Memilih media bijak",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": null
+ },
+ "MIL-02": {
+  "id": "MIL-02",
+  "domain": "MIL",
+  "name": "Sumber & Penulis",
+  "micro": [
+   {
+    "id": "MIL-02.01",
+    "name": "Siapa pembuat pesan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-02.02",
+    "name": "Mengenali nama sumber",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-02.03",
+    "name": "Keahlian penulis",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-02.04",
+    "name": "Tujuan dan niat sumber",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-02.05",
+    "name": "Sumber primer dan sekunder",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-02.06",
+    "name": "Tanggal dan konteks",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-02.07",
+    "name": "Menelusuri sumber asli",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-02.08",
+    "name": "Kepentingan dan konflik",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-02.09",
+    "name": "Membandingkan sumber",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-02.10",
+    "name": "Menilai kredibilitas utuh",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "A",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-01"
+ },
+ "MIL-03": {
+  "id": "MIL-03",
+  "domain": "MIL",
+  "name": "Iklan & Bujukan",
+  "micro": [
+   {
+    "id": "MIL-03.01",
+    "name": "Mengenal iklan",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-03.02",
+    "name": "Tujuan dan cara iklan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-03.03",
+    "name": "Informasi dan bujukan",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-03.04",
+    "name": "Selebriti dan tokoh",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-03.05",
+    "name": "Kelangkaan dan terburu-buru",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-03.06",
+    "name": "Testimoni dan ulasan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-03.07",
+    "name": "Emosi dan diskon",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-03.08",
+    "name": "Iklan terselubung",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-03.09",
+    "name": "Promosi pemengaruh",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-03.10",
+    "name": "Memutuskan tanpa terbawa",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-02"
+ },
+ "MIL-04": {
+  "id": "MIL-04",
+  "domain": "MIL",
+  "name": "Berita, Opini & Hoaks",
+  "micro": [
+   {
+    "id": "MIL-04.01",
+    "name": "Mengenal jenis informasi",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-04.02",
+    "name": "Berita dan opini",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-04.03",
+    "name": "Fakta dan pendapat",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-04.04",
+    "name": "Iklan dan promosi",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-04.05",
+    "name": "Satire dan parodi",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-04.06",
+    "name": "Judul pancingan",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-04.07",
+    "name": "Misinformasi dan disinformasi",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-04.08",
+    "name": "Ciri hoaks",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-04.09",
+    "name": "Berita seimbang",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-04.10",
+    "name": "Menilai dan menanggapi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "B",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-03"
+ },
+ "MIL-05": {
+  "id": "MIL-05",
+  "domain": "MIL",
+  "name": "Memeriksa Fakta",
+  "micro": [
+   {
+    "id": "MIL-05.01",
+    "name": "Mengenal informasi",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-05.02",
+    "name": "Sumber dan pembuat",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-05.03",
+    "name": "Cek tanggal dan waktu",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-05.04",
+    "name": "Cari sumber asli",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-05.05",
+    "name": "Bandingkan beberapa sumber",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-05.06",
+    "name": "Membaca angka dan data",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-05.07",
+    "name": "Membaca grafik sederhana",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-05.08",
+    "name": "Klaim terlalu bagus",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-05.09",
+    "name": "Berhenti sebelum membagikan",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-05.10",
+    "name": "Bertanya dan menyimpulkan",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-04"
+ },
+ "MIL-06": {
+  "id": "MIL-06",
+  "domain": "MIL",
+  "name": "Gambar, Video & Manipulasi",
+  "micro": [
+   {
+    "id": "MIL-06.01",
+    "name": "Foto bisa diubah",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-06.02",
+    "name": "Sudut dan bingkai",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-06.03",
+    "name": "Potongan konteks",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-06.04",
+    "name": "Foto lama dipakai ulang",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-06.05",
+    "name": "Filter dan retouch",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-06.06",
+    "name": "Video dipotong",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-06.07",
+    "name": "Gambar buatan AI",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-06.08",
+    "name": "Deepfake dan suara tiruan",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-06.09",
+    "name": "Memeriksa asal gambar",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-06.10",
+    "name": "Menilai dan menyikapi",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "C",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-05"
+ },
+ "MIL-07": {
+  "id": "MIL-07",
+  "domain": "MIL",
+  "name": "Algoritma & Gelembung Informasi",
+  "micro": [
+   {
+    "id": "MIL-07.01",
+    "name": "Mengenal rekomendasi",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-07.02",
+    "name": "Jejak kebiasaan",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-07.03",
+    "name": "Mengapa muncul di beranda",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-07.04",
+    "name": "Gelembung informasi",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-07.05",
+    "name": "Ruang gema",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-07.06",
+    "name": "Waktu layar dan perhatian",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-07.07",
+    "name": "Mencari sudut pandang lain",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-07.08",
+    "name": "Mengatur pengalaman sendiri",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-07.09",
+    "name": "Iklan dan tujuan platform",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-07.10",
+    "name": "Sintesis literasi algoritma",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-06"
+ },
+ "MIL-08": {
+  "id": "MIL-08",
+  "domain": "MIL",
+  "name": "Membuat & Membagikan dengan Bertanggung Jawab",
+  "micro": [
+   {
+    "id": "MIL-08.01",
+    "name": "Membuat karya sendiri",
+    "range": [
+     1,
+     10
+    ]
+   },
+   {
+    "id": "MIL-08.02",
+    "name": "Menyebut sumber",
+    "range": [
+     11,
+     20
+    ]
+   },
+   {
+    "id": "MIL-08.03",
+    "name": "Hak cipta sederhana",
+    "range": [
+     21,
+     30
+    ]
+   },
+   {
+    "id": "MIL-08.04",
+    "name": "Meminta izin",
+    "range": [
+     31,
+     40
+    ]
+   },
+   {
+    "id": "MIL-08.05",
+    "name": "Privasi dalam foto",
+    "range": [
+     41,
+     50
+    ]
+   },
+   {
+    "id": "MIL-08.06",
+    "name": "Berpikir sebelum berbagi",
+    "range": [
+     51,
+     60
+    ]
+   },
+   {
+    "id": "MIL-08.07",
+    "name": "Dampak pesan pada pembaca",
+    "range": [
+     61,
+     70
+    ]
+   },
+   {
+    "id": "MIL-08.08",
+    "name": "Memilih isi dan wadah",
+    "range": [
+     71,
+     80
+    ]
+   },
+   {
+    "id": "MIL-08.09",
+    "name": "Akurasi dan koreksi",
+    "range": [
+     81,
+     90
+    ]
+   },
+   {
+    "id": "MIL-08.10",
+    "name": "Kreator bertanggung jawab",
+    "range": [
+     91,
+     100
+    ]
+   }
+  ],
+  "age_entry": "D",
+  "age_source": "heuristic",
+  "prerequisite_skill": "MIL-07"
  }
 };
